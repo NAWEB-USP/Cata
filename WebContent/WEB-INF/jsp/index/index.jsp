@@ -80,7 +80,7 @@ $(document).ready(
 					<h2>Verifique o estilo de seus textos</h2>
 				</center>
 				<form id="advice_form" action="<c:url value="/advice"/>" enctype="multipart/form-data" method="post">
-					Selecione um arquivo .txt ou .pdf para análise:<br>
+					Selecione um arquivo .txt, .pdf ou .doc para análise:<br>
 					<div class="single_form_element">
 						<input id="file" type="file" name="file" size="25"><br />
 						<span class="small" style="position: relative">
@@ -106,8 +106,8 @@ $(document).ready(
 			<div id='coin-slider'>
 				<a href="<c:url value='/#checkYourTexts'/>">
 					<img src="<c:url value='/css/images/files.png'/>">
-					<span><b>Envie um arquivo .txt ou .pdf</b><br>
-						Selecione um arquivo de texto sem formatação ou um PDF e envie para verificação.
+					<span><b>Envie um arquivo .txt, .pdf ou .doc</b><br>
+						Selecione um arquivo de texto sem formatação, um PDF ou um DOC e envie para verificação.
 					</span>
 				</a>
 				

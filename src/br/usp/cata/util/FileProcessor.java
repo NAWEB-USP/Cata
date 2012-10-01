@@ -2,6 +2,8 @@ package br.usp.cata.util;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -19,6 +21,8 @@ import org.apache.pdfbox.cos.COSDocument;
 import org.apache.pdfbox.pdfparser.PDFParser;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.util.PDFTextStripper;
+import org.apache.poi.hwpf.HWPFDocument;
+import org.apache.poi.hwpf.extractor.WordExtractor;
 
 import br.com.caelum.vraptor.interceptor.multipart.UploadedFile;
 
@@ -171,9 +175,25 @@ public class FileProcessor {
 	        this.fixHiphenation(text);
 	        this.fixUglyLatex(text);
 		}
-		//TODO: Add more file types
+		
+		else if (file.getContentType().equals("application/msword")) {
+			WordExtractor extractor = null;
+			
+			try {
+				HWPFDocument document = new HWPFDocument(is);
+				extractor = new WordExtractor(document);
+				String[] paragraphs = extractor.getParagraphText();
+			
+				for(String line : paragraphs)
+		        	text.add(line);
+				
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			
+			//TODO: Add more file types
+		}
 	}
-	
 }
 
 	
