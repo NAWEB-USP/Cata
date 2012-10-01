@@ -1,7 +1,7 @@
 -- Usuario 'Sistema CATA'
 
 insert into User (userID, active, email, name) values
-	(1, True, 'sistema.cata@gmail.com', 'CATA');
+	(1, True, 'arthbr@gmail.com', 'EU');
 
 
 -- Referências Bibliográficas
