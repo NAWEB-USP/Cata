@@ -77,15 +77,13 @@ $(document).ready(
 					</fieldset>
 				</form>
 			</div>
-			
-			
 			<br>
 
 			<div id='coin-slider'>
 				<a href="<c:url value='/#checkYourTexts'/>">
 					<img src="<c:url value='/css/images/files.png'/>">
-					<span><b>Envie um arquivo .txt ou .pdf</b><br>
-						Selecione um arquivo de texto sem formatação ou um PDF e envie para verificação.
+					<span><b>Envie um arquivo .txt, .pdf ou .doc</b><br>
+						Selecione um arquivo de texto sem formatação, um PDF ou um DOC e envie para verificação.
 					</span>
 				</a>
 				
