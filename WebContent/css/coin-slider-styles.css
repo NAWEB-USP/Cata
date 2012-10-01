@@ -3,11 +3,11 @@
 	http://workshop.rs/projects/coin-slider
 */
 .coin-slider { 
-	overflow: hidden;
-	zoom: 1;
-	position: relative;
-	width: 950px;
 	margin: auto;
+    overflow: hidden;
+    padding-top: 20px;
+    position: relative;
+    width: 950px;
 }
 
 .coin-slider a {
