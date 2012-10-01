@@ -46,61 +46,39 @@ $(document).ready(
 	
 	<div id="page">
 		<div id="content">
-			<h1>CATA: Collaborative Academic Text Advisor</h1>
-			<p>
-			Um verificador de estilo para textos acadêmicos de Computação.
-			</p>
+			<div id="title">
+				CATA: Collaborative Academic Text Advisor
+				<br>
+				<p>Um verificador de estilo para textos acadêmicos de Computação.</p>
+			</div>
+			
 			<div id="login">
+				
 				<form id="login_form" action="<c:url value='/login'/>" method="post">
 					<fieldset>
 						<div class="single_form_element">
-							<label class="label" for="email">E-mail</label><br />
-							<input id="email" class="input_border width285" type="text" maxlength=100 name="user.email" />
-						</div>
-						<div class="single_form_element">
-							<label class="label" for="pass">Senha</label><br />
-							<input id="pass" class="input_border width285" type="password" maxlength=100 name="user.password" />
+							<label class="label" for="email">E-mail: </label>
+							<input id="email" class="input_border width130" type="text" maxlength=100 name="user.email" />
+							<label class="label" for="pass">Senha: </label>
+							<input id="pass" class="input_border width130" type="password" maxlength=100 name="user.password" />
+							
+							<div id="loginEntry">
+								<input class="loginButton" type="submit" value="Entrar">
+							</div>
 							<div class="small align-right">
 								<a href="<c:url value='/recover'/>">Esqueci a senha</a>
-							</div>
-						</div>
-						<center>
-							<input class="button" type="submit" value="Entrar">
-							<div class="small">
 								<a href="<c:url value='/signup'/>">Cadastre-se</a>
 							</div>
-						</center>
+							
+						</div>
+<!-- 						<div id="loginEntry"> -->
+							
+<!-- 						</div> -->
 					</fieldset>
 				</form>
 			</div>
 			
-			<div id="advice">
-				<a name="checkYourTexts"></a>
-				<center>
-					<h2>Verifique o estilo de seus textos</h2>
-				</center>
-				<form id="advice_form" action="<c:url value="/advice"/>" enctype="multipart/form-data" method="post">
-					Selecione um arquivo .txt ou .pdf para análise:<br>
-					<div class="single_form_element">
-						<input id="file" type="file" name="file" size="25"><br />
-						<span class="small" style="position: relative">
-							<input id="pt" name="language" value="0" type="checkbox">Português
-							<input id="en" name="language" value="1" type="checkbox">Inglês
-							<br />
-						</span>
-					</div>
-					<center>
-						<input class="button" style="margin-top: 0px;" type="submit"
-							value="Enviar">
-						<div class="small">
-							Por padrão, apenas algumas regras cadastradas no Sistema serão
-							aplicadas ao seu texto. Para configurar a análise de seus
-							arquivos, use a opção<br>
-							<a href="<c:url value="/advanced"/>">Verificação Avançada</a>.
-						</div>
-					</center>
-				</form>
-			</div>
+			
 			<br>
 
 			<div id='coin-slider'>
@@ -129,6 +107,33 @@ $(document).ready(
 					O código-fonte do Sistema CATA está hospedado no GitHub.
 				</span>
 				</a>
+			</div>
+			
+			<div id="advice">
+				<a name="checkYourTexts"></a>
+				<center>
+					<h2>Verifique o estilo de seus textos</h2>
+				
+				<form id="advice_form" action="<c:url value="/advice"/>" enctype="multipart/form-data" method="post">
+					<div class="single_form_element">
+						Selecione um arquivo .txt ou .pdf para análise: 
+						<input id="file" type="file" name="file" size="30"><br />
+						<span class="small" style="position: relative">
+							<input id="pt" name="language" value="0" type="checkbox">Português
+							<input id="en" name="language" value="1" type="checkbox">Inglês
+							<br />
+						</span>
+					</div>
+						<input class="button" type="submit"
+							value="Enviar">
+						<div class="small">
+							Por padrão, apenas algumas regras cadastradas no Sistema serão
+							aplicadas ao seu texto. Para configurar a análise de seus
+							arquivos, use a opção<br>
+							<a href="<c:url value="/advanced"/>">Verificação Avançada</a>.
+						</div>
+					</center>
+				</form>
 			</div>
 
 			<div class="spacer"></div>
