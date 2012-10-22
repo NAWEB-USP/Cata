@@ -4,3 +4,23 @@ CATA (Collaborative Academic Text Advisor) tem por finalidade detectar problemas
 acadêmicos de Computação, bem como sugerir possíveis correções para tais problemas.
 
 Aqui você encontra todo o código-fonte do Sistema CATA, assim como uma breve documentação.
+
+Para rodar este projeto no Eclipse, você precisa seguir os seguintes passos:
+
+->Importe o projeto através de um plugin para o git ou usando a ferramenta de importar projetos já existentes.
+
+->Se houver um problema no classpath, é porque você não possui o Apache Tomcat 7 configurado. 
+
+->Configure então um novo servidor e acrescente-o ao Server Runtime.
+
+->Copie os arquivos "activation.jar" e "mail.jar" (que estão em "CATA/WebContent/WEB-INF/lib") para a pasta "lib" do Tomcat("TOMCAT_HOME\lib").
+
+->Configure o arquivo "hibernate.properties" (da pasta "CATA/src") de acordo com o banco de dados que você tem disponível.
+
+-> Arrume a primeira query do arquivo  CATA/dbScripts/initialContent.sql para o email que usará para gerenciamneto do CATA.
+
+->Execute o script "initialContent.sql" (da pasta "CATA/dbScripts").
+
+->Configure o arquivo "context.xml" (em "CATA/WebContent/META-INF") com uma conta de e-mail válida.
+
+Pronto!
