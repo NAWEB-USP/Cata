@@ -2,8 +2,6 @@ package br.usp.cata.util;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -25,7 +23,6 @@ import org.apache.poi.hwpf.HWPFDocument;
 import org.apache.poi.hwpf.extractor.WordExtractor;
 
 import br.com.caelum.vraptor.interceptor.multipart.UploadedFile;
-
 import br.usp.cata.component.FixesForLatexPDFTexts;
 
 
@@ -190,9 +187,25 @@ public class FileProcessor {
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
-			
-			//TODO: Add more file types
 		}
+		
+		else if (file.getContentType().equals("text/x-tex")) {
+			try {
+				byte[] fileBytes = IOUtils.toByteArray(is);
+				Charset charset = guessEncoding(fileBytes);
+				BufferedReader br = new BufferedReader(
+						new InputStreamReader(new ByteArrayInputStream(fileBytes), charset));
+				
+				String line;
+		    	while((line = br.readLine()) != null) {
+		    		text.add(line);
+		    	}
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		//TODO: Add more file types
 	}
 }
 

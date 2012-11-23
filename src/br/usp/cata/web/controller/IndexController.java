@@ -85,7 +85,8 @@ public class IndexController {
     				"Selecione um arquivo no formato .txt, .pdf ou .doc.", "Nenhum arquivo selecionado"));
 		else if(!file.getContentType().equals("text/plain") &&
 				!file.getContentType().equals("application/pdf") &&
-				!file.getContentType().equals("application/msword")) {
+				!file.getContentType().equals("application/msword") &&
+				!file.getContentType().equals("text/x-tex")) {
 			validator.add(new ValidationMessage(
 					"O arquivo deve estar em formato .txt, .pdf ou .doc.", "Formato do arquivo"));
 		}
@@ -96,7 +97,7 @@ public class IndexController {
 	public void advice(UploadedFile file, Languages language) throws Exception {
 		validateFile(file);
 		validator.onErrorRedirectTo(IndexController.class).index();
-		
+
 		result.forwardTo(SuggestionsController.class).results(file, language, AdviceFilter.DEFAULT, null);
 	}
 	
