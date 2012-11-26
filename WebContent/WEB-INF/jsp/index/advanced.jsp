@@ -95,7 +95,7 @@
 						</div>
 						
 						<br />
-						Selecione um arquivo .txt, .pdf ou .doc para análise:<br>
+						Selecione um arquivo .txt, .pdf, .doc ou .tex para análise:<br>
 						<div class="single_form_element">
 							<input id="file" type="file" name="file" size="30"><br>
 							<span class="small" style="position: relative">

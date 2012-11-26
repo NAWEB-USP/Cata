@@ -82,13 +82,13 @@ public class IndexController {
     private void validateFile(UploadedFile file) {
     	if(file == null)
 			validator.add(new ValidationMessage(
-    				"Selecione um arquivo no formato .txt, .pdf ou .doc.", "Nenhum arquivo selecionado"));
+    				"Selecione um arquivo no formato .txt, .pdf, .doc ou .tex.", "Nenhum arquivo selecionado"));
 		else if(!file.getContentType().equals("text/plain") &&
 				!file.getContentType().equals("application/pdf") &&
 				!file.getContentType().equals("application/msword") &&
 				!file.getContentType().equals("text/x-tex")) {
 			validator.add(new ValidationMessage(
-					"O arquivo deve estar em formato .txt, .pdf ou .doc.", "Formato do arquivo"));
+					"O arquivo deve estar em formato .txt, .pdf, .doc ou .tex.", "Formato do arquivo"));
 		}
     }
 

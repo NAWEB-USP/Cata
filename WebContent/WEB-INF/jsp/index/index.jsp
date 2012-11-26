@@ -82,8 +82,8 @@ $(document).ready(
 			<div id='coin-slider'>
 				<a href="<c:url value='/#checkYourTexts'/>">
 					<img src="<c:url value='/css/images/files.png'/>">
-					<span><b>Envie um arquivo .txt, .pdf ou .doc</b><br>
-						Selecione um arquivo de texto sem formatação, um PDF ou um DOC e envie para verificação.
+					<span><b>Envie um arquivo .txt, .pdf, .doc ou .tex</b><br>
+						Selecione um arquivo de texto sem formatação, um PDF, um DOC ou um arquivo LaTeX e envie para verificação.
 					</span>
 				</a>
 				
@@ -114,7 +114,7 @@ $(document).ready(
 				
 				<form id="advice_form" action="<c:url value="/advice"/>" enctype="multipart/form-data" method="post">
 					<div class="single_form_element">
-						Selecione um arquivo .txt ou .pdf para análise: 
+						Selecione um arquivo .txt, .pdf, .doc ou .tex para análise: 
 						<input id="file" type="file" name="file" size="30"><br />
 						<span class="small" style="position: relative">
 							<input id="pt" name="language" value="0" type="checkbox">Português
