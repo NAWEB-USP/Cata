@@ -19,8 +19,8 @@ import org.apache.pdfbox.cos.COSDocument;
 import org.apache.pdfbox.pdfparser.PDFParser;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.util.PDFTextStripper;
-import org.apache.poi.hwpf.HWPFDocument;
-import org.apache.poi.hwpf.extractor.WordExtractor;
+//import org.apache.poi.hwpf.HWPFDocument;
+//import org.apache.poi.hwpf.extractor.WordExtractor;
 
 import br.com.caelum.vraptor.interceptor.multipart.UploadedFile;
 import br.usp.cata.component.FixesForLatexPDFTexts;
@@ -173,20 +173,28 @@ public class FileProcessor {
 	        this.fixUglyLatex(text);
 		}
 		
-		else if (file.getContentType().equals("application/msword")) {
-			WordExtractor extractor = null;
+	//	else if (file.getContentType().equals("application/msword")) {
+		//	WordExtractor extractor = null;
 			
-			try {
-				HWPFDocument document = new HWPFDocument(is);
-				extractor = new WordExtractor(document);
-				String[] paragraphs = extractor.getParagraphText();
+			//try {
+				//HWPFDocument document = new HWPFDocument(is);
+			//	extractor = new WordExtractor(document);
+				//String[] paragraphs = extractor.getParagraphText();
 			
-				for(String line : paragraphs)
-		        	text.add(line);
+				//for(String line : paragraphs)
+		        	// text.add(line);
 				
+<<<<<<< HEAD
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
+=======
+			//} catch (Exception e) {
+				//e.printStackTrace();
+		//	}
+			
+			//TODO: Add more file types
+>>>>>>> Mudança layout
 		}
 		
 		else if (file.getContentType().equals("text/x-tex")) {
@@ -207,6 +215,6 @@ public class FileProcessor {
 		
 		//TODO: Add more file types
 	}
-}
+//}
 
 	

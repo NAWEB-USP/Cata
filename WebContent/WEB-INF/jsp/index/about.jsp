@@ -29,7 +29,7 @@
 				<h1>Sobre</h1>
 				<b>CATA (Collaborative Academic Text Advisor)</b> foi produzido para um Trabalho de Formatura Supervisionado
 				do <a href="http://www.ime.usp.br" target="_blank">Instituto de Matemática e Estatística</a>
-				da <a href="http://www.usp.br" target="_blank">Universidade de São Paulo (USP)</a>.<br>
+				da <a href="http://www.usp.br" target="_blank">Universidade de São Paulo (USP)</a>. Foi desenvolvido também por um grupo de estudantes também <br>
 				<p>
 					<h3>Um verificador de estilo</h3>
 					CATA tem por finalidade detectar problemas de estilo em textos

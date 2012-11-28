@@ -184,7 +184,7 @@ public class IndexController {
     		case SUCCESS:
     			result.include("messages", "Seu acesso foi criado. " +
     					"Siga as instruções enviadas para o endereço " + newUser.getEmail() +
-    					" para ativar sua conta.");
+    					" para ativar sua conta. Cuidado! O email de confirmação pode ter sido enviado para o SPAM. ");
     			break;
     		case USER_ALREADY_REGISTERED_ACTIVE_EMAIL:
     			validator.add(new ValidationMessage(
@@ -201,7 +201,7 @@ public class IndexController {
     		case NO_EMAIL_SENT:
     			validator.add(new ValidationMessage(
     					"Não foi possível enviar o e-mail de ativação de conta para o endereço " + newUser.getEmail() + ". " +
-    							"Tente novamente mais tarde ou use outro endereço de e-mail.", "E-mail de ativação"));
+    							"Tente novamente mais tarde ou use outro endereço de e-mail. Verifique também sua conexão.", "E-mail de ativação"));
     			break;
     		default:
     			 throw new IllegalStateException("Unexpected signup result");
@@ -261,7 +261,7 @@ public class IndexController {
     							"Tente novamente mais tarde.", "E-mail de renovação de senha"));
     		else
     			result.include("messages", "Um e-mail com instruções para renovação da senha foi" +
-    					" enviado para o endereço " + email + ".");
+    					" enviado para o endereço " + email + ". Cuidado! O email de confirmação pode ter sido enviado para o SPAM.");
     			
     	}
   	   	validator.onErrorRedirectTo(IndexController.class).recover();
