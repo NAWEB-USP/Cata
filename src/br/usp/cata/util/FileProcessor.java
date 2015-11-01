@@ -184,18 +184,18 @@ public class FileProcessor {
 				//for(String line : paragraphs)
 		        	// text.add(line);
 				
-<<<<<<< HEAD
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-=======
+//<<<<<<< HEAD
+//			} catch (Exception e) {
+//				e.printStackTrace();
+//			}
+//=======
 			//} catch (Exception e) {
 				//e.printStackTrace();
 		//	}
 			
 			//TODO: Add more file types
->>>>>>> Mudança layout
-		}
+//>>>>>>> Mudança layout
+//		}
 		
 		else if (file.getContentType().equals("text/x-tex")) {
 			try {
@@ -215,6 +215,6 @@ public class FileProcessor {
 		
 		//TODO: Add more file types
 	}
-//}
+}
 
 	
