@@ -65,9 +65,9 @@ $(document).ready(
 							<div id="loginEntry">
 								<input class="loginButton" type="submit" value="Entrar">
 							</div>
-							<div class="small align-right">
-								<a href="<c:url value='/recover'/>">Esqueci a senha</a>
+							<div class="small align-left">
 								<a href="<c:url value='/signup'/>">Cadastre-se</a>
+								<a href="<c:url value='/recover'/>">Esqueci a senha</a>
 							</div>
 							
 						</div>
