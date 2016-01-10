@@ -99,7 +99,7 @@ $(document).ready(
 					Cadastrando-se no Sistema CATA você poderá inserir e modificar suas próprias regras e sugestões de estilo.
 					</span>
 				</a>
-				<a href="https://github.com/NAWEB-USP/Cata2012" target="_blank">
+				<a href="https://github.com/NAWEB-USP/Cata" target="_blank">
 					<img src="<c:url value='/css/images/free-github.png'/>">
 					<span> <b>CATA é software livre!</b><br>
 					O código-fonte do Sistema CATA está hospedado no GitHub.
