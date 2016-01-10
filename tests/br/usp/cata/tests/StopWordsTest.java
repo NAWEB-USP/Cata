@@ -1,7 +1,5 @@
 package br.usp.cata.tests;
 
-import java.util.HashSet;
-
 import org.junit.Before;
 import org.junit.Test;
 
@@ -21,13 +19,11 @@ public class StopWordsTest extends CataTestCase {
 	
 	@Test
 	public void testStopWordsPT() {
-		HashSet<String> sw = StopWords.getStopWordsPT();
 		assertTrue(StopWords.getStopWordsPT().contains("também"));
 	}
 
 	@Test
 	public void testStopWordsEN() {
-		HashSet<String> sw = StopWords.getStopWordsEN();
 		assertTrue(StopWords.getStopWordsEN().contains("the"));
 	}
 	
