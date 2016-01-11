@@ -11,6 +11,7 @@
      mail.smtp.auth="true"
      mail.smtp.user="servidorcatabolsaunificada"
 	 mail.smtp.from="servidorcatabolsaunificada@gmail.com"
+	 mail.smtp.personal="Sistema CATA"
      password="servidorcata"
      mail.smtp.starttls.enable="true"
      mail.smtp.socketFactory.class="javax.net.ssl.SSLSocketFactory"

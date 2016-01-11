@@ -1,6 +1,7 @@
 package br.usp.cata.service;
 
 import java.io.Serializable;
+import java.io.UnsupportedEncodingException;
 
 import javax.mail.Message;
 import javax.mail.MessagingException;
@@ -32,6 +33,7 @@ public class EmailService implements Serializable {
 	
     private static final long serialVersionUID = 943210483745027L;
 
+    public static String PROP_MAIL_SMTP_PERSONAL = "mail.smtp.personal";
     public static String PROP_MAIL_SMTP_FROM = "mail.smtp.from";
     public static String PROP_MAIL_SMTP_HOST = "mail.smtp.host";
     public static String PROP_MAIL_SMTP_USER = "mail.smtp.user";
@@ -80,7 +82,7 @@ public class EmailService implements Serializable {
             for(int i = 0; i < numberOfReceivers; i++)
                 receiversAddresses[i] = new InternetAddress(email.getToAddresses().get(i));
 
-            message.setFrom(new InternetAddress(email.getFromAddress()));
+            message.setFrom(new InternetAddress(email.getFromAddress(), email.getFromPersonal()));
             message.setRecipients(Message.RecipientType.TO, receiversAddresses);
 
             message.setSubject(email.getSubject());
@@ -94,6 +96,8 @@ public class EmailService implements Serializable {
             throw new EmailException(e);
         } catch(MessagingException e) {
             throw new EmailException(e);
+        } catch(UnsupportedEncodingException e) {
+        	throw new EmailException(e);
         }
     }
 
@@ -101,6 +105,7 @@ public class EmailService implements Serializable {
         final String... receivers) {
         final Email email = new Email();
         email.setFromAddress(session.getProperty(PROP_MAIL_SMTP_FROM));
+        email.setFromPersonal(session.getProperty(PROP_MAIL_SMTP_PERSONAL));
         email.setHostname(session.getProperty(PROP_MAIL_SMTP_HOST));
         email.setUser(session.getProperty(PROP_MAIL_SMTP_USER));
         email.setSubject(subject);

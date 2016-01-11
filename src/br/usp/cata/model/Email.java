@@ -17,6 +17,7 @@ public class Email implements Serializable {
     private String password;
     private String fromAddress;
     private List<String> toAddresses;
+    private String fromPersonal;
 
     public Email() {
         this.toAddresses = new ArrayList<String>();
@@ -93,5 +94,13 @@ public class Email implements Serializable {
 	public void addReceiver(String receiverEmail) {
         this.toAddresses.add(receiverEmail);
     }
+	
+	public String getFromPersonal() {
+		return fromPersonal;
+	}
+
+	public void setFromPersonal(String fromPersonal) {
+		this.fromPersonal = fromPersonal;
+	}
 	
 }
