@@ -28,6 +28,7 @@
 					"aaSorting": [[ 0, "asc" ]],
 					"sPaginationType": "four_button"
 				});
+				$('a').css("margin", "0px 0px");
 			});
 		</script>
 		<script type="text/javascript">

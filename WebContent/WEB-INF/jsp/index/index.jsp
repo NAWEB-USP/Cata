@@ -32,6 +32,7 @@ $(document).ready(
 		showModal(
 			"#modal",
 			'<a href="#" class="close"><img src="<c:url value='/css/images/close_pop.png'/>" class="btn_close" title="Fechar" alt="Fechar" /></a>');
+		$('a').css("margin", "0px 0px");
 	});
 </script>
 
@@ -90,7 +91,7 @@ $(document).ready(
 				<a href="<c:url value='/#checkYourTexts'/>">
 					<img src="<c:url value='/css/images/advice.png'/>">
 					<span><b>Alternativas aos problemas de estilo</b><br>
-					CATA marca os problemas de estilo encontrados em seu texto e oferece sugestões para corrigi-los.
+					Para “CATA marca problemas de estilo em seu texto e oferece sugestões para corrigi-los
 					</span>
 				</a>
 				<a href="<c:url value='/signup'/>">
@@ -124,7 +125,7 @@ $(document).ready(
 					</div>
 						<input class="button" type="submit"
 							value="Enviar">
-						<div class="small">
+						<div class="small" style="margin-right: none">
 							Por padrão, apenas algumas regras cadastradas no Sistema serão
 							aplicadas ao seu texto. Para configurar a análise de seus
 							arquivos, use a opção<br>

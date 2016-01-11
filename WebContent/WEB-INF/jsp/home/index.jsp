@@ -42,7 +42,7 @@
 				
 				<div id="advice">
 					<center>
-						<h2>Verifique o estilo de seus textos</h2>
+						<h2>Selecione um arquivo e envie para verificação</h2>
 					</center>
 					<form id="advice_form" action="<c:url value="/advice"/>" enctype="multipart/form-data" method="post">
 						Selecione um arquivo .txt, .pdf, .doc ou .tex para análise:<br>
@@ -57,7 +57,7 @@
 							<div class="small">
 								Por padrão, apenas algumas regras cadastradas no Sistema serão aplicadas ao seu texto. Para
 								configurar a análise de seus arquivos, use a opção<br>
-								<a href="<c:url value="/advanced"/>">Verificação Avançada</a>.
+								<a href="<c:url value="/advanced"/>" style="margin: 10px 10px">Verificação Avançada afd!</a>.
 							</div>
 						</center>
 					</form>
