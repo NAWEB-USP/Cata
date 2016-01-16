@@ -27,22 +27,19 @@
 		<div id="page">
 			<div id="content">
 				<h1>Sobre</h1>
-				<b>CATA (Collaborative Academic Text Advisor)</b> foi produzido para um Trabalho de Formatura Supervisionado
-				do <a href="http://www.ime.usp.br" target="_blank">Instituto de Matemática e Estatística</a>
-				da <a href="http://www.usp.br" target="_blank">Universidade de São Paulo (USP)</a>. Foi desenvolvido também por um grupo de estudantes também <br>
+				<b>CATA (Collaborative Academic Text Advisor)</b> é desenvolvido na <a href="http://www.usp.br" target="_blank">Universidade de São Paulo</a>
+				no escopo do <a href="http://nap.usp.br/naweb/" target="_blank">Núcleo de Pesquisa em Ambientes Colaborativos na Web</a> e do
+				<a href="http://ccsl.ime.usp.br/" target="_blank">Centro de Competência em Software Livre</a>.<br>
 				<p>
 					<h3>Um verificador de estilo</h3>
-					CATA tem por finalidade detectar problemas de estilo em textos
-					acadêmicos de Computação, bem como sugerir possíveis correções para tais problemas. CATA analisa textos levando
+					O CATA tem por finalidade detectar problemas de estilo em textos
+					acadêmicos de Computação, bem como sugerir possíveis correções para tais problemas. O sistema analisa textos levando
 					em conta aspectos linguísticos e estéticos, para, por exemplo, detectar ocorrências de traduções incorretas e
-					estrangeirismos: como o uso de "testes unitários" como tradução para "unit tests", em vez da forma correta
-					"testes de unidade"; ou ainda, "a função retorna um determinado valor" (tradução de "return"), quando mais
-					elegante seria "a função devolve um determinado valor".
+					estrangeirismos.
 				</p>
 				<p>
 					<h3>Cadastre suas próprias regras e sugestões</h3>
-					Um usuário autenticado no Sistema CATA poderá cadastrar novas regras e sugestões de estilo, que ficarão
-					disponíveis a todos os demais usuários.
+					Um usuário autenticado no Sistema CATA pode cadastrar novas regras e sugestões de estilo, que ficam disponíveis a todos os demais usuários.
 				</p>
 				<p>
 					<h3>CATA é Software Livre</h3>
@@ -50,8 +47,20 @@
 					<a href="https://github.com/NAWEB-USP/Cata" target="_blank">link</a>.
 				</p>
 				<p>
-					<h3>Use o <b>Firefox</b>!</h3>
-					CATA recomenda o navegador <a href=http://www.mozilla.org/en-US/firefox/new/ target="_blank">Firefox</a>.
+					<h3>Coordenação do projeto</h3>
+					<a href="https://www.ime.usp.br/˜gerosa" target="_blank">Prof. Dr. Marco Aurélio Gerosa</a>
+				</p>
+				<p>
+					<h3>Desenvolvedores atuais</h3>
+					Yoshio Mori
+				</p>
+				<p>
+					<h3>Desenvolvedores anteriores</h3>
+					Ana Luiza<br>
+					Camila Achutti<br>
+					Arthur<br>
+					Daniel<br>
+					Diego de Araújo Martinez Camarinha
 				</p>
 			</div>
 		</div>	
