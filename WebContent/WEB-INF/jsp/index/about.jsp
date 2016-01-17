@@ -48,7 +48,7 @@
 				</p>
 				<p>
 					<h3>Coordenação do projeto</h3>
-					<a href="https://www.ime.usp.br/˜gerosa" target="_blank">Prof. Dr. Marco Aurélio Gerosa</a>
+					<a href="https://www.ime.usp.br/~gerosa" target="_blank">Prof. Dr. Marco Aurélio Gerosa</a>
 				</p>
 				<p>
 					<h3>Desenvolvedores atuais</h3>
