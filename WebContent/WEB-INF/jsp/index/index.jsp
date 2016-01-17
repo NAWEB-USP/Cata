@@ -67,7 +67,7 @@ $(document).ready(
 								<input class="loginButton" type="submit" value="Entrar">
 							</div>
 							<div class="small align-left">
-								<a href="<c:url value='/signup'/>">Cadastre-se</a>
+								<a href="<c:url value='/signup'/>">Cadastre-se</a>&#160;&#160;&#160;
 								<a href="<c:url value='/recover'/>">Esqueci a senha</a>
 							</div>
 							
@@ -91,7 +91,7 @@ $(document).ready(
 				<a href="<c:url value='/#checkYourTexts'/>">
 					<img src="<c:url value='/css/images/advice.png'/>">
 					<span><b>Alternativas aos problemas de estilo</b><br>
-					Para “CATA marca problemas de estilo em seu texto e oferece sugestões para corrigi-los
+					CATA marca problemas de estilo em seu texto e oferece sugestões para corrigi-los.
 					</span>
 				</a>
 				<a href="<c:url value='/signup'/>">
