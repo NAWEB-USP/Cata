@@ -57,7 +57,7 @@
 							<div class="small">
 								Por padrão, apenas algumas regras cadastradas no Sistema serão aplicadas ao seu texto. Para
 								configurar a análise de seus arquivos, use a opção<br>
-								<a href="<c:url value="/advanced"/>" style="margin: 10px 10px">Verificação Avançada afd!</a>.
+								<a href="<c:url value="/advanced"/>" style="margin: 10px 10px">Verificação Avançada</a>.
 							</div>
 						</center>
 					</form>
