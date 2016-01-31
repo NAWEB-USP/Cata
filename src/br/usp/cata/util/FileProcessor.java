@@ -20,9 +20,9 @@ import org.apache.pdfbox.pdfparser.PDFParser;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.util.PDFTextStripper;
 import org.apache.poi.hwpf.HWPFDocument;
-//import org.apache.poi.hwpf.HWPFDocument;
-//import org.apache.poi.hwpf.extractor.WordExtractor;
 import org.apache.poi.hwpf.extractor.WordExtractor;
+import org.apache.poi.xwpf.extractor.XWPFWordExtractor;
+import org.apache.poi.xwpf.usermodel.XWPFDocument;
 
 import br.com.caelum.vraptor.interceptor.multipart.UploadedFile;
 import br.usp.cata.component.FixesForLatexPDFTexts;
@@ -202,6 +202,19 @@ public class FileProcessor {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
+		}
+		else if (file.getContentType().equals("application/vnd.openxmlformats-officedocument.wordprocessingml.document")) {
+			XWPFWordExtractor extractor = null;
+			
+			try {
+				XWPFDocument document = new XWPFDocument(is);
+				extractor = new XWPFWordExtractor(document);
+				String paragraphs = extractor.getText();
+			
+				text.add(paragraphs);
+			} catch (Exception e) {
+				e.printStackTrace();
+			} 
 		}
 		
 		//TODO: Add more file types
