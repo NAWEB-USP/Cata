@@ -13,7 +13,7 @@ Para rodar este projeto no Eclipse, você precisa seguir os seguintes passos:
 
 ->Configure então um novo servidor e acrescente-o ao Server Runtime.
 
-->O sisteme faz uso de JavaMail e JavaBeans Activation Framework, que fornecem dois arquivos mail.jar e activation.jar que devem ser colocados em "TOMCAT_HOME\lib". Os arquivos podem ser obtidos em http://www.oracle.com/technetwork/java/index-138643.html e http://www.oracle.com/technetwork/java/javase/downloads/index-135046.html.
+->O sistema faz uso de JavaMail, JavaBeans Activation Framework, Xmlbeans (2.x), que fornecem dois arquivos mail.jar, activation.jar e xmlbeans.jar que devem ser colocados em "TOMCAT_HOME\lib". Os arquivos podem ser obtidos em http://www.oracle.com/technetwork/java/index-138643.html e http://www.oracle.com/technetwork/java/javase/downloads/index-135046.html.
 
 ->Configure o arquivo "hibernate.properties" (da pasta "CATA/src") de acordo com o banco de dados que você tem disponível.
 
