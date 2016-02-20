@@ -5,10 +5,8 @@ import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.nio.ByteBuffer;
-import java.nio.charset.CharacterCodingException;
 import java.nio.charset.Charset;
-import java.nio.charset.CharsetDecoder;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.regex.Matcher;
@@ -47,33 +45,27 @@ public class FileProcessor {
 		return text;
 	}
 	
-	// FIXME find a better way to guess file encoding
 	private Charset guessEncoding(byte[] fileBytes) {
-		String[] charsetNames = { "UTF-8", "ISO-8859-1", "US-ASCII", 
-				"ISO-8859-15", "cp1252", "UTF-16BE", "UTF-16LE", "UTF-16", "UTF-32" };		
-		Charset charset = null;
-		
-		for(String charsetName : charsetNames) {
-			if(!Charset.isSupported(charsetName))
-				continue;
-			
-			charset = Charset.forName(charsetName);
-			CharsetDecoder decoder = charset.newDecoder();
-			try {
-				decoder.decode(ByteBuffer.wrap(fileBytes));
-			} catch(CharacterCodingException e) {
-				charset = null;
-				continue;
-			}
-			break;
+		Integer firstFourBytes = 0;
+		if(fileBytes.length < 4)
+			throw new IllegalArgumentException("size of fileBytes must be greater or equal than 4");
+		for(Integer i = 0; i < 4; i++){
+			firstFourBytes <<= 8;
+			firstFourBytes |= fileBytes[i] & 255;
 		}
-		
-		if(charset == null)
-			 return Charset.forName("UTF-8");
-		
-		return charset;
+		if((firstFourBytes & 0xffffff00) == 0xefbbbf00)
+			return StandardCharsets.UTF_8;
+		if(firstFourBytes == 0x0000feff)
+			return Charset.forName("UTF-32BE");
+		if(firstFourBytes == 0xfffe0000)
+			return Charset.forName("UTF-32LE");
+		if((firstFourBytes & 0xffff0000) == 0xfeff0000)
+			return StandardCharsets.UTF_16BE;
+		if((firstFourBytes & 0xffff0000) == 0xfffe0000)
+			return StandardCharsets.UTF_16LE;
+		return Charset.forName("IBM437");
 	}
-	
+
 	private void fixHiphenation(ArrayList<String> text) {
 		for(int i = 0; i < text.size() - 1; i++) {
 			String line = text.get(i);
