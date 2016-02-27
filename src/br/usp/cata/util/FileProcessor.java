@@ -52,8 +52,6 @@ public class FileProcessor {
 				firstFourBytes <<= 8;
 				firstFourBytes |= fileBytes[i] & 255;
 			}
-			if((firstFourBytes & 0xffffff00) == 0xefbbbf00)
-				return StandardCharsets.UTF_8;
 			if(firstFourBytes == 0x0000feff)
 				return Charset.forName("UTF-32BE");
 			if(firstFourBytes == 0xfffe0000)
@@ -63,7 +61,7 @@ public class FileProcessor {
 			if((firstFourBytes & 0xffff0000) == 0xfffe0000)
 				return StandardCharsets.UTF_16LE;
 		}
-		return Charset.forName("IBM437");
+		return StandardCharsets.UTF_8;
 	}
 
 	private void fixHiphenation(ArrayList<String> text) {
