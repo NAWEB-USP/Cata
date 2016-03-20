@@ -1,0 +1,196 @@
+\hypertarget{classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service}{\section{br.\+usp.\+cata.\+service.\+New\+User\+Service Class Reference}
+\label{classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service}\index{br.\+usp.\+cata.\+service.\+New\+User\+Service@{br.\+usp.\+cata.\+service.\+New\+User\+Service}}
+}
+
+
+Collaboration diagram for br.\+usp.\+cata.\+service.\+New\+User\+Service\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{enumbr_1_1usp_1_1cata_1_1service_1_1_new_user_service_1_1_signup_result}{Signup\+Result}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service_a4dd6a551afac57c1000bcfc5e885fcd5}{New\+User\+Service} (\hyperlink{classbr_1_1usp_1_1cata_1_1dao_1_1_user_d_a_o}{User\+D\+A\+O} \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service_a67d4700db9bda321b02d987085995a99}{user\+D\+A\+O}, \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_email_service}{Email\+Service} \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service_afd564835d3b82f748745b6c899175c1f}{email\+Service}, Http\+Servlet\+Request \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service_a0f83da9b9dfcb3a750d110971e7d6086}{http\+Servlet\+Request})
+\item 
+\hyperlink{enumbr_1_1usp_1_1cata_1_1service_1_1_new_user_service_1_1_signup_result}{Signup\+Result} \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service_a931ce40045ffd8a9a0f1b3fc152d71fc}{register} (final \hyperlink{classbr_1_1usp_1_1cata_1_1model_1_1_user}{User} new\+User)
+\item 
+\hyperlink{enumbr_1_1usp_1_1cata_1_1service_1_1_new_user_service_1_1_signup_result}{Signup\+Result} \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service_a454660d66dbc9c8f05da70ea752b9147}{activate} (String activation\+Key)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service_a07dc78b0903a3bf8e32f0f9decc33609}{get\+Activation\+Url} ()
+\item 
+\hyperlink{classbr_1_1usp_1_1cata_1_1model_1_1_email}{Email} \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service_a0cb78c605f1e2449c286e5709cb1629a}{build\+New\+User\+Email} (final \hyperlink{classbr_1_1usp_1_1cata_1_1model_1_1_user}{User} new\+User)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final \hyperlink{classbr_1_1usp_1_1cata_1_1dao_1_1_user_d_a_o}{User\+D\+A\+O} \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service_a67d4700db9bda321b02d987085995a99}{user\+D\+A\+O}
+\item 
+final \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_email_service}{Email\+Service} \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service_afd564835d3b82f748745b6c899175c1f}{email\+Service}
+\item 
+final Http\+Servlet\+Request \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service_a0f83da9b9dfcb3a750d110971e7d6086}{http\+Servlet\+Request}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file New\+User\+Service.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service_a4dd6a551afac57c1000bcfc5e885fcd5}{\index{br\+::usp\+::cata\+::service\+::\+New\+User\+Service@{br\+::usp\+::cata\+::service\+::\+New\+User\+Service}!New\+User\+Service@{New\+User\+Service}}
+\index{New\+User\+Service@{New\+User\+Service}!br\+::usp\+::cata\+::service\+::\+New\+User\+Service@{br\+::usp\+::cata\+::service\+::\+New\+User\+Service}}
+\subsubsection[{New\+User\+Service}]{\setlength{\rightskip}{0pt plus 5cm}br.\+usp.\+cata.\+service.\+New\+User\+Service.\+New\+User\+Service (
+\begin{DoxyParamCaption}
+\item[{{\bf User\+D\+A\+O}}]{user\+D\+A\+O, }
+\item[{{\bf Email\+Service}}]{email\+Service, }
+\item[{Http\+Servlet\+Request}]{http\+Servlet\+Request}
+\end{DoxyParamCaption}
+)}}\label{classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service_a4dd6a551afac57c1000bcfc5e885fcd5}
+
+
+Definition at line 34 of file New\+User\+Service.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service_a454660d66dbc9c8f05da70ea752b9147}{\index{br\+::usp\+::cata\+::service\+::\+New\+User\+Service@{br\+::usp\+::cata\+::service\+::\+New\+User\+Service}!activate@{activate}}
+\index{activate@{activate}!br\+::usp\+::cata\+::service\+::\+New\+User\+Service@{br\+::usp\+::cata\+::service\+::\+New\+User\+Service}}
+\subsubsection[{activate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Signup\+Result} br.\+usp.\+cata.\+service.\+New\+User\+Service.\+activate (
+\begin{DoxyParamCaption}
+\item[{String}]{activation\+Key}
+\end{DoxyParamCaption}
+)}}\label{classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service_a454660d66dbc9c8f05da70ea752b9147}
+
+
+Definition at line 102 of file New\+User\+Service.\+java.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service_a454660d66dbc9c8f05da70ea752b9147_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service_a0cb78c605f1e2449c286e5709cb1629a}{\index{br\+::usp\+::cata\+::service\+::\+New\+User\+Service@{br\+::usp\+::cata\+::service\+::\+New\+User\+Service}!build\+New\+User\+Email@{build\+New\+User\+Email}}
+\index{build\+New\+User\+Email@{build\+New\+User\+Email}!br\+::usp\+::cata\+::service\+::\+New\+User\+Service@{br\+::usp\+::cata\+::service\+::\+New\+User\+Service}}
+\subsubsection[{build\+New\+User\+Email}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Email} br.\+usp.\+cata.\+service.\+New\+User\+Service.\+build\+New\+User\+Email (
+\begin{DoxyParamCaption}
+\item[{final {\bf User}}]{new\+User}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service_a0cb78c605f1e2449c286e5709cb1629a}
+
+
+Definition at line 47 of file New\+User\+Service.\+java.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service_a0cb78c605f1e2449c286e5709cb1629a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service_a0cb78c605f1e2449c286e5709cb1629a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service_a07dc78b0903a3bf8e32f0f9decc33609}{\index{br\+::usp\+::cata\+::service\+::\+New\+User\+Service@{br\+::usp\+::cata\+::service\+::\+New\+User\+Service}!get\+Activation\+Url@{get\+Activation\+Url}}
+\index{get\+Activation\+Url@{get\+Activation\+Url}!br\+::usp\+::cata\+::service\+::\+New\+User\+Service@{br\+::usp\+::cata\+::service\+::\+New\+User\+Service}}
+\subsubsection[{get\+Activation\+Url}]{\setlength{\rightskip}{0pt plus 5cm}String br.\+usp.\+cata.\+service.\+New\+User\+Service.\+get\+Activation\+Url (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service_a07dc78b0903a3bf8e32f0f9decc33609}
+
+
+Definition at line 41 of file New\+User\+Service.\+java.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service_a07dc78b0903a3bf8e32f0f9decc33609_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service_a931ce40045ffd8a9a0f1b3fc152d71fc}{\index{br\+::usp\+::cata\+::service\+::\+New\+User\+Service@{br\+::usp\+::cata\+::service\+::\+New\+User\+Service}!register@{register}}
+\index{register@{register}!br\+::usp\+::cata\+::service\+::\+New\+User\+Service@{br\+::usp\+::cata\+::service\+::\+New\+User\+Service}}
+\subsubsection[{register}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Signup\+Result} br.\+usp.\+cata.\+service.\+New\+User\+Service.\+register (
+\begin{DoxyParamCaption}
+\item[{final {\bf User}}]{new\+User}
+\end{DoxyParamCaption}
+)}}\label{classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service_a931ce40045ffd8a9a0f1b3fc152d71fc}
+
+
+Definition at line 65 of file New\+User\+Service.\+java.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service_a931ce40045ffd8a9a0f1b3fc152d71fc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service_afd564835d3b82f748745b6c899175c1f}{\index{br\+::usp\+::cata\+::service\+::\+New\+User\+Service@{br\+::usp\+::cata\+::service\+::\+New\+User\+Service}!email\+Service@{email\+Service}}
+\index{email\+Service@{email\+Service}!br\+::usp\+::cata\+::service\+::\+New\+User\+Service@{br\+::usp\+::cata\+::service\+::\+New\+User\+Service}}
+\subsubsection[{email\+Service}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf Email\+Service} br.\+usp.\+cata.\+service.\+New\+User\+Service.\+email\+Service\hspace{0.3cm}{\ttfamily [private]}}}\label{classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service_afd564835d3b82f748745b6c899175c1f}
+
+
+Definition at line 31 of file New\+User\+Service.\+java.
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service_a0f83da9b9dfcb3a750d110971e7d6086}{\index{br\+::usp\+::cata\+::service\+::\+New\+User\+Service@{br\+::usp\+::cata\+::service\+::\+New\+User\+Service}!http\+Servlet\+Request@{http\+Servlet\+Request}}
+\index{http\+Servlet\+Request@{http\+Servlet\+Request}!br\+::usp\+::cata\+::service\+::\+New\+User\+Service@{br\+::usp\+::cata\+::service\+::\+New\+User\+Service}}
+\subsubsection[{http\+Servlet\+Request}]{\setlength{\rightskip}{0pt plus 5cm}final Http\+Servlet\+Request br.\+usp.\+cata.\+service.\+New\+User\+Service.\+http\+Servlet\+Request\hspace{0.3cm}{\ttfamily [private]}}}\label{classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service_a0f83da9b9dfcb3a750d110971e7d6086}
+
+
+Definition at line 32 of file New\+User\+Service.\+java.
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service_a67d4700db9bda321b02d987085995a99}{\index{br\+::usp\+::cata\+::service\+::\+New\+User\+Service@{br\+::usp\+::cata\+::service\+::\+New\+User\+Service}!user\+D\+A\+O@{user\+D\+A\+O}}
+\index{user\+D\+A\+O@{user\+D\+A\+O}!br\+::usp\+::cata\+::service\+::\+New\+User\+Service@{br\+::usp\+::cata\+::service\+::\+New\+User\+Service}}
+\subsubsection[{user\+D\+A\+O}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf User\+D\+A\+O} br.\+usp.\+cata.\+service.\+New\+User\+Service.\+user\+D\+A\+O\hspace{0.3cm}{\ttfamily [private]}}}\label{classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service_a67d4700db9bda321b02d987085995a99}
+
+
+Definition at line 30 of file New\+User\+Service.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/mori/git/cata/src/br/usp/cata/service/\hyperlink{_new_user_service_8java}{New\+User\+Service.\+java}\end{DoxyCompactItemize}

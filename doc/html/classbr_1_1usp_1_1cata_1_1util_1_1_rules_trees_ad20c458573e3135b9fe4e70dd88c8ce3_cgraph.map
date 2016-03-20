@@ -1,0 +1,6 @@
+<map id="br.usp.cata.util.RulesTrees.buildUsersTrees" name="br.usp.cata.util.RulesTrees.buildUsersTrees">
+<area shape="rect" id="node2" href="$classbr_1_1usp_1_1cata_1_1service_1_1_user_service.html#a60776aa226a2c44ed066bf9c3dade43b" title="br.usp.cata.service.User\lService.findByID" alt="" coords="283,5,449,47"/>
+<area shape="rect" id="node3" href="$classbr_1_1usp_1_1cata_1_1service_1_1_rule_service.html#aca50ccd94593b8dff8a98c465850a6e7" title="br.usp.cata.service.Rule\lService.findByUser" alt="" coords="284,71,448,112"/>
+<area shape="rect" id="node5" href="$classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees.html#a6dd7c5c974d8a3e4390b69a47360e6e0" title="br.usp.cata.util.RulesTrees.add\lRulesAndPrepare" alt="" coords="264,136,468,177"/>
+<area shape="rect" id="node4" href="$classbr_1_1usp_1_1cata_1_1dao_1_1_rule_d_a_o.html#add63c4a13558e41488b8dab179f3cb69" title="br.usp.cata.dao.RuleDAO.find\lByUser" alt="" coords="516,71,713,112"/>
+</map>

@@ -1,0 +1,428 @@
+\hypertarget{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees}{\section{br.\+usp.\+cata.\+component.\+lemmatizer.\+Lemmatizer\+Trees Class Reference}
+\label{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees}\index{br.\+usp.\+cata.\+component.\+lemmatizer.\+Lemmatizer\+Trees@{br.\+usp.\+cata.\+component.\+lemmatizer.\+Lemmatizer\+Trees}}
+}
+
+
+Collaboration diagram for br.\+usp.\+cata.\+component.\+lemmatizer.\+Lemmatizer\+Trees\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a02014a56727ee3b28a74e3375cdd27b9}{Lemmatizer\+Trees} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_accents_char}{Accents\+Char} \hyperlink{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a0a51000da4da886e37d9c9787131431d}{get\+Accents\+Root} ()
+\item 
+static \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_expressions_char}{Expressions\+Char} \hyperlink{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a736ec8b8f6ee1d7faf14d23f6ebe3046}{get\+Expressions\+Root} ()
+\item 
+static \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_suffixes_char}{Suffixes\+Char} \hyperlink{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_ab32413f5083ef074bd786247d2626219}{get\+Suffixes\+Root} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_accents_char}{Accents\+Char} \hyperlink{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a74231a5dc7bba4243a22e883d95e110f}{insert\+Accents\+Tree} (String word, int col, String lemma, int tag, \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_accents_char}{Accents\+Char} root)
+\item 
+void \hyperlink{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a35774277b53429f3cfd07d7bfd3daf65}{read\+Accents\+File} ()
+\item 
+\hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_expressions_char}{Expressions\+Char} \hyperlink{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a6456da8739411ebc7fcaa1a37ed53199}{insert\+Expressions\+Tree} (String word, int col, int tag, \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_expressions_char}{Expressions\+Char} root)
+\item 
+void \hyperlink{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a6c2d16f7d28382ea3440f0ddf3bdb5c9}{read\+Expressions\+File} ()
+\item 
+\hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_suffixes_char}{Suffixes\+Char} \hyperlink{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a441d84baf8fcf596911def5de2cd9b84}{insert\+Suffixes\+Tree} (String word, int col, int exact, String lemma\+Tag, \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_suffixes_char}{Suffixes\+Char} root)
+\item 
+void \hyperlink{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a736c56ee1e984ca2f1eeafea2b6d8299}{read\+Suffixes\+Files} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final String \hyperlink{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_ac447265bf3916189bd063ed9b9738cd3}{accents\+File} = \char`\"{}/br/usp/cata/resources/lemmatizer/accents.\+txt\char`\"{}
+\item 
+final String \hyperlink{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_aca539fbee591a27d66cc1977a0175d15}{expressions\+File} = \char`\"{}/br/usp/cata/resources/lemmatizer/expressions.\+txt\char`\"{}
+\item 
+final String \hyperlink{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a04bbb41c672505518cb686410bcaa81e}{suffixes\+File} = \char`\"{}/br/usp/cata/resources/lemmatizer/suffixes.\+txt\char`\"{}
+\item 
+final String \hyperlink{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_af4645525b8813e134fae84ed656b42cd}{suffixes\+File2} = \char`\"{}/br/usp/cata/resources/lemmatizer/suffixes-\/b.\+txt\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_accents_char}{Accents\+Char} \hyperlink{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a3ff64828b81013c9f3ea1744e2ed996f}{accents\+Root}
+\item 
+static \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_expressions_char}{Expressions\+Char} \hyperlink{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a72823e09db24036c2c8e241557a3f216}{expressions\+Root}
+\item 
+static \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_suffixes_char}{Suffixes\+Char} \hyperlink{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a6e88697661cf7e6cfc419587f8e0cfd8}{suffixes\+Root}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 21 of file Lemmatizer\+Trees.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a02014a56727ee3b28a74e3375cdd27b9}{\index{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees@{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees}!Lemmatizer\+Trees@{Lemmatizer\+Trees}}
+\index{Lemmatizer\+Trees@{Lemmatizer\+Trees}!br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees@{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees}}
+\subsubsection[{Lemmatizer\+Trees}]{\setlength{\rightskip}{0pt plus 5cm}br.\+usp.\+cata.\+component.\+lemmatizer.\+Lemmatizer\+Trees.\+Lemmatizer\+Trees (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a02014a56727ee3b28a74e3375cdd27b9}
+
+
+Definition at line 32 of file Lemmatizer\+Trees.\+java.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a02014a56727ee3b28a74e3375cdd27b9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a0a51000da4da886e37d9c9787131431d}{\index{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees@{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees}!get\+Accents\+Root@{get\+Accents\+Root}}
+\index{get\+Accents\+Root@{get\+Accents\+Root}!br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees@{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees}}
+\subsubsection[{get\+Accents\+Root}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Accents\+Char} br.\+usp.\+cata.\+component.\+lemmatizer.\+Lemmatizer\+Trees.\+get\+Accents\+Root (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a0a51000da4da886e37d9c9787131431d}
+
+
+Definition at line 38 of file Lemmatizer\+Trees.\+java.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a0a51000da4da886e37d9c9787131431d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a736ec8b8f6ee1d7faf14d23f6ebe3046}{\index{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees@{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees}!get\+Expressions\+Root@{get\+Expressions\+Root}}
+\index{get\+Expressions\+Root@{get\+Expressions\+Root}!br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees@{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees}}
+\subsubsection[{get\+Expressions\+Root}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Expressions\+Char} br.\+usp.\+cata.\+component.\+lemmatizer.\+Lemmatizer\+Trees.\+get\+Expressions\+Root (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a736ec8b8f6ee1d7faf14d23f6ebe3046}
+
+
+Definition at line 42 of file Lemmatizer\+Trees.\+java.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a736ec8b8f6ee1d7faf14d23f6ebe3046_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_ab32413f5083ef074bd786247d2626219}{\index{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees@{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees}!get\+Suffixes\+Root@{get\+Suffixes\+Root}}
+\index{get\+Suffixes\+Root@{get\+Suffixes\+Root}!br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees@{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees}}
+\subsubsection[{get\+Suffixes\+Root}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Suffixes\+Char} br.\+usp.\+cata.\+component.\+lemmatizer.\+Lemmatizer\+Trees.\+get\+Suffixes\+Root (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_ab32413f5083ef074bd786247d2626219}
+
+
+Definition at line 46 of file Lemmatizer\+Trees.\+java.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_ab32413f5083ef074bd786247d2626219_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a74231a5dc7bba4243a22e883d95e110f}{\index{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees@{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees}!insert\+Accents\+Tree@{insert\+Accents\+Tree}}
+\index{insert\+Accents\+Tree@{insert\+Accents\+Tree}!br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees@{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees}}
+\subsubsection[{insert\+Accents\+Tree}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Accents\+Char} br.\+usp.\+cata.\+component.\+lemmatizer.\+Lemmatizer\+Trees.\+insert\+Accents\+Tree (
+\begin{DoxyParamCaption}
+\item[{String}]{word, }
+\item[{int}]{col, }
+\item[{String}]{lemma, }
+\item[{int}]{tag, }
+\item[{{\bf Accents\+Char}}]{root}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a74231a5dc7bba4243a22e883d95e110f}
+
+
+Definition at line 50 of file Lemmatizer\+Trees.\+java.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a74231a5dc7bba4243a22e883d95e110f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a74231a5dc7bba4243a22e883d95e110f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a6456da8739411ebc7fcaa1a37ed53199}{\index{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees@{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees}!insert\+Expressions\+Tree@{insert\+Expressions\+Tree}}
+\index{insert\+Expressions\+Tree@{insert\+Expressions\+Tree}!br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees@{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees}}
+\subsubsection[{insert\+Expressions\+Tree}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expressions\+Char} br.\+usp.\+cata.\+component.\+lemmatizer.\+Lemmatizer\+Trees.\+insert\+Expressions\+Tree (
+\begin{DoxyParamCaption}
+\item[{String}]{word, }
+\item[{int}]{col, }
+\item[{int}]{tag, }
+\item[{{\bf Expressions\+Char}}]{root}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a6456da8739411ebc7fcaa1a37ed53199}
+
+
+Definition at line 117 of file Lemmatizer\+Trees.\+java.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a6456da8739411ebc7fcaa1a37ed53199_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a6456da8739411ebc7fcaa1a37ed53199_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a441d84baf8fcf596911def5de2cd9b84}{\index{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees@{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees}!insert\+Suffixes\+Tree@{insert\+Suffixes\+Tree}}
+\index{insert\+Suffixes\+Tree@{insert\+Suffixes\+Tree}!br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees@{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees}}
+\subsubsection[{insert\+Suffixes\+Tree}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Suffixes\+Char} br.\+usp.\+cata.\+component.\+lemmatizer.\+Lemmatizer\+Trees.\+insert\+Suffixes\+Tree (
+\begin{DoxyParamCaption}
+\item[{String}]{word, }
+\item[{int}]{col, }
+\item[{int}]{exact, }
+\item[{String}]{lemma\+Tag, }
+\item[{{\bf Suffixes\+Char}}]{root}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a441d84baf8fcf596911def5de2cd9b84}
+
+
+Definition at line 173 of file Lemmatizer\+Trees.\+java.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a441d84baf8fcf596911def5de2cd9b84_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a441d84baf8fcf596911def5de2cd9b84_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a35774277b53429f3cfd07d7bfd3daf65}{\index{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees@{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees}!read\+Accents\+File@{read\+Accents\+File}}
+\index{read\+Accents\+File@{read\+Accents\+File}!br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees@{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees}}
+\subsubsection[{read\+Accents\+File}]{\setlength{\rightskip}{0pt plus 5cm}void br.\+usp.\+cata.\+component.\+lemmatizer.\+Lemmatizer\+Trees.\+read\+Accents\+File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a35774277b53429f3cfd07d7bfd3daf65}
+
+
+Definition at line 94 of file Lemmatizer\+Trees.\+java.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a35774277b53429f3cfd07d7bfd3daf65_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a35774277b53429f3cfd07d7bfd3daf65_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a6c2d16f7d28382ea3440f0ddf3bdb5c9}{\index{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees@{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees}!read\+Expressions\+File@{read\+Expressions\+File}}
+\index{read\+Expressions\+File@{read\+Expressions\+File}!br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees@{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees}}
+\subsubsection[{read\+Expressions\+File}]{\setlength{\rightskip}{0pt plus 5cm}void br.\+usp.\+cata.\+component.\+lemmatizer.\+Lemmatizer\+Trees.\+read\+Expressions\+File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a6c2d16f7d28382ea3440f0ddf3bdb5c9}
+
+
+Definition at line 152 of file Lemmatizer\+Trees.\+java.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a6c2d16f7d28382ea3440f0ddf3bdb5c9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a6c2d16f7d28382ea3440f0ddf3bdb5c9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a736c56ee1e984ca2f1eeafea2b6d8299}{\index{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees@{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees}!read\+Suffixes\+Files@{read\+Suffixes\+Files}}
+\index{read\+Suffixes\+Files@{read\+Suffixes\+Files}!br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees@{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees}}
+\subsubsection[{read\+Suffixes\+Files}]{\setlength{\rightskip}{0pt plus 5cm}void br.\+usp.\+cata.\+component.\+lemmatizer.\+Lemmatizer\+Trees.\+read\+Suffixes\+Files (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a736c56ee1e984ca2f1eeafea2b6d8299}
+
+
+Definition at line 257 of file Lemmatizer\+Trees.\+java.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a736c56ee1e984ca2f1eeafea2b6d8299_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a736c56ee1e984ca2f1eeafea2b6d8299_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_ac447265bf3916189bd063ed9b9738cd3}{\index{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees@{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees}!accents\+File@{accents\+File}}
+\index{accents\+File@{accents\+File}!br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees@{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees}}
+\subsubsection[{accents\+File}]{\setlength{\rightskip}{0pt plus 5cm}final String br.\+usp.\+cata.\+component.\+lemmatizer.\+Lemmatizer\+Trees.\+accents\+File = \char`\"{}/br/usp/cata/resources/lemmatizer/accents.\+txt\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}}\label{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_ac447265bf3916189bd063ed9b9738cd3}
+
+
+Definition at line 23 of file Lemmatizer\+Trees.\+java.
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a3ff64828b81013c9f3ea1744e2ed996f}{\index{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees@{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees}!accents\+Root@{accents\+Root}}
+\index{accents\+Root@{accents\+Root}!br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees@{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees}}
+\subsubsection[{accents\+Root}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Accents\+Char} br.\+usp.\+cata.\+component.\+lemmatizer.\+Lemmatizer\+Trees.\+accents\+Root\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a3ff64828b81013c9f3ea1744e2ed996f}
+
+
+Definition at line 28 of file Lemmatizer\+Trees.\+java.
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_aca539fbee591a27d66cc1977a0175d15}{\index{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees@{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees}!expressions\+File@{expressions\+File}}
+\index{expressions\+File@{expressions\+File}!br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees@{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees}}
+\subsubsection[{expressions\+File}]{\setlength{\rightskip}{0pt plus 5cm}final String br.\+usp.\+cata.\+component.\+lemmatizer.\+Lemmatizer\+Trees.\+expressions\+File = \char`\"{}/br/usp/cata/resources/lemmatizer/expressions.\+txt\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}}\label{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_aca539fbee591a27d66cc1977a0175d15}
+
+
+Definition at line 24 of file Lemmatizer\+Trees.\+java.
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a72823e09db24036c2c8e241557a3f216}{\index{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees@{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees}!expressions\+Root@{expressions\+Root}}
+\index{expressions\+Root@{expressions\+Root}!br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees@{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees}}
+\subsubsection[{expressions\+Root}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expressions\+Char} br.\+usp.\+cata.\+component.\+lemmatizer.\+Lemmatizer\+Trees.\+expressions\+Root\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a72823e09db24036c2c8e241557a3f216}
+
+
+Definition at line 29 of file Lemmatizer\+Trees.\+java.
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a04bbb41c672505518cb686410bcaa81e}{\index{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees@{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees}!suffixes\+File@{suffixes\+File}}
+\index{suffixes\+File@{suffixes\+File}!br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees@{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees}}
+\subsubsection[{suffixes\+File}]{\setlength{\rightskip}{0pt plus 5cm}final String br.\+usp.\+cata.\+component.\+lemmatizer.\+Lemmatizer\+Trees.\+suffixes\+File = \char`\"{}/br/usp/cata/resources/lemmatizer/suffixes.\+txt\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}}\label{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a04bbb41c672505518cb686410bcaa81e}
+
+
+Definition at line 25 of file Lemmatizer\+Trees.\+java.
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_af4645525b8813e134fae84ed656b42cd}{\index{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees@{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees}!suffixes\+File2@{suffixes\+File2}}
+\index{suffixes\+File2@{suffixes\+File2}!br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees@{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees}}
+\subsubsection[{suffixes\+File2}]{\setlength{\rightskip}{0pt plus 5cm}final String br.\+usp.\+cata.\+component.\+lemmatizer.\+Lemmatizer\+Trees.\+suffixes\+File2 = \char`\"{}/br/usp/cata/resources/lemmatizer/suffixes-\/b.\+txt\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}}\label{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_af4645525b8813e134fae84ed656b42cd}
+
+
+Definition at line 26 of file Lemmatizer\+Trees.\+java.
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a6e88697661cf7e6cfc419587f8e0cfd8}{\index{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees@{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees}!suffixes\+Root@{suffixes\+Root}}
+\index{suffixes\+Root@{suffixes\+Root}!br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees@{br\+::usp\+::cata\+::component\+::lemmatizer\+::\+Lemmatizer\+Trees}}
+\subsubsection[{suffixes\+Root}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Suffixes\+Char} br.\+usp.\+cata.\+component.\+lemmatizer.\+Lemmatizer\+Trees.\+suffixes\+Root\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees_a6e88697661cf7e6cfc419587f8e0cfd8}
+
+
+Definition at line 30 of file Lemmatizer\+Trees.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/mori/git/cata/src/br/usp/cata/component/lemmatizer/\hyperlink{_lemmatizer_trees_8java}{Lemmatizer\+Trees.\+java}\end{DoxyCompactItemize}

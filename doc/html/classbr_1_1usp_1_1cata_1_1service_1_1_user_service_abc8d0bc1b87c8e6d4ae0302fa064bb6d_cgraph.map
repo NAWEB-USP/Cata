@@ -1,0 +1,5 @@
+<map id="br.usp.cata.service.UserService.authenticate" name="br.usp.cata.service.UserService.authenticate">
+<area shape="rect" id="node2" href="$classbr_1_1usp_1_1cata_1_1service_1_1_crypto_service.html#a2941595185b39d654bcba055ef8467e6" title="br.usp.cata.service.Crypto\lService.generateMd5" alt="" coords="243,5,419,47"/>
+<area shape="rect" id="node3" href="$classbr_1_1usp_1_1cata_1_1dao_1_1_user_d_a_o.html#a1a31dcd6f1118562f73c2d381b1bf40b" title="br.usp.cata.dao.UserDAO.find\lActiveUsersByEmailAndPassword" alt="" coords="219,71,443,112"/>
+<area shape="rect" id="node4" href="$classbr_1_1usp_1_1cata_1_1web_1_1controller_1_1_user_session.html#ae6f6d8aedf45fcd5aa89f90a115fee5d" title="br.usp.cata.web.controller.\lUserSession.setUser" alt="" coords="243,136,419,177"/>
+</map>

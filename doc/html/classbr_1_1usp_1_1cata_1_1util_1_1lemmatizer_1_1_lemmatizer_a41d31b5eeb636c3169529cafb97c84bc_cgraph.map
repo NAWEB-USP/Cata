@@ -1,0 +1,5 @@
+<map id="br.usp.cata.util.lemmatizer.Lemmatizer.Lemmatizer" name="br.usp.cata.util.lemmatizer.Lemmatizer.Lemmatizer">
+<area shape="rect" id="node2" href="$classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees.html#a0a51000da4da886e37d9c9787131431d" title="br.usp.cata.component.lemmatizer.\lLemmatizerTrees.getAccentsRoot" alt="" coords="243,5,469,47"/>
+<area shape="rect" id="node3" href="$classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees.html#a736ec8b8f6ee1d7faf14d23f6ebe3046" title="br.usp.cata.component.lemmatizer.\lLemmatizerTrees.getExpressionsRoot" alt="" coords="233,71,479,112"/>
+<area shape="rect" id="node4" href="$classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees.html#ab32413f5083ef074bd786247d2626219" title="br.usp.cata.component.lemmatizer.\lLemmatizerTrees.getSuffixesRoot" alt="" coords="243,136,469,177"/>
+</map>

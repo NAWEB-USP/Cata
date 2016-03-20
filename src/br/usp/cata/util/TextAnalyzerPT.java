@@ -26,6 +26,12 @@ public class TextAnalyzerPT extends TextAnalyzerLanguage {
 	}
 
 	@Override
+	/**
+	 * Analisa um texto.
+	 * A análise consiste em quebrar o texto em tokens e entre outras coisas fazer a lematização como descritos na
+	 * monografia da Ana Luiza Basalo 
+	 * @param text Um ArrayList de String cujas componentes são linhas do texto a ser analisado.
+	 */
 	void analyze(ArrayList<String> text) {
 		// Tokenization
 		startsTokenized = new HashMap<Integer, Position>();

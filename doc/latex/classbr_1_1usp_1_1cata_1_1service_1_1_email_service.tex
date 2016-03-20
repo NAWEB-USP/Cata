@@ -1,0 +1,290 @@
+\hypertarget{classbr_1_1usp_1_1cata_1_1service_1_1_email_service}{\section{br.\+usp.\+cata.\+service.\+Email\+Service Class Reference}
+\label{classbr_1_1usp_1_1cata_1_1service_1_1_email_service}\index{br.\+usp.\+cata.\+service.\+Email\+Service@{br.\+usp.\+cata.\+service.\+Email\+Service}}
+}
+
+
+Inheritance diagram for br.\+usp.\+cata.\+service.\+Email\+Service\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classbr_1_1usp_1_1cata_1_1service_1_1_email_service__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for br.\+usp.\+cata.\+service.\+Email\+Service\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{classbr_1_1usp_1_1cata_1_1service_1_1_email_service__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{enumbr_1_1usp_1_1cata_1_1service_1_1_email_service_1_1_email_result}{Email\+Result}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a47804eb90f58f22469b23aa82919361f}{Email\+Service} ()  throws Email\+Exception 
+\item 
+\hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a6800014ed9f5ec5869d999fc580a623e}{Email\+Service} (final Session \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_aaff5f980e96cf78a79aabe980bb9b11f}{session})  throws Email\+Exception 
+\item 
+void \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_aea0165afd1266d5473cb47eb69f0a668}{send\+Email} (final \hyperlink{classbr_1_1usp_1_1cata_1_1model_1_1_email}{Email} email)  throws Email\+Exception 
+\item 
+\hyperlink{classbr_1_1usp_1_1cata_1_1model_1_1_email}{Email} \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a7f2806a58bf35075f50c4f9840749a4d}{build\+Email} (final String subject, final String body, final String...\+receivers)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static String \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a9ef4bbbf02c68df3bc44cbb5272048b9}{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+P\+E\+R\+S\+O\+N\+A\+L} = \char`\"{}mail.\+smtp.\+personal\char`\"{}
+\item 
+static String \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_ad664b2ea4e98b5aca9a5a57998a6a652}{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+F\+R\+O\+M} = \char`\"{}mail.\+smtp.\+from\char`\"{}
+\item 
+static String \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a281866e958ed8d604c7652584b276896}{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+H\+O\+S\+T} = \char`\"{}mail.\+smtp.\+host\char`\"{}
+\item 
+static String \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_adaaba7639ca5fb8e2397c7f75ce0ad36}{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+U\+S\+E\+R} = \char`\"{}mail.\+smtp.\+user\char`\"{}
+\item 
+static String \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a781d850c1d19164ce8dcbb9a83a3860a}{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+P\+O\+R\+T} = \char`\"{}mail.\+smtp.\+port\char`\"{}
+\item 
+static String \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a398b3e3a794b2742e0a2125c1256aa4e}{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+S\+S\+L\+\_\+\+E\+N\+A\+B\+L\+E} = \char`\"{}mail.\+smtp.\+ssl.\+enable\char`\"{}
+\item 
+static String \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_af4581e560903f13da9b67582e061d743}{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+A\+U\+T\+H} = \char`\"{}mail.\+smtp.\+auth\char`\"{}
+\item 
+static String \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_af20a1de38a7c761f3073d0fae020d642}{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+S\+T\+A\+R\+T\+T\+L\+S\+\_\+\+E\+N\+A\+B\+L\+E} = \char`\"{}mail.\+smtp.\+starttls.\+enable\char`\"{}
+\item 
+static String \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a781af3f937dc7e8f8b0dd19c909e8881}{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+F\+A\+C\+T\+O\+R\+Y\+\_\+\+P\+O\+R\+T} = \char`\"{}mail.\+smtp.\+socket\+Factory.\+port\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final Session \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_aaff5f980e96cf78a79aabe980bb9b11f}{session}
+\item 
+final Transport \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a57a5b449146d14f21719964cea77a272}{transport}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final long \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_ac3ac333b655045e9597db2ba8a7cb86a}{serial\+Version\+U\+I\+D} = 943210483745027\+L
+\item 
+static final String \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a61e23d47de11117d2537c6cba837a517}{C\+O\+N\+T\+E\+X\+T\+\_\+\+E\+N\+V} = \char`\"{}java\+:comp/env\char`\"{}
+\item 
+static final String \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a5aa5219ae5563c584505f2640cb10aae}{C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+A\+I\+L\+\_\+\+S\+E\+S\+S\+I\+O\+N} = \char`\"{}mail/Session\char`\"{}
+\item 
+static final String \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a0ba51bf199752796ea41d35d70426a03}{S\+M\+T\+P\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L} = \char`\"{}smtp\char`\"{}
+\item 
+static final String \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a2f0e25106fa65e8a6158924ca52204b5}{P\+L\+A\+I\+N\+\_\+\+T\+E\+X\+T} = \char`\"{}text/html\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 27 of file Email\+Service.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a47804eb90f58f22469b23aa82919361f}{\index{br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}!Email\+Service@{Email\+Service}}
+\index{Email\+Service@{Email\+Service}!br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}}
+\subsubsection[{Email\+Service}]{\setlength{\rightskip}{0pt plus 5cm}br.\+usp.\+cata.\+service.\+Email\+Service.\+Email\+Service (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throws {\bf Email\+Exception}}}\label{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a47804eb90f58f22469b23aa82919361f}
+
+
+Definition at line 54 of file Email\+Service.\+java.
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a6800014ed9f5ec5869d999fc580a623e}{\index{br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}!Email\+Service@{Email\+Service}}
+\index{Email\+Service@{Email\+Service}!br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}}
+\subsubsection[{Email\+Service}]{\setlength{\rightskip}{0pt plus 5cm}br.\+usp.\+cata.\+service.\+Email\+Service.\+Email\+Service (
+\begin{DoxyParamCaption}
+\item[{final Session}]{session}
+\end{DoxyParamCaption}
+) throws {\bf Email\+Exception}}}\label{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a6800014ed9f5ec5869d999fc580a623e}
+
+
+Definition at line 67 of file Email\+Service.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a7f2806a58bf35075f50c4f9840749a4d}{\index{br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}!build\+Email@{build\+Email}}
+\index{build\+Email@{build\+Email}!br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}}
+\subsubsection[{build\+Email}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Email} br.\+usp.\+cata.\+service.\+Email\+Service.\+build\+Email (
+\begin{DoxyParamCaption}
+\item[{final String}]{subject, }
+\item[{final String}]{body, }
+\item[{final String...}]{receivers}
+\end{DoxyParamCaption}
+)}}\label{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a7f2806a58bf35075f50c4f9840749a4d}
+
+
+Definition at line 104 of file Email\+Service.\+java.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a7f2806a58bf35075f50c4f9840749a4d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a7f2806a58bf35075f50c4f9840749a4d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_aea0165afd1266d5473cb47eb69f0a668}{\index{br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}!send\+Email@{send\+Email}}
+\index{send\+Email@{send\+Email}!br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}}
+\subsubsection[{send\+Email}]{\setlength{\rightskip}{0pt plus 5cm}void br.\+usp.\+cata.\+service.\+Email\+Service.\+send\+Email (
+\begin{DoxyParamCaption}
+\item[{final {\bf Email}}]{email}
+\end{DoxyParamCaption}
+) throws {\bf Email\+Exception}}}\label{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_aea0165afd1266d5473cb47eb69f0a668}
+
+
+Definition at line 76 of file Email\+Service.\+java.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_aea0165afd1266d5473cb47eb69f0a668_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a61e23d47de11117d2537c6cba837a517}{\index{br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}!C\+O\+N\+T\+E\+X\+T\+\_\+\+E\+N\+V@{C\+O\+N\+T\+E\+X\+T\+\_\+\+E\+N\+V}}
+\index{C\+O\+N\+T\+E\+X\+T\+\_\+\+E\+N\+V@{C\+O\+N\+T\+E\+X\+T\+\_\+\+E\+N\+V}!br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}}
+\subsubsection[{C\+O\+N\+T\+E\+X\+T\+\_\+\+E\+N\+V}]{\setlength{\rightskip}{0pt plus 5cm}final String br.\+usp.\+cata.\+service.\+Email\+Service.\+C\+O\+N\+T\+E\+X\+T\+\_\+\+E\+N\+V = \char`\"{}java\+:comp/env\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a61e23d47de11117d2537c6cba837a517}
+
+
+Definition at line 46 of file Email\+Service.\+java.
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a5aa5219ae5563c584505f2640cb10aae}{\index{br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}!C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+A\+I\+L\+\_\+\+S\+E\+S\+S\+I\+O\+N@{C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+A\+I\+L\+\_\+\+S\+E\+S\+S\+I\+O\+N}}
+\index{C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+A\+I\+L\+\_\+\+S\+E\+S\+S\+I\+O\+N@{C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+A\+I\+L\+\_\+\+S\+E\+S\+S\+I\+O\+N}!br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}}
+\subsubsection[{C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+A\+I\+L\+\_\+\+S\+E\+S\+S\+I\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}final String br.\+usp.\+cata.\+service.\+Email\+Service.\+C\+O\+N\+T\+E\+X\+T\+\_\+\+M\+A\+I\+L\+\_\+\+S\+E\+S\+S\+I\+O\+N = \char`\"{}mail/Session\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a5aa5219ae5563c584505f2640cb10aae}
+
+
+Definition at line 47 of file Email\+Service.\+java.
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a2f0e25106fa65e8a6158924ca52204b5}{\index{br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}!P\+L\+A\+I\+N\+\_\+\+T\+E\+X\+T@{P\+L\+A\+I\+N\+\_\+\+T\+E\+X\+T}}
+\index{P\+L\+A\+I\+N\+\_\+\+T\+E\+X\+T@{P\+L\+A\+I\+N\+\_\+\+T\+E\+X\+T}!br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}}
+\subsubsection[{P\+L\+A\+I\+N\+\_\+\+T\+E\+X\+T}]{\setlength{\rightskip}{0pt plus 5cm}final String br.\+usp.\+cata.\+service.\+Email\+Service.\+P\+L\+A\+I\+N\+\_\+\+T\+E\+X\+T = \char`\"{}text/html\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a2f0e25106fa65e8a6158924ca52204b5}
+
+
+Definition at line 49 of file Email\+Service.\+java.
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_af4581e560903f13da9b67582e061d743}{\index{br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}!P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+A\+U\+T\+H@{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+A\+U\+T\+H}}
+\index{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+A\+U\+T\+H@{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+A\+U\+T\+H}!br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}}
+\subsubsection[{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+A\+U\+T\+H}]{\setlength{\rightskip}{0pt plus 5cm}String br.\+usp.\+cata.\+service.\+Email\+Service.\+P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+A\+U\+T\+H = \char`\"{}mail.\+smtp.\+auth\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_af4581e560903f13da9b67582e061d743}
+
+
+Definition at line 42 of file Email\+Service.\+java.
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_ad664b2ea4e98b5aca9a5a57998a6a652}{\index{br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}!P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+F\+R\+O\+M@{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+F\+R\+O\+M}}
+\index{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+F\+R\+O\+M@{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+F\+R\+O\+M}!br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}}
+\subsubsection[{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+F\+R\+O\+M}]{\setlength{\rightskip}{0pt plus 5cm}String br.\+usp.\+cata.\+service.\+Email\+Service.\+P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+F\+R\+O\+M = \char`\"{}mail.\+smtp.\+from\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_ad664b2ea4e98b5aca9a5a57998a6a652}
+
+
+Definition at line 37 of file Email\+Service.\+java.
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a281866e958ed8d604c7652584b276896}{\index{br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}!P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+H\+O\+S\+T@{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+H\+O\+S\+T}}
+\index{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+H\+O\+S\+T@{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+H\+O\+S\+T}!br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}}
+\subsubsection[{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+H\+O\+S\+T}]{\setlength{\rightskip}{0pt plus 5cm}String br.\+usp.\+cata.\+service.\+Email\+Service.\+P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+H\+O\+S\+T = \char`\"{}mail.\+smtp.\+host\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a281866e958ed8d604c7652584b276896}
+
+
+Definition at line 38 of file Email\+Service.\+java.
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a9ef4bbbf02c68df3bc44cbb5272048b9}{\index{br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}!P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+P\+E\+R\+S\+O\+N\+A\+L@{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+P\+E\+R\+S\+O\+N\+A\+L}}
+\index{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+P\+E\+R\+S\+O\+N\+A\+L@{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+P\+E\+R\+S\+O\+N\+A\+L}!br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}}
+\subsubsection[{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+P\+E\+R\+S\+O\+N\+A\+L}]{\setlength{\rightskip}{0pt plus 5cm}String br.\+usp.\+cata.\+service.\+Email\+Service.\+P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+P\+E\+R\+S\+O\+N\+A\+L = \char`\"{}mail.\+smtp.\+personal\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a9ef4bbbf02c68df3bc44cbb5272048b9}
+
+
+Definition at line 36 of file Email\+Service.\+java.
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a781d850c1d19164ce8dcbb9a83a3860a}{\index{br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}!P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+P\+O\+R\+T@{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+P\+O\+R\+T}}
+\index{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+P\+O\+R\+T@{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+P\+O\+R\+T}!br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}}
+\subsubsection[{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+P\+O\+R\+T}]{\setlength{\rightskip}{0pt plus 5cm}String br.\+usp.\+cata.\+service.\+Email\+Service.\+P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+P\+O\+R\+T = \char`\"{}mail.\+smtp.\+port\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a781d850c1d19164ce8dcbb9a83a3860a}
+
+
+Definition at line 40 of file Email\+Service.\+java.
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a781af3f937dc7e8f8b0dd19c909e8881}{\index{br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}!P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+F\+A\+C\+T\+O\+R\+Y\+\_\+\+P\+O\+R\+T@{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+F\+A\+C\+T\+O\+R\+Y\+\_\+\+P\+O\+R\+T}}
+\index{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+F\+A\+C\+T\+O\+R\+Y\+\_\+\+P\+O\+R\+T@{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+F\+A\+C\+T\+O\+R\+Y\+\_\+\+P\+O\+R\+T}!br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}}
+\subsubsection[{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+F\+A\+C\+T\+O\+R\+Y\+\_\+\+P\+O\+R\+T}]{\setlength{\rightskip}{0pt plus 5cm}String br.\+usp.\+cata.\+service.\+Email\+Service.\+P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+S\+O\+C\+K\+E\+T\+\_\+\+F\+A\+C\+T\+O\+R\+Y\+\_\+\+P\+O\+R\+T = \char`\"{}mail.\+smtp.\+socket\+Factory.\+port\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a781af3f937dc7e8f8b0dd19c909e8881}
+
+
+Definition at line 44 of file Email\+Service.\+java.
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a398b3e3a794b2742e0a2125c1256aa4e}{\index{br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}!P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+S\+S\+L\+\_\+\+E\+N\+A\+B\+L\+E@{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+S\+S\+L\+\_\+\+E\+N\+A\+B\+L\+E}}
+\index{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+S\+S\+L\+\_\+\+E\+N\+A\+B\+L\+E@{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+S\+S\+L\+\_\+\+E\+N\+A\+B\+L\+E}!br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}}
+\subsubsection[{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+S\+S\+L\+\_\+\+E\+N\+A\+B\+L\+E}]{\setlength{\rightskip}{0pt plus 5cm}String br.\+usp.\+cata.\+service.\+Email\+Service.\+P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+S\+S\+L\+\_\+\+E\+N\+A\+B\+L\+E = \char`\"{}mail.\+smtp.\+ssl.\+enable\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a398b3e3a794b2742e0a2125c1256aa4e}
+
+
+Definition at line 41 of file Email\+Service.\+java.
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_af20a1de38a7c761f3073d0fae020d642}{\index{br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}!P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+S\+T\+A\+R\+T\+T\+L\+S\+\_\+\+E\+N\+A\+B\+L\+E@{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+S\+T\+A\+R\+T\+T\+L\+S\+\_\+\+E\+N\+A\+B\+L\+E}}
+\index{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+S\+T\+A\+R\+T\+T\+L\+S\+\_\+\+E\+N\+A\+B\+L\+E@{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+S\+T\+A\+R\+T\+T\+L\+S\+\_\+\+E\+N\+A\+B\+L\+E}!br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}}
+\subsubsection[{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+S\+T\+A\+R\+T\+T\+L\+S\+\_\+\+E\+N\+A\+B\+L\+E}]{\setlength{\rightskip}{0pt plus 5cm}String br.\+usp.\+cata.\+service.\+Email\+Service.\+P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+S\+T\+A\+R\+T\+T\+L\+S\+\_\+\+E\+N\+A\+B\+L\+E = \char`\"{}mail.\+smtp.\+starttls.\+enable\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_af20a1de38a7c761f3073d0fae020d642}
+
+
+Definition at line 43 of file Email\+Service.\+java.
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_adaaba7639ca5fb8e2397c7f75ce0ad36}{\index{br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}!P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+U\+S\+E\+R@{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+U\+S\+E\+R}}
+\index{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+U\+S\+E\+R@{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+U\+S\+E\+R}!br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}}
+\subsubsection[{P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+U\+S\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}String br.\+usp.\+cata.\+service.\+Email\+Service.\+P\+R\+O\+P\+\_\+\+M\+A\+I\+L\+\_\+\+S\+M\+T\+P\+\_\+\+U\+S\+E\+R = \char`\"{}mail.\+smtp.\+user\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_adaaba7639ca5fb8e2397c7f75ce0ad36}
+
+
+Definition at line 39 of file Email\+Service.\+java.
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_ac3ac333b655045e9597db2ba8a7cb86a}{\index{br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}!serial\+Version\+U\+I\+D@{serial\+Version\+U\+I\+D}}
+\index{serial\+Version\+U\+I\+D@{serial\+Version\+U\+I\+D}!br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}}
+\subsubsection[{serial\+Version\+U\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}final long br.\+usp.\+cata.\+service.\+Email\+Service.\+serial\+Version\+U\+I\+D = 943210483745027\+L\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_ac3ac333b655045e9597db2ba8a7cb86a}
+
+
+Definition at line 34 of file Email\+Service.\+java.
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_aaff5f980e96cf78a79aabe980bb9b11f}{\index{br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}!session@{session}}
+\index{session@{session}!br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}}
+\subsubsection[{session}]{\setlength{\rightskip}{0pt plus 5cm}final Session br.\+usp.\+cata.\+service.\+Email\+Service.\+session\hspace{0.3cm}{\ttfamily [private]}}}\label{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_aaff5f980e96cf78a79aabe980bb9b11f}
+
+
+Definition at line 51 of file Email\+Service.\+java.
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a0ba51bf199752796ea41d35d70426a03}{\index{br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}!S\+M\+T\+P\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L@{S\+M\+T\+P\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L}}
+\index{S\+M\+T\+P\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L@{S\+M\+T\+P\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L}!br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}}
+\subsubsection[{S\+M\+T\+P\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L}]{\setlength{\rightskip}{0pt plus 5cm}final String br.\+usp.\+cata.\+service.\+Email\+Service.\+S\+M\+T\+P\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L = \char`\"{}smtp\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a0ba51bf199752796ea41d35d70426a03}
+
+
+Definition at line 48 of file Email\+Service.\+java.
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a57a5b449146d14f21719964cea77a272}{\index{br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}!transport@{transport}}
+\index{transport@{transport}!br\+::usp\+::cata\+::service\+::\+Email\+Service@{br\+::usp\+::cata\+::service\+::\+Email\+Service}}
+\subsubsection[{transport}]{\setlength{\rightskip}{0pt plus 5cm}final Transport br.\+usp.\+cata.\+service.\+Email\+Service.\+transport\hspace{0.3cm}{\ttfamily [private]}}}\label{classbr_1_1usp_1_1cata_1_1service_1_1_email_service_a57a5b449146d14f21719964cea77a272}
+
+
+Definition at line 52 of file Email\+Service.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/mori/git/cata/src/br/usp/cata/service/\hyperlink{_email_service_8java}{Email\+Service.\+java}\end{DoxyCompactItemize}

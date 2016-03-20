@@ -1,0 +1,9 @@
+<map id="br.usp.cata.util.lemmatizer.Lemmatizer.analyzeLongestSuffix" name="br.usp.cata.util.lemmatizer.Lemmatizer.analyzeLongestSuffix">
+<area shape="rect" id="node2" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_suffixes_char.html#a6af30a58b95c08ca17aa0dc131532137" title="br.usp.cata.util.lemmatizer.\lSuffixesChar.getExactTag" alt="" coords="297,5,477,47"/>
+<area shape="rect" id="node3" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_suffixes_char.html#af612e28c94e2332317047714685a3f5b" title="br.usp.cata.util.lemmatizer.\lSuffixesChar.getLemma" alt="" coords="297,71,477,112"/>
+<area shape="rect" id="node4" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_lemmatizer.html#a3ae79862b511b5313c75f902dddb79ea" title="br.usp.cata.util.lemmatizer.\lLemmatizer.toNoAccentLowerCase" alt="" coords="272,136,501,177"/>
+<area shape="rect" id="node5" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_suffixes_char.html#a64a2685345fb553123450ee3ac5c4685" title="br.usp.cata.util.lemmatizer.\lSuffixesChar.getTags" alt="" coords="297,201,477,243"/>
+<area shape="rect" id="node6" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_suffixes_char.html#acdea974096f90a2eff0a277c28f2e80d" title="br.usp.cata.util.lemmatizer.\lSuffixesChar.getEqual" alt="" coords="297,267,477,308"/>
+<area shape="rect" id="node7" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_suffixes_char.html#ac658d5bb195c1c36d460c3646c820d8c" title="br.usp.cata.util.lemmatizer.\lSuffixesChar.getLess" alt="" coords="297,332,477,373"/>
+<area shape="rect" id="node8" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_suffixes_char.html#aa500ae76354ebb46f4ec5aba198716d0" title="br.usp.cata.util.lemmatizer.\lSuffixesChar.getGreater" alt="" coords="297,397,477,439"/>
+</map>

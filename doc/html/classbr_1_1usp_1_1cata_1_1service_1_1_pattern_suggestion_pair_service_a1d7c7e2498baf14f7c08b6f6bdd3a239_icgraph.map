@@ -1,0 +1,5 @@
+<map id="br.usp.cata.service.PatternSuggestionPairService.tokenizePattern" name="br.usp.cata.service.PatternSuggestionPairService.tokenizePattern">
+<area shape="rect" id="node2" href="$classbr_1_1usp_1_1cata_1_1service_1_1_rule_service.html#aeae985656bb009ef23b97a30fa6a8bea" title="br.usp.cata.service.Rule\lService.tokenizeLemmasAndMatchings" alt="" coords="303,39,555,80"/>
+<area shape="rect" id="node3" href="$classbr_1_1usp_1_1cata_1_1service_1_1_rule_service.html#a5e0dd9bd09116a994adab45fcbf46b81" title="br.usp.cata.service.Rule\lService.save" alt="" coords="603,5,767,47"/>
+<area shape="rect" id="node4" href="$classbr_1_1usp_1_1cata_1_1service_1_1_rule_service.html#a5eabe087a5accd726b4d6458451b8e03" title="br.usp.cata.service.Rule\lService.update" alt="" coords="603,71,767,112"/>
+</map>

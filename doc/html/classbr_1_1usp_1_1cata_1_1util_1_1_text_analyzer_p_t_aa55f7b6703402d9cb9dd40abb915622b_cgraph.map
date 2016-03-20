@@ -1,0 +1,4 @@
+<map id="br.usp.cata.util.TextAnalyzerPT.analyze" name="br.usp.cata.util.TextAnalyzerPT.analyze">
+<area shape="rect" id="node2" href="$classbr_1_1usp_1_1cata_1_1component_1_1keyword_extraction_1_1_stemmer_p_t.html#a9defade5b0e4ba5612a60aae53de287b" title="br.usp.cata.component.keyword\lExtraction.StemmerPT.getStemmerPT" alt="" coords="247,5,493,47"/>
+<area shape="rect" id="node3" href="$classbr_1_1usp_1_1cata_1_1component_1_1keyword_extraction_1_1_stop_words.html#a6257e827435690106f80234ccea33718" title="br.usp.cata.component.keyword\lExtraction.StopWords.getStopWordsPT" alt="" coords="243,71,497,112"/>
+</map>

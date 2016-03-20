@@ -1,0 +1,4 @@
+<map id="br.usp.cata.web.interceptor.LoginInterceptor.intercept" name="br.usp.cata.web.interceptor.LoginInterceptor.intercept">
+<area shape="rect" id="node2" href="$classbr_1_1usp_1_1cata_1_1web_1_1controller_1_1_user_session.html#a6dd8d6847eac9be1e2e2e196322d1194" title="br.usp.cata.web.controller.\lUserSession.isAuthenticatedUser" alt="" coords="259,5,477,47"/>
+<area shape="rect" id="node3" href="$classbr_1_1usp_1_1cata_1_1web_1_1interceptor_1_1_login_interceptor.html#a535abded7295c0b7b31a14845143077b" title="br.usp.cata.web.interceptor.\lLoginInterceptor.wantsAccessToIrrestrict\lMethod" alt="" coords="237,70,499,126"/>
+</map>

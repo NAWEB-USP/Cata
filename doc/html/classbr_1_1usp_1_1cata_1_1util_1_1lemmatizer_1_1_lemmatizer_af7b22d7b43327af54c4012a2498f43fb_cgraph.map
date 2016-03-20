@@ -1,0 +1,9 @@
+<map id="br.usp.cata.util.lemmatizer.Lemmatizer.analyzeTkCurrentAux" name="br.usp.cata.util.lemmatizer.Lemmatizer.analyzeTkCurrentAux">
+<area shape="rect" id="node2" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_lemmatizer.html#a4e8b806057732f8da5b11091998389a1" title="br.usp.cata.util.lemmatizer.\lLemmatizer.setTkCurrent" alt="" coords="273,169,453,211"/>
+<area shape="rect" id="node3" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_lemmatizer_token.html#acdb8f86fafb3f23af734f9ddae325cae" title="br.usp.cata.util.lemmatizer.\lLemmatizerToken.setLemma" alt="" coords="505,5,695,47"/>
+<area shape="rect" id="node4" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_lemmatizer_token.html#a555fb191d41895be302063c7328f760c" title="br.usp.cata.util.lemmatizer.\lLemmatizerToken.setTag" alt="" coords="510,71,690,112"/>
+<area shape="rect" id="node5" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_lemmatizer_token.html#a24ff1373117fc1e11631d774db1c6245" title="br.usp.cata.util.lemmatizer.\lLemmatizerToken.getSfxTags" alt="" coords="501,136,699,177"/>
+<area shape="rect" id="node6" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_lemmatizer_token.html#aeace07699a708b35b32d58c1dd402390" title="br.usp.cata.util.lemmatizer.\lLemmatizerToken.setResult" alt="" coords="507,201,693,243"/>
+<area shape="rect" id="node7" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_lemmatizer_token.html#aff201e80ab0da876e65c3fd5b386e631" title="br.usp.cata.util.lemmatizer.\lLemmatizerToken.getWord" alt="" coords="510,267,690,308"/>
+<area shape="rect" id="node8" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_lemmatizer_token.html#ae15602706e190db22692efe2e92c8b26" title="br.usp.cata.util.lemmatizer.\lLemmatizerToken.getLemma" alt="" coords="505,332,695,373"/>
+</map>

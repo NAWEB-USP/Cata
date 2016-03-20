@@ -1,0 +1,11 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$classbr_1_1usp_1_1cata_1_1model_1_1_email.html" title="br.usp.cata.model.Email" alt="" coords="170,5,333,32"/>
+<area shape="rect" id="node3" href="$classbr_1_1usp_1_1cata_1_1model_1_1_exact_matching.html" title="br.usp.cata.model.ExactMatching" alt="" coords="143,56,360,83"/>
+<area shape="rect" id="node4" href="$classbr_1_1usp_1_1cata_1_1model_1_1_lemma.html" title="br.usp.cata.model.Lemma" alt="" coords="165,107,338,133"/>
+<area shape="rect" id="node5" href="$classbr_1_1usp_1_1cata_1_1model_1_1_pattern_suggestion_pair.html" title="br.usp.cata.model.Pattern\lSuggestionPair" alt="" coords="165,158,337,199"/>
+<area shape="rect" id="node6" href="$classbr_1_1usp_1_1cata_1_1model_1_1_rule.html" title="br.usp.cata.model.Rule" alt="" coords="173,224,330,251"/>
+<area shape="rect" id="node7" href="$classbr_1_1usp_1_1cata_1_1model_1_1_source.html" title="br.usp.cata.model.Source" alt="" coords="166,275,337,301"/>
+<area shape="rect" id="node8" href="$classbr_1_1usp_1_1cata_1_1model_1_1_user.html" title="br.usp.cata.model.User" alt="" coords="172,325,331,352"/>
+<area shape="rect" id="node9" href="$classbr_1_1usp_1_1cata_1_1service_1_1_email_service.html" title="br.usp.cata.service.Email\lService" alt="" coords="166,377,337,418"/>
+<area shape="rect" id="node10" href="$classbr_1_1usp_1_1cata_1_1web_1_1controller_1_1_user_session.html" title="br.usp.cata.web.controller.\lUserSession" alt="" coords="163,442,339,483"/>
+</map>

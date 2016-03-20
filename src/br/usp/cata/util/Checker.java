@@ -35,7 +35,16 @@ public class Checker {
 	public int getNumOfMistakes() {
 		return numOfMistakes;
 	}
-	
+	/**
+	 * Na função addMistakes é feita uma varredura no conjunto de tokens/lemas (não estou muito certo
+	 * sobre isso) que "quebraram alguma das regras".
+	 * Essa função é chamada duas vezes uma para um conjunto de tokens e outra para um conjunto de lemas.
+	 * @param searcher Um Iterator cujos elementos são os tokens
+	 * @param starts HashMap que associa o índice de cada token no ArrayList tokenizedText com uma
+	 * instancia de Position ou associa o índice de cada lema no ArrayList TODO parei aqui
+	 * @param ends
+	 * @param mistakes
+	 */
 	private void addMistakes(Iterator<?> searcher, HashMap<Integer, Position> starts,
 			HashMap<Integer, Position> ends, ArrayList<Mistake> mistakes) {
 		

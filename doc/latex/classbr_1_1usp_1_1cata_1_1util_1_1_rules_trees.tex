@@ -1,0 +1,279 @@
+\hypertarget{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees}{\section{br.\+usp.\+cata.\+util.\+Rules\+Trees Class Reference}
+\label{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees}\index{br.\+usp.\+cata.\+util.\+Rules\+Trees@{br.\+usp.\+cata.\+util.\+Rules\+Trees}}
+}
+
+
+Collaboration diagram for br.\+usp.\+cata.\+util.\+Rules\+Trees\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a9680a3e8b8e54372c4d9245671226b18}{Rules\+Trees} (\hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_rule_service}{Rule\+Service} \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a93fb83138e4ab0938c34e06d3eb3b48a}{rule\+Service}, \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_source_service}{Source\+Service} \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a891861c5b386059c58675590a8878176}{source\+Service}, \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_user_service}{User\+Service} \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_acc11381172d0de06c7710395f7499844}{user\+Service}, \hyperlink{classbr_1_1usp_1_1cata_1_1web_1_1controller_1_1_user_session}{User\+Session} \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_aae7be5fb6afb386509a5b91c91b8c559}{user\+Session})
+\item 
+void \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a6dd7c5c974d8a3e4390b69a47360e6e0}{add\+Rules\+And\+Prepare} (List$<$ \hyperlink{classbr_1_1usp_1_1cata_1_1model_1_1_rule}{Rule} $>$ rules)
+\item 
+void \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_ac12f087aaff1ad3aec275117cf248eae}{build\+Default\+Trees} (\hyperlink{enumbr_1_1usp_1_1cata_1_1model_1_1_languages}{Languages} language)
+\item 
+void \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a193a548786d46646499a3331c51ac7ea}{build\+All\+Trees} (\hyperlink{enumbr_1_1usp_1_1cata_1_1model_1_1_languages}{Languages} language)
+\item 
+void \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_ad20c458573e3135b9fe4e70dd88c8ce3}{build\+Users\+Trees} (\hyperlink{enumbr_1_1usp_1_1cata_1_1model_1_1_languages}{Languages} language, long\mbox{[}$\,$\mbox{]} users)
+\item 
+void \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a80945f70f909b21feb390335a31f88a7}{build\+Sources\+Trees} (\hyperlink{enumbr_1_1usp_1_1cata_1_1model_1_1_languages}{Languages} language, long\mbox{[}$\,$\mbox{]} sources)
+\item 
+Iterator$<$?$>$ \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a71edf3fe667d833d630e9c7a077572c9}{search\+Exact\+Matchings} (byte\mbox{[}$\,$\mbox{]} text)
+\item 
+Iterator$<$?$>$ \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a9bec6cddac112f3a87e1a53e512e9371}{search\+Lemmas} (byte\mbox{[}$\,$\mbox{]} text)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Aho\+Corasick \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a3e326a07d34a8f0fdd58b5901098d534}{matchings\+Tree}
+\item 
+Aho\+Corasick \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a8c396a47e167ded77451bab3aed52684}{lemmas\+Tree}
+\item 
+final \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_rule_service}{Rule\+Service} \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a93fb83138e4ab0938c34e06d3eb3b48a}{rule\+Service}
+\item 
+final \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_source_service}{Source\+Service} \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a891861c5b386059c58675590a8878176}{source\+Service}
+\item 
+final \hyperlink{classbr_1_1usp_1_1cata_1_1service_1_1_user_service}{User\+Service} \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_acc11381172d0de06c7710395f7499844}{user\+Service}
+\item 
+final \hyperlink{classbr_1_1usp_1_1cata_1_1web_1_1controller_1_1_user_session}{User\+Session} \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_aae7be5fb6afb386509a5b91c91b8c559}{user\+Session}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 22 of file Rules\+Trees.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a9680a3e8b8e54372c4d9245671226b18}{\index{br\+::usp\+::cata\+::util\+::\+Rules\+Trees@{br\+::usp\+::cata\+::util\+::\+Rules\+Trees}!Rules\+Trees@{Rules\+Trees}}
+\index{Rules\+Trees@{Rules\+Trees}!br\+::usp\+::cata\+::util\+::\+Rules\+Trees@{br\+::usp\+::cata\+::util\+::\+Rules\+Trees}}
+\subsubsection[{Rules\+Trees}]{\setlength{\rightskip}{0pt plus 5cm}br.\+usp.\+cata.\+util.\+Rules\+Trees.\+Rules\+Trees (
+\begin{DoxyParamCaption}
+\item[{{\bf Rule\+Service}}]{rule\+Service, }
+\item[{{\bf Source\+Service}}]{source\+Service, }
+\item[{{\bf User\+Service}}]{user\+Service, }
+\item[{{\bf User\+Session}}]{user\+Session}
+\end{DoxyParamCaption}
+)}}\label{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a9680a3e8b8e54372c4d9245671226b18}
+
+
+Definition at line 31 of file Rules\+Trees.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a6dd7c5c974d8a3e4390b69a47360e6e0}{\index{br\+::usp\+::cata\+::util\+::\+Rules\+Trees@{br\+::usp\+::cata\+::util\+::\+Rules\+Trees}!add\+Rules\+And\+Prepare@{add\+Rules\+And\+Prepare}}
+\index{add\+Rules\+And\+Prepare@{add\+Rules\+And\+Prepare}!br\+::usp\+::cata\+::util\+::\+Rules\+Trees@{br\+::usp\+::cata\+::util\+::\+Rules\+Trees}}
+\subsubsection[{add\+Rules\+And\+Prepare}]{\setlength{\rightskip}{0pt plus 5cm}void br.\+usp.\+cata.\+util.\+Rules\+Trees.\+add\+Rules\+And\+Prepare (
+\begin{DoxyParamCaption}
+\item[{List$<$ {\bf Rule} $>$}]{rules}
+\end{DoxyParamCaption}
+)}}\label{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a6dd7c5c974d8a3e4390b69a47360e6e0}
+
+
+Definition at line 41 of file Rules\+Trees.\+java.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a6dd7c5c974d8a3e4390b69a47360e6e0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a193a548786d46646499a3331c51ac7ea}{\index{br\+::usp\+::cata\+::util\+::\+Rules\+Trees@{br\+::usp\+::cata\+::util\+::\+Rules\+Trees}!build\+All\+Trees@{build\+All\+Trees}}
+\index{build\+All\+Trees@{build\+All\+Trees}!br\+::usp\+::cata\+::util\+::\+Rules\+Trees@{br\+::usp\+::cata\+::util\+::\+Rules\+Trees}}
+\subsubsection[{build\+All\+Trees}]{\setlength{\rightskip}{0pt plus 5cm}void br.\+usp.\+cata.\+util.\+Rules\+Trees.\+build\+All\+Trees (
+\begin{DoxyParamCaption}
+\item[{{\bf Languages}}]{language}
+\end{DoxyParamCaption}
+)}}\label{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a193a548786d46646499a3331c51ac7ea}
+
+
+Definition at line 62 of file Rules\+Trees.\+java.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a193a548786d46646499a3331c51ac7ea_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_ac12f087aaff1ad3aec275117cf248eae}{\index{br\+::usp\+::cata\+::util\+::\+Rules\+Trees@{br\+::usp\+::cata\+::util\+::\+Rules\+Trees}!build\+Default\+Trees@{build\+Default\+Trees}}
+\index{build\+Default\+Trees@{build\+Default\+Trees}!br\+::usp\+::cata\+::util\+::\+Rules\+Trees@{br\+::usp\+::cata\+::util\+::\+Rules\+Trees}}
+\subsubsection[{build\+Default\+Trees}]{\setlength{\rightskip}{0pt plus 5cm}void br.\+usp.\+cata.\+util.\+Rules\+Trees.\+build\+Default\+Trees (
+\begin{DoxyParamCaption}
+\item[{{\bf Languages}}]{language}
+\end{DoxyParamCaption}
+)}}\label{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_ac12f087aaff1ad3aec275117cf248eae}
+
+
+Definition at line 55 of file Rules\+Trees.\+java.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_ac12f087aaff1ad3aec275117cf248eae_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a80945f70f909b21feb390335a31f88a7}{\index{br\+::usp\+::cata\+::util\+::\+Rules\+Trees@{br\+::usp\+::cata\+::util\+::\+Rules\+Trees}!build\+Sources\+Trees@{build\+Sources\+Trees}}
+\index{build\+Sources\+Trees@{build\+Sources\+Trees}!br\+::usp\+::cata\+::util\+::\+Rules\+Trees@{br\+::usp\+::cata\+::util\+::\+Rules\+Trees}}
+\subsubsection[{build\+Sources\+Trees}]{\setlength{\rightskip}{0pt plus 5cm}void br.\+usp.\+cata.\+util.\+Rules\+Trees.\+build\+Sources\+Trees (
+\begin{DoxyParamCaption}
+\item[{{\bf Languages}}]{language, }
+\item[{long\mbox{[}$\,$\mbox{]}}]{sources}
+\end{DoxyParamCaption}
+)}}\label{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a80945f70f909b21feb390335a31f88a7}
+
+
+Definition at line 78 of file Rules\+Trees.\+java.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a80945f70f909b21feb390335a31f88a7_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_ad20c458573e3135b9fe4e70dd88c8ce3}{\index{br\+::usp\+::cata\+::util\+::\+Rules\+Trees@{br\+::usp\+::cata\+::util\+::\+Rules\+Trees}!build\+Users\+Trees@{build\+Users\+Trees}}
+\index{build\+Users\+Trees@{build\+Users\+Trees}!br\+::usp\+::cata\+::util\+::\+Rules\+Trees@{br\+::usp\+::cata\+::util\+::\+Rules\+Trees}}
+\subsubsection[{build\+Users\+Trees}]{\setlength{\rightskip}{0pt plus 5cm}void br.\+usp.\+cata.\+util.\+Rules\+Trees.\+build\+Users\+Trees (
+\begin{DoxyParamCaption}
+\item[{{\bf Languages}}]{language, }
+\item[{long\mbox{[}$\,$\mbox{]}}]{users}
+\end{DoxyParamCaption}
+)}}\label{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_ad20c458573e3135b9fe4e70dd88c8ce3}
+
+
+Definition at line 68 of file Rules\+Trees.\+java.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_ad20c458573e3135b9fe4e70dd88c8ce3_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a71edf3fe667d833d630e9c7a077572c9}{\index{br\+::usp\+::cata\+::util\+::\+Rules\+Trees@{br\+::usp\+::cata\+::util\+::\+Rules\+Trees}!search\+Exact\+Matchings@{search\+Exact\+Matchings}}
+\index{search\+Exact\+Matchings@{search\+Exact\+Matchings}!br\+::usp\+::cata\+::util\+::\+Rules\+Trees@{br\+::usp\+::cata\+::util\+::\+Rules\+Trees}}
+\subsubsection[{search\+Exact\+Matchings}]{\setlength{\rightskip}{0pt plus 5cm}Iterator$<$?$>$ br.\+usp.\+cata.\+util.\+Rules\+Trees.\+search\+Exact\+Matchings (
+\begin{DoxyParamCaption}
+\item[{byte\mbox{[}$\,$\mbox{]}}]{text}
+\end{DoxyParamCaption}
+)}}\label{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a71edf3fe667d833d630e9c7a077572c9}
+
+
+Definition at line 87 of file Rules\+Trees.\+java.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a71edf3fe667d833d630e9c7a077572c9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a9bec6cddac112f3a87e1a53e512e9371}{\index{br\+::usp\+::cata\+::util\+::\+Rules\+Trees@{br\+::usp\+::cata\+::util\+::\+Rules\+Trees}!search\+Lemmas@{search\+Lemmas}}
+\index{search\+Lemmas@{search\+Lemmas}!br\+::usp\+::cata\+::util\+::\+Rules\+Trees@{br\+::usp\+::cata\+::util\+::\+Rules\+Trees}}
+\subsubsection[{search\+Lemmas}]{\setlength{\rightskip}{0pt plus 5cm}Iterator$<$?$>$ br.\+usp.\+cata.\+util.\+Rules\+Trees.\+search\+Lemmas (
+\begin{DoxyParamCaption}
+\item[{byte\mbox{[}$\,$\mbox{]}}]{text}
+\end{DoxyParamCaption}
+)}}\label{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a9bec6cddac112f3a87e1a53e512e9371}
+
+
+Definition at line 91 of file Rules\+Trees.\+java.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a9bec6cddac112f3a87e1a53e512e9371_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a8c396a47e167ded77451bab3aed52684}{\index{br\+::usp\+::cata\+::util\+::\+Rules\+Trees@{br\+::usp\+::cata\+::util\+::\+Rules\+Trees}!lemmas\+Tree@{lemmas\+Tree}}
+\index{lemmas\+Tree@{lemmas\+Tree}!br\+::usp\+::cata\+::util\+::\+Rules\+Trees@{br\+::usp\+::cata\+::util\+::\+Rules\+Trees}}
+\subsubsection[{lemmas\+Tree}]{\setlength{\rightskip}{0pt plus 5cm}Aho\+Corasick br.\+usp.\+cata.\+util.\+Rules\+Trees.\+lemmas\+Tree\hspace{0.3cm}{\ttfamily [private]}}}\label{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a8c396a47e167ded77451bab3aed52684}
+
+
+Definition at line 25 of file Rules\+Trees.\+java.
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a3e326a07d34a8f0fdd58b5901098d534}{\index{br\+::usp\+::cata\+::util\+::\+Rules\+Trees@{br\+::usp\+::cata\+::util\+::\+Rules\+Trees}!matchings\+Tree@{matchings\+Tree}}
+\index{matchings\+Tree@{matchings\+Tree}!br\+::usp\+::cata\+::util\+::\+Rules\+Trees@{br\+::usp\+::cata\+::util\+::\+Rules\+Trees}}
+\subsubsection[{matchings\+Tree}]{\setlength{\rightskip}{0pt plus 5cm}Aho\+Corasick br.\+usp.\+cata.\+util.\+Rules\+Trees.\+matchings\+Tree\hspace{0.3cm}{\ttfamily [private]}}}\label{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a3e326a07d34a8f0fdd58b5901098d534}
+
+
+Definition at line 24 of file Rules\+Trees.\+java.
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a93fb83138e4ab0938c34e06d3eb3b48a}{\index{br\+::usp\+::cata\+::util\+::\+Rules\+Trees@{br\+::usp\+::cata\+::util\+::\+Rules\+Trees}!rule\+Service@{rule\+Service}}
+\index{rule\+Service@{rule\+Service}!br\+::usp\+::cata\+::util\+::\+Rules\+Trees@{br\+::usp\+::cata\+::util\+::\+Rules\+Trees}}
+\subsubsection[{rule\+Service}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf Rule\+Service} br.\+usp.\+cata.\+util.\+Rules\+Trees.\+rule\+Service\hspace{0.3cm}{\ttfamily [private]}}}\label{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a93fb83138e4ab0938c34e06d3eb3b48a}
+
+
+Definition at line 26 of file Rules\+Trees.\+java.
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a891861c5b386059c58675590a8878176}{\index{br\+::usp\+::cata\+::util\+::\+Rules\+Trees@{br\+::usp\+::cata\+::util\+::\+Rules\+Trees}!source\+Service@{source\+Service}}
+\index{source\+Service@{source\+Service}!br\+::usp\+::cata\+::util\+::\+Rules\+Trees@{br\+::usp\+::cata\+::util\+::\+Rules\+Trees}}
+\subsubsection[{source\+Service}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf Source\+Service} br.\+usp.\+cata.\+util.\+Rules\+Trees.\+source\+Service\hspace{0.3cm}{\ttfamily [private]}}}\label{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_a891861c5b386059c58675590a8878176}
+
+
+Definition at line 27 of file Rules\+Trees.\+java.
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_acc11381172d0de06c7710395f7499844}{\index{br\+::usp\+::cata\+::util\+::\+Rules\+Trees@{br\+::usp\+::cata\+::util\+::\+Rules\+Trees}!user\+Service@{user\+Service}}
+\index{user\+Service@{user\+Service}!br\+::usp\+::cata\+::util\+::\+Rules\+Trees@{br\+::usp\+::cata\+::util\+::\+Rules\+Trees}}
+\subsubsection[{user\+Service}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf User\+Service} br.\+usp.\+cata.\+util.\+Rules\+Trees.\+user\+Service\hspace{0.3cm}{\ttfamily [private]}}}\label{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_acc11381172d0de06c7710395f7499844}
+
+
+Definition at line 28 of file Rules\+Trees.\+java.
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_aae7be5fb6afb386509a5b91c91b8c559}{\index{br\+::usp\+::cata\+::util\+::\+Rules\+Trees@{br\+::usp\+::cata\+::util\+::\+Rules\+Trees}!user\+Session@{user\+Session}}
+\index{user\+Session@{user\+Session}!br\+::usp\+::cata\+::util\+::\+Rules\+Trees@{br\+::usp\+::cata\+::util\+::\+Rules\+Trees}}
+\subsubsection[{user\+Session}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf User\+Session} br.\+usp.\+cata.\+util.\+Rules\+Trees.\+user\+Session\hspace{0.3cm}{\ttfamily [private]}}}\label{classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees_aae7be5fb6afb386509a5b91c91b8c559}
+
+
+Definition at line 29 of file Rules\+Trees.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/mori/git/cata/src/br/usp/cata/util/\hyperlink{_rules_trees_8java}{Rules\+Trees.\+java}\end{DoxyCompactItemize}

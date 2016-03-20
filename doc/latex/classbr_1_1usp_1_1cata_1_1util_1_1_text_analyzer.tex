@@ -1,0 +1,374 @@
+\hypertarget{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer}{\section{br.\+usp.\+cata.\+util.\+Text\+Analyzer Class Reference}
+\label{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer}\index{br.\+usp.\+cata.\+util.\+Text\+Analyzer@{br.\+usp.\+cata.\+util.\+Text\+Analyzer}}
+}
+
+
+Collaboration diagram for br.\+usp.\+cata.\+util.\+Text\+Analyzer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_a3f3e4da87b76db2e231e61628dd35f90}{Text\+Analyzer} (Array\+List$<$ String $>$ \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_a1cc14e76a5f9bac01a30199465155a68}{text}, \hyperlink{enumbr_1_1usp_1_1cata_1_1model_1_1_languages}{Languages} language, Servlet\+Context servlet\+Context)
+\item 
+Array\+List$<$ String $>$ \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_a6a672a8aac2461f42c69f3937bb4c599}{get\+Text} ()
+\item 
+void \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_a4c32749d82f3b7c8e6f4550677303f00}{set\+Text} (Array\+List$<$ String $>$ \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_a1cc14e76a5f9bac01a30199465155a68}{text})
+\item 
+byte\mbox{[}$\,$\mbox{]} \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_ac9f847326a0c649c262e75a041efb264}{get\+Tokenized\+Text\+Bytes} ()
+\item 
+Hash\+Map$<$ Integer, \hyperlink{classbr_1_1usp_1_1cata_1_1model_1_1_position}{Position} $>$ \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_a8a3a477c1b3750071ecc117e6ab04b30}{get\+Starts\+Tokenized} ()
+\item 
+Hash\+Map$<$ Integer, \hyperlink{classbr_1_1usp_1_1cata_1_1model_1_1_position}{Position} $>$ \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_ae0732529dc545b8ede43f002e2eea982}{get\+Ends\+Tokenized} ()
+\item 
+byte\mbox{[}$\,$\mbox{]} \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_a1c13774723b128cfdf78168900e012ca}{get\+Lemmatized\+Text\+Bytes} ()
+\item 
+Hash\+Map$<$ Integer, \hyperlink{classbr_1_1usp_1_1cata_1_1model_1_1_position}{Position} $>$ \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_af7c6b024a201d1604798ca9f68d2e928}{get\+Starts\+Lemmatized} ()
+\item 
+Hash\+Map$<$ Integer, \hyperlink{classbr_1_1usp_1_1cata_1_1model_1_1_position}{Position} $>$ \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_afeb0c9dfb6f7fdfcaa89f6bf38214d42}{get\+Ends\+Lemmatized} ()
+\item 
+List$<$ String $>$ \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_a71d3ec70b439088e2ede4c684ae72323}{get\+Keywords} ()
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List$<$ String $>$ \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_a1cc14e76a5f9bac01a30199465155a68}{text}
+\item 
+\hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_language}{Text\+Analyzer\+Language} \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_a21fdf134b8cb13be9a94d3c98aa36813}{text\+Analyzer\+Language}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file Text\+Analyzer.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_a3f3e4da87b76db2e231e61628dd35f90}{\index{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer@{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer}!Text\+Analyzer@{Text\+Analyzer}}
+\index{Text\+Analyzer@{Text\+Analyzer}!br\+::usp\+::cata\+::util\+::\+Text\+Analyzer@{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer}}
+\subsubsection[{Text\+Analyzer}]{\setlength{\rightskip}{0pt plus 5cm}br.\+usp.\+cata.\+util.\+Text\+Analyzer.\+Text\+Analyzer (
+\begin{DoxyParamCaption}
+\item[{Array\+List$<$ String $>$}]{text, }
+\item[{{\bf Languages}}]{language, }
+\item[{Servlet\+Context}]{servlet\+Context}
+\end{DoxyParamCaption}
+)}}\label{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_a3f3e4da87b76db2e231e61628dd35f90}
+Construtor \hyperlink{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer}{Text\+Analyzer} faz a seleção entre as formas de análise de texto por idioma, informção que é passada no parametro language, e faz a análise do texto de acordo com o idioma selecionado. 
+\begin{DoxyParams}{Parameters}
+{\em text} & Um Array\+List de String cujas componentes são linhas do texto a ser analisado. \\
+\hline
+{\em language} & Um Language pode ser english ou portuguese \\
+\hline
+{\em servlet\+Context} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 25 of file Text\+Analyzer.\+java.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_a3f3e4da87b76db2e231e61628dd35f90_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_afeb0c9dfb6f7fdfcaa89f6bf38214d42}{\index{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer@{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer}!get\+Ends\+Lemmatized@{get\+Ends\+Lemmatized}}
+\index{get\+Ends\+Lemmatized@{get\+Ends\+Lemmatized}!br\+::usp\+::cata\+::util\+::\+Text\+Analyzer@{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer}}
+\subsubsection[{get\+Ends\+Lemmatized}]{\setlength{\rightskip}{0pt plus 5cm}Hash\+Map$<$Integer, {\bf Position}$>$ br.\+usp.\+cata.\+util.\+Text\+Analyzer.\+get\+Ends\+Lemmatized (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_afeb0c9dfb6f7fdfcaa89f6bf38214d42}
+
+
+Definition at line 64 of file Text\+Analyzer.\+java.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_afeb0c9dfb6f7fdfcaa89f6bf38214d42_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_afeb0c9dfb6f7fdfcaa89f6bf38214d42_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_ae0732529dc545b8ede43f002e2eea982}{\index{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer@{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer}!get\+Ends\+Tokenized@{get\+Ends\+Tokenized}}
+\index{get\+Ends\+Tokenized@{get\+Ends\+Tokenized}!br\+::usp\+::cata\+::util\+::\+Text\+Analyzer@{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer}}
+\subsubsection[{get\+Ends\+Tokenized}]{\setlength{\rightskip}{0pt plus 5cm}Hash\+Map$<$Integer, {\bf Position}$>$ br.\+usp.\+cata.\+util.\+Text\+Analyzer.\+get\+Ends\+Tokenized (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_ae0732529dc545b8ede43f002e2eea982}
+
+
+Definition at line 52 of file Text\+Analyzer.\+java.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_ae0732529dc545b8ede43f002e2eea982_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_ae0732529dc545b8ede43f002e2eea982_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_a71d3ec70b439088e2ede4c684ae72323}{\index{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer@{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer}!get\+Keywords@{get\+Keywords}}
+\index{get\+Keywords@{get\+Keywords}!br\+::usp\+::cata\+::util\+::\+Text\+Analyzer@{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer}}
+\subsubsection[{get\+Keywords}]{\setlength{\rightskip}{0pt plus 5cm}List$<$String$>$ br.\+usp.\+cata.\+util.\+Text\+Analyzer.\+get\+Keywords (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_a71d3ec70b439088e2ede4c684ae72323}
+
+
+Definition at line 68 of file Text\+Analyzer.\+java.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_a71d3ec70b439088e2ede4c684ae72323_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_a71d3ec70b439088e2ede4c684ae72323_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_a1c13774723b128cfdf78168900e012ca}{\index{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer@{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer}!get\+Lemmatized\+Text\+Bytes@{get\+Lemmatized\+Text\+Bytes}}
+\index{get\+Lemmatized\+Text\+Bytes@{get\+Lemmatized\+Text\+Bytes}!br\+::usp\+::cata\+::util\+::\+Text\+Analyzer@{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer}}
+\subsubsection[{get\+Lemmatized\+Text\+Bytes}]{\setlength{\rightskip}{0pt plus 5cm}byte \mbox{[}$\,$\mbox{]} br.\+usp.\+cata.\+util.\+Text\+Analyzer.\+get\+Lemmatized\+Text\+Bytes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_a1c13774723b128cfdf78168900e012ca}
+
+
+Definition at line 56 of file Text\+Analyzer.\+java.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_a1c13774723b128cfdf78168900e012ca_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_a1c13774723b128cfdf78168900e012ca_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_af7c6b024a201d1604798ca9f68d2e928}{\index{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer@{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer}!get\+Starts\+Lemmatized@{get\+Starts\+Lemmatized}}
+\index{get\+Starts\+Lemmatized@{get\+Starts\+Lemmatized}!br\+::usp\+::cata\+::util\+::\+Text\+Analyzer@{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer}}
+\subsubsection[{get\+Starts\+Lemmatized}]{\setlength{\rightskip}{0pt plus 5cm}Hash\+Map$<$Integer, {\bf Position}$>$ br.\+usp.\+cata.\+util.\+Text\+Analyzer.\+get\+Starts\+Lemmatized (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_af7c6b024a201d1604798ca9f68d2e928}
+
+
+Definition at line 60 of file Text\+Analyzer.\+java.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_af7c6b024a201d1604798ca9f68d2e928_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_af7c6b024a201d1604798ca9f68d2e928_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_a8a3a477c1b3750071ecc117e6ab04b30}{\index{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer@{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer}!get\+Starts\+Tokenized@{get\+Starts\+Tokenized}}
+\index{get\+Starts\+Tokenized@{get\+Starts\+Tokenized}!br\+::usp\+::cata\+::util\+::\+Text\+Analyzer@{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer}}
+\subsubsection[{get\+Starts\+Tokenized}]{\setlength{\rightskip}{0pt plus 5cm}Hash\+Map$<$Integer, {\bf Position}$>$ br.\+usp.\+cata.\+util.\+Text\+Analyzer.\+get\+Starts\+Tokenized (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_a8a3a477c1b3750071ecc117e6ab04b30}
+
+
+Definition at line 48 of file Text\+Analyzer.\+java.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_a8a3a477c1b3750071ecc117e6ab04b30_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_a8a3a477c1b3750071ecc117e6ab04b30_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_a6a672a8aac2461f42c69f3937bb4c599}{\index{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer@{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer}!get\+Text@{get\+Text}}
+\index{get\+Text@{get\+Text}!br\+::usp\+::cata\+::util\+::\+Text\+Analyzer@{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer}}
+\subsubsection[{get\+Text}]{\setlength{\rightskip}{0pt plus 5cm}Array\+List$<$String$>$ br.\+usp.\+cata.\+util.\+Text\+Analyzer.\+get\+Text (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_a6a672a8aac2461f42c69f3937bb4c599}
+
+
+Definition at line 36 of file Text\+Analyzer.\+java.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_a6a672a8aac2461f42c69f3937bb4c599_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_ac9f847326a0c649c262e75a041efb264}{\index{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer@{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer}!get\+Tokenized\+Text\+Bytes@{get\+Tokenized\+Text\+Bytes}}
+\index{get\+Tokenized\+Text\+Bytes@{get\+Tokenized\+Text\+Bytes}!br\+::usp\+::cata\+::util\+::\+Text\+Analyzer@{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer}}
+\subsubsection[{get\+Tokenized\+Text\+Bytes}]{\setlength{\rightskip}{0pt plus 5cm}byte \mbox{[}$\,$\mbox{]} br.\+usp.\+cata.\+util.\+Text\+Analyzer.\+get\+Tokenized\+Text\+Bytes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_ac9f847326a0c649c262e75a041efb264}
+
+
+Definition at line 44 of file Text\+Analyzer.\+java.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_ac9f847326a0c649c262e75a041efb264_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_ac9f847326a0c649c262e75a041efb264_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_a4c32749d82f3b7c8e6f4550677303f00}{\index{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer@{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer}!set\+Text@{set\+Text}}
+\index{set\+Text@{set\+Text}!br\+::usp\+::cata\+::util\+::\+Text\+Analyzer@{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer}}
+\subsubsection[{set\+Text}]{\setlength{\rightskip}{0pt plus 5cm}void br.\+usp.\+cata.\+util.\+Text\+Analyzer.\+set\+Text (
+\begin{DoxyParamCaption}
+\item[{Array\+List$<$ String $>$}]{text}
+\end{DoxyParamCaption}
+)}}\label{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_a4c32749d82f3b7c8e6f4550677303f00}
+
+
+Definition at line 40 of file Text\+Analyzer.\+java.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_a1cc14e76a5f9bac01a30199465155a68}{\index{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer@{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer}!text@{text}}
+\index{text@{text}!br\+::usp\+::cata\+::util\+::\+Text\+Analyzer@{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer}}
+\subsubsection[{text}]{\setlength{\rightskip}{0pt plus 5cm}Array\+List$<$String$>$ br.\+usp.\+cata.\+util.\+Text\+Analyzer.\+text\hspace{0.3cm}{\ttfamily [package]}}}\label{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_a1cc14e76a5f9bac01a30199465155a68}
+
+
+Definition at line 15 of file Text\+Analyzer.\+java.
+
+\hypertarget{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_a21fdf134b8cb13be9a94d3c98aa36813}{\index{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer@{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer}!text\+Analyzer\+Language@{text\+Analyzer\+Language}}
+\index{text\+Analyzer\+Language@{text\+Analyzer\+Language}!br\+::usp\+::cata\+::util\+::\+Text\+Analyzer@{br\+::usp\+::cata\+::util\+::\+Text\+Analyzer}}
+\subsubsection[{text\+Analyzer\+Language}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Text\+Analyzer\+Language} br.\+usp.\+cata.\+util.\+Text\+Analyzer.\+text\+Analyzer\+Language\hspace{0.3cm}{\ttfamily [package]}}}\label{classbr_1_1usp_1_1cata_1_1util_1_1_text_analyzer_a21fdf134b8cb13be9a94d3c98aa36813}
+
+
+Definition at line 16 of file Text\+Analyzer.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/mori/git/cata/src/br/usp/cata/util/\hyperlink{_text_analyzer_8java}{Text\+Analyzer.\+java}\end{DoxyCompactItemize}

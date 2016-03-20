@@ -1,0 +1,15 @@
+<map id="br.usp.cata.web.controller.IndexController" name="br.usp.cata.web.controller.IndexController">
+<area shape="rect" id="node2" href="$classbr_1_1usp_1_1cata_1_1service_1_1_source_service.html" title="br.usp.cata.service.Source\lService" alt="" coords="1180,96,1359,137"/>
+<area shape="rect" id="node3" href="$classbr_1_1usp_1_1cata_1_1dao_1_1_source_d_a_o.html" title="br.usp.cata.dao.SourceDAO" alt="" coords="761,38,948,65"/>
+<area shape="rect" id="node5" href="$classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service.html" title="br.usp.cata.service.NewUser\lService" alt="" coords="1173,320,1365,361"/>
+<area shape="rect" id="node25" href="$classbr_1_1usp_1_1cata_1_1service_1_1_user_service.html" title="br.usp.cata.service.User\lService" alt="" coords="1187,203,1352,244"/>
+<area shape="rect" id="node7" href="$classbr_1_1usp_1_1cata_1_1service_1_1_email_service.html" title="br.usp.cata.service.Email\lService" alt="" coords="769,283,940,324"/>
+<area shape="rect" id="node26" href="$classbr_1_1usp_1_1cata_1_1web_1_1controller_1_1_user_session.html" title="br.usp.cata.web.controller.\lUserSession" alt="" coords="767,115,943,156"/>
+<area shape="rect" id="node27" href="$classbr_1_1usp_1_1cata_1_1model_1_1_user.html" title="br.usp.cata.model.User" alt="" coords="361,122,520,149"/>
+<area shape="rect" id="node11" href="$classbr_1_1usp_1_1cata_1_1dao_1_1_user_d_a_o.html" title="br.usp.cata.dao.UserDAO" alt="" coords="768,181,941,207"/>
+<area shape="rect" id="node14" href="$classbr_1_1usp_1_1cata_1_1service_1_1_rule_service.html" title="br.usp.cata.service.Rule\lService" alt="" coords="1187,413,1351,455"/>
+<area shape="rect" id="node15" href="$classbr_1_1usp_1_1cata_1_1dao_1_1_rule_d_a_o.html" title="br.usp.cata.dao.RuleDAO" alt="" coords="769,557,941,583"/>
+<area shape="rect" id="node17" href="$classbr_1_1usp_1_1cata_1_1service_1_1_pattern_suggestion_pair_service.html" title="br.usp.cata.service.Pattern\lSuggestionPairService" alt="" coords="765,453,944,495"/>
+<area shape="rect" id="node19" href="$classbr_1_1usp_1_1cata_1_1util_1_1_tokenizer.html" title="br.usp.cata.util.Tokenizer" alt="" coords="356,415,525,442"/>
+<area shape="rect" id="node23" href="$classbr_1_1usp_1_1cata_1_1dao_1_1_pattern_suggestion_pair_d_a_o.html" title="br.usp.cata.dao.PatternSuggestion\lPairDAO" alt="" coords="329,467,552,508"/>
+</map>

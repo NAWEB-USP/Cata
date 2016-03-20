@@ -1,0 +1,11 @@
+<map id="br.usp.cata.util.lemmatizer.Lemmatizer.searchAccents" name="br.usp.cata.util.lemmatizer.Lemmatizer.searchAccents">
+<area shape="rect" id="node2" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_accents_char.html#a3683569033e4e9cf38f686c6ca9e30f1" title="br.usp.cata.util.lemmatizer.\lAccentsChar.getCharacter" alt="" coords="259,5,439,47"/>
+<area shape="rect" id="node3" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_accents_char.html#a7378dc103b07c22a51228400537dcef1" title="br.usp.cata.util.lemmatizer.\lAccentsChar.getTagLemma" alt="" coords="256,71,441,112"/>
+<area shape="rect" id="node4" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_lemmatizer_token.html#acdb8f86fafb3f23af734f9ddae325cae" title="br.usp.cata.util.lemmatizer.\lLemmatizerToken.setLemma" alt="" coords="253,136,444,177"/>
+<area shape="rect" id="node5" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_accents_lemma_tag_char.html#a2b8a0595cf55fc75220b80a297447cdc" title="br.usp.cata.util.lemmatizer.\lAccentsLemmaTagChar.getLemma" alt="" coords="235,201,463,243"/>
+<area shape="rect" id="node6" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_lemmatizer_token.html#a555fb191d41895be302063c7328f760c" title="br.usp.cata.util.lemmatizer.\lLemmatizerToken.setTag" alt="" coords="259,267,439,308"/>
+<area shape="rect" id="node7" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_accents_lemma_tag_char.html#ac872b5bd633ba3a2ae8f7ce8bdd0039f" title="br.usp.cata.util.lemmatizer.\lAccentsLemmaTagChar.getTag" alt="" coords="245,332,452,373"/>
+<area shape="rect" id="node8" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_accents_char.html#aeba657fb3a03ca05965769e4ca3c545b" title="br.usp.cata.util.lemmatizer.\lAccentsChar.getEqual" alt="" coords="259,397,439,439"/>
+<area shape="rect" id="node9" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_accents_char.html#a8908648ae394dc9d57f2a7086715a7f0" title="br.usp.cata.util.lemmatizer.\lAccentsChar.getLess" alt="" coords="259,463,439,504"/>
+<area shape="rect" id="node10" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_accents_char.html#a192c696ecbf7ed1cccb6bb233048b935" title="br.usp.cata.util.lemmatizer.\lAccentsChar.getGreater" alt="" coords="259,528,439,569"/>
+</map>

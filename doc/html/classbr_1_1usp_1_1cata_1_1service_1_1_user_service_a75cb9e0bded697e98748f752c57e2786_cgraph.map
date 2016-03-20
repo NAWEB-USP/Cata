@@ -1,0 +1,11 @@
+<map id="br.usp.cata.service.UserService.buildNewPasswordEmail" name="br.usp.cata.service.UserService.buildNewPasswordEmail">
+<area shape="rect" id="node2" href="$classbr_1_1usp_1_1cata_1_1service_1_1_user_service.html#a4954ad7b1a7eb94ab67e755a408517cb" title="br.usp.cata.service.User\lService.getRecoveryUrl" alt="" coords="271,129,436,171"/>
+<area shape="rect" id="node3" href="$classbr_1_1usp_1_1cata_1_1service_1_1_email_service.html#a7f2806a58bf35075f50c4f9840749a4d" title="br.usp.cata.service.Email\lService.buildEmail" alt="" coords="268,195,439,236"/>
+<area shape="rect" id="node4" href="$classbr_1_1usp_1_1cata_1_1model_1_1_email.html#a9b90e9222e0fc583b0493e61c59c240c" title="br.usp.cata.model.Email.set\lFromAddress" alt="" coords="501,5,687,47"/>
+<area shape="rect" id="node5" href="$classbr_1_1usp_1_1cata_1_1model_1_1_email.html#ab83cf7c8de3ed1b22a52cca74a48fa7e" title="br.usp.cata.model.Email.set\lFromPersonal" alt="" coords="501,71,687,112"/>
+<area shape="rect" id="node6" href="$classbr_1_1usp_1_1cata_1_1model_1_1_email.html#a1ebee48ef5becc771c85846e1887181a" title="br.usp.cata.model.Email.set\lHostname" alt="" coords="501,136,687,177"/>
+<area shape="rect" id="node7" href="$classbr_1_1usp_1_1cata_1_1model_1_1_email.html#a06889f561b79ed20f28ecfdb791afe57" title="br.usp.cata.model.Email.setUser" alt="" coords="487,202,701,229"/>
+<area shape="rect" id="node8" href="$classbr_1_1usp_1_1cata_1_1model_1_1_email.html#aadbbbe88dcddd924224347343572c96b" title="br.usp.cata.model.Email.set\lSubject" alt="" coords="501,253,687,295"/>
+<area shape="rect" id="node9" href="$classbr_1_1usp_1_1cata_1_1model_1_1_email.html#ad16e1f34722b3283df83d755f5d4dd31" title="br.usp.cata.model.Email.setBody" alt="" coords="487,319,701,346"/>
+<area shape="rect" id="node10" href="$classbr_1_1usp_1_1cata_1_1model_1_1_email.html#a51e856c27bc79d9df5d4d7102dfc58f9" title="br.usp.cata.model.Email.add\lReceiver" alt="" coords="500,371,688,412"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="br.usp.cata.web.controller.UserSession.setUser" name="br.usp.cata.web.controller.UserSession.setUser">
+<area shape="rect" id="node2" href="$classbr_1_1usp_1_1cata_1_1service_1_1_user_service.html#abc8d0bc1b87c8e6d4ae0302fa064bb6d" title="br.usp.cata.service.User\lService.authenticate" alt="" coords="229,5,395,47"/>
+<area shape="rect" id="node3" href="$classbr_1_1usp_1_1cata_1_1service_1_1_user_service.html#ab4ce4dc6e4b870046935df6af6f8b24f" title="br.usp.cata.service.User\lService.deauthenticate" alt="" coords="229,71,395,112"/>
+</map>
