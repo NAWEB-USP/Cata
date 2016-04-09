@@ -99,7 +99,7 @@
 						<div class="single_form_element">
 							<input id="file" type="file" name="file" size="30"><br>
 							<span class="small" style="position: relative">
-								<input id="pt" name="language" value="0" type="checkbox">Português <input id="en" name="language" value="1" type="checkbox">Inglês<br />
+								<input id="pt" name="language" value="0" type="radio">Português <input id="en" name="language" value="1" type="radio">Inglês<br />
 							</span>
 						</div>
 						<button type="button" class="button" onclick="javascript:history.go(-1);return false;">Voltar</button>
