@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="cata">
+    <output-path>$PROJECT_DIR$/out/artifacts/cata</output-path>
+    <root id="archive" name="cata.war">
+      <element id="dir-copy" path="$PROJECT_DIR$/WebContent" />
+    </root>
+  </artifact>
+</component>

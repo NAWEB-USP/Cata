@@ -54,7 +54,7 @@ public class SuggestionsController {
 
 	@Post
 	@Path("/suggestions/results")
-	public void results(UploadedFile file, Languages language, AdviceFilter adviceFilter, long[] filterIDs) {
+	public void results(UploadedFile file, Languages language, String type, AdviceFilter adviceFilter, long[] filterIDs) {
 		RulesTrees rulesTrees = new RulesTrees(ruleService, sourceService, userService, userSession);
 		switch(adviceFilter) {
 			case DEFAULT: 
@@ -73,7 +73,7 @@ public class SuggestionsController {
 				break;
 		}
 		
-		FileProcessor fileProcessor = new FileProcessor(file);		
+		FileProcessor fileProcessor = new FileProcessor(file, type);
 		TextAnalyzer textAnalyzer = new TextAnalyzer(fileProcessor.getText(), language, servletContext);
 		
 		Checker checker = new Checker(textAnalyzer, rulesTrees, opinionService);

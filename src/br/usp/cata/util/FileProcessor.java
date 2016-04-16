@@ -32,9 +32,9 @@ public class FileProcessor {
 	// Each element in the list is a line of the text
 	private ArrayList<String> text;
 	
-	public FileProcessor(UploadedFile file) {
+	public FileProcessor(UploadedFile file, String type) {
 		this.fileName = file.getFileName();
-		getText(file);
+		getText(file, type);
 	}
 
 	public String getFileName() {
@@ -108,14 +108,14 @@ public class FileProcessor {
 		}
 	}
 	
-	private void getText(UploadedFile file) {
+	private void getText(UploadedFile file, String type) {
 		text = new ArrayList<String>();
 		InputStream is = file.getFile();
 		
 		if(file.getContentType().equals("text/plain")) {
 			try {
 				byte[] fileBytes = IOUtils.toByteArray(is);
-				Charset charset = guessEncoding(fileBytes);
+				Charset charset = Charset.forName(type);
 				BufferedReader br = new BufferedReader(
 						new InputStreamReader(new ByteArrayInputStream(fileBytes), charset));
 				

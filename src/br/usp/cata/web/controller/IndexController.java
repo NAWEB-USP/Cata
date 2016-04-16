@@ -4,6 +4,8 @@
  */
 package br.usp.cata.web.controller;
 
+import java.nio.charset.Charset;
+
 import br.com.caelum.vraptor.Get;
 import br.com.caelum.vraptor.Path;
 import br.com.caelum.vraptor.Post;
@@ -52,6 +54,7 @@ public class IndexController {
 	@Get
 	@Path("/")
 	public void index() {
+    	result.include("charsets", Charset.availableCharsets().values());
 		if(userService.isAuthenticatedUser())
 			result.redirectTo(HomeController.class).index();
 	}
@@ -95,11 +98,11 @@ public class IndexController {
 
 	@Post
 	@Path("/advice")
-	public void advice(UploadedFile file, Languages language) throws Exception {
+	public void advice(UploadedFile file, Languages language, String type) throws Exception {
 		validateFile(file);
 		validator.onErrorRedirectTo(IndexController.class).index();
 
-		result.forwardTo(SuggestionsController.class).results(file, language, AdviceFilter.DEFAULT, null);
+		result.forwardTo(SuggestionsController.class).results(file, language, type, AdviceFilter.DEFAULT, null);
 	}
 	
 	@Get
@@ -112,7 +115,7 @@ public class IndexController {
     @Post
     @Path("/advanced")
     public void advanced(int filter, int selectedFilter, long[] selectedUsers,
-    		long[] selectedSources, UploadedFile file, Languages language) {
+    		long[] selectedSources, UploadedFile file, Languages language, String type) {
     	validateFile(file);
     	
     	if(filter == 1) {
@@ -122,7 +125,7 @@ public class IndexController {
 	        				"Selecione pelo menos um usuário.", "Nenhum usuário selecionado"));
     			validator.onErrorRedirectTo(IndexController.class).advanced();
     			
-    			result.forwardTo(SuggestionsController.class).results(file, language, AdviceFilter.FILTERED_BY_USER, selectedUsers); 
+    			result.forwardTo(SuggestionsController.class).results(file, language, type, AdviceFilter.FILTERED_BY_USER, selectedUsers);
     		}
     		else {
     			if(selectedSources == null)
@@ -130,12 +133,12 @@ public class IndexController {
     						"Selecione pelo menos uma referência bibliográfica.", "Nenhuma referência bibliográfica selecionada"));
     			validator.onErrorRedirectTo(IndexController.class).advanced();
     			
-    			result.forwardTo(SuggestionsController.class).results(file, language, AdviceFilter.FILTERED_BY_SOURCE, selectedSources);
+    			result.forwardTo(SuggestionsController.class).results(file, language, type, AdviceFilter.FILTERED_BY_SOURCE, selectedSources);
     		}
     	}
     	else {
     		validator.onErrorRedirectTo(IndexController.class).advanced();
-    		result.forwardTo(SuggestionsController.class).results(file, language, AdviceFilter.ALL, null);
+    		result.forwardTo(SuggestionsController.class).results(file, language, type, AdviceFilter.ALL, null);
     	}
     }
 	

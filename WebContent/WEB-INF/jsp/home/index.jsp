@@ -25,6 +25,16 @@
 				showModal("#modal", '<a href="#" class="close"><img src="<c:url value='/css/images/close_pop.png'/>" class="btn_close" title="Fechar" alt="Fechar" /></a>');
 				$('a').css("margin", "0px 0px");
 			});
+				
+			function hideorshow() {
+				var file = $("#file");
+				var type_div = $("#type_div");
+				var patt = new RegExp("\.txt$");
+				if (patt.test(file.val()))
+					type_div.attr("hidden", false);
+				else
+					type_div.attr("hidden", true);
+			};
 		</script>
 				
 		<title>CATA: Collaborative Academic Text Advisor</title>
@@ -48,10 +58,19 @@
 					<form id="advice_form" action="<c:url value="/advice"/>" enctype="multipart/form-data" method="post">
 						Selecione um arquivo .txt, .pdf, .doc ou .tex para análise:<br>
 						<div class="single_form_element">
-							<input id="file" type="file" name="file" size="30"><br>
+							<input id="file" type="file" name="file" size="30" onchange="hideorshow()"><br>
 							<span class="small" style="position: relative">
 								<input id="pt" name="language" value="0" type="radio">Português <input id="en" name="language" value="1" type="radio">Inglês<br />
 							</span>
+							<div id="type_div" hidden class="small">
+								<label for="type">Tipo de txt</label> <select id="type" type="text"
+									name="type">
+									<c:forEach items="${charsets}" var="charset">
+										<option value="${charset}"
+											<c:if test="${charset eq 'UTF-8' }">selected</c:if>>${charset}</option>
+									</c:forEach>
+								</select> <br />
+							</div>
 						</div>
 						<center>
 							<input class="button" style="margin-top: 0px;" type="submit" value="Enviar">
