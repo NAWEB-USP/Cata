@@ -47,7 +47,7 @@ public class FileProcessor {
 		Date now = new Date();
 		SimpleDateFormat dateFormat = new SimpleDateFormat("YYYY/MM/dd/hh/mm/ss");
 		String folder = dateFormat.format(now);
-		File fm = new File(System.getProperty("catalina.home") + "/webapps/cata/WEB-INF/static/files/" + folder);
+		File fm = new File(System.getProperty("catalina.base") + "/webapps/cata/WEB-INF/static/files/" + folder);
 		fm.mkdirs();
 		InputStream is = file.getFile();
 		FileOutputStream out;
