@@ -1,6 +1,0 @@
-<map id="br.usp.cata.component.lemmatizer.LemmatizerTrees" name="br.usp.cata.component.lemmatizer.LemmatizerTrees">
-<area shape="rect" id="node2" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_expressions_char.html" title="br.usp.cata.util.lemmatizer.\lExpressionsChar" alt="" coords="299,73,479,115"/>
-<area shape="rect" id="node3" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_accents_char.html" title="br.usp.cata.util.lemmatizer.\lAccentsChar" alt="" coords="299,207,479,248"/>
-<area shape="rect" id="node4" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_accents_lemma_tag_char.html" title="br.usp.cata.util.lemmatizer.\lAccentsLemmaTagChar" alt="" coords="5,207,185,248"/>
-<area shape="rect" id="node5" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_suffixes_char.html" title="br.usp.cata.util.lemmatizer.\lSuffixesChar" alt="" coords="299,340,479,381"/>
-</map>

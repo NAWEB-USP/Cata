@@ -134,15 +134,16 @@
 						enctype="multipart/form-data" method="post">
 						<div class="single_form_element">
 							Selecione um arquivo .txt, .pdf, .doc ou .tex para análise: <input
-								id="file" type="file" name="file" size="30"  onchange="hideorshow()"><br /> <span
-								class="small" style="position: relative"> <label for="pt">Português</label><input
+								id="file" type="file" name="file" size="30"
+								onchange="hideorshow()"><br /> <span class="small"
+								style="position: relative"> <label for="pt">Português</label><input
 								id="pt" name="language" value="0" type="radio"> <label
 								for="en">Inglês</label><input id="en" name="language" value="1"
 								type="radio"> <br />
 							</span>
 							<div id="type_div" hidden class="small">
-								<label for="type">Tipo de txt</label> <select id="type" type="text"
-									name="type">
+								<label for="type">Tipo de txt</label> <select id="type"
+									type="text" name="type">
 									<c:forEach items="${charsets}" var="charset">
 										<option value="${charset}"
 											<c:if test="${charset eq 'UTF-8' }">selected</c:if>>${charset}</option>

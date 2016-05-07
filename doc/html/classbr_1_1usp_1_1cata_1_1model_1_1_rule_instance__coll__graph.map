@@ -1,7 +1,0 @@
-<map id="br.usp.cata.model.RuleInstance" name="br.usp.cata.model.RuleInstance">
-<area shape="rect" id="node2" href="$classbr_1_1usp_1_1cata_1_1model_1_1_pattern_suggestion_pair.html" title="br.usp.cata.model.Pattern\lSuggestionPair" alt="" coords="569,5,741,47"/>
-<area shape="rect" id="node4" href="$classbr_1_1usp_1_1cata_1_1model_1_1_rule.html" title="br.usp.cata.model.Rule" alt="" coords="577,75,734,102"/>
-<area shape="rect" id="node5" href="$enumbr_1_1usp_1_1cata_1_1model_1_1_languages.html" title="br.usp.cata.model.Languages" alt="" coords="257,70,451,97"/>
-<area shape="rect" id="node7" href="$enumbr_1_1usp_1_1cata_1_1model_1_1_rule_categories.html" title="br.usp.cata.model.RuleCategories" alt="" coords="244,121,464,147"/>
-<area shape="rect" id="node8" href="$enumbr_1_1usp_1_1cata_1_1model_1_1_types_of_rules.html" title="br.usp.cata.model.TypesOf\lRules" alt="" coords="264,172,444,213"/>
-</map>

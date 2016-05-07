@@ -1,7 +1,0 @@
-<map id="br.usp.cata.service.EmailService.buildEmail" name="br.usp.cata.service.EmailService.buildEmail">
-<area shape="rect" id="node2" href="$classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service.html#a0cb78c605f1e2449c286e5709cb1629a" title="br.usp.cata.service.NewUser\lService.buildNewUserEmail" alt="" coords="235,5,427,47"/>
-<area shape="rect" id="node4" href="$classbr_1_1usp_1_1cata_1_1service_1_1_user_service.html#a75cb9e0bded697e98748f752c57e2786" title="br.usp.cata.service.User\lService.buildNewPasswordEmail" alt="" coords="224,71,439,112"/>
-<area shape="rect" id="node3" href="$classbr_1_1usp_1_1cata_1_1service_1_1_new_user_service.html#a931ce40045ffd8a9a0f1b3fc152d71fc" title="br.usp.cata.service.NewUser\lService.register" alt="" coords="510,5,702,47"/>
-<area shape="rect" id="node5" href="$classbr_1_1usp_1_1cata_1_1service_1_1_user_service.html#afdf2a96bc2ca5829ffa4ce3f9e79addb" title="br.usp.cata.service.User\lService.sendRecoverPasswordEmail" alt="" coords="487,71,725,112"/>
-<area shape="rect" id="node6" href="$classbr_1_1usp_1_1cata_1_1service_1_1_user_service.html#a8c83f45c33fd9fd55247ee3be46042f9" title="br.usp.cata.service.User\lService.recoverPassword" alt="" coords="773,71,944,112"/>
-</map>

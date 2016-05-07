@@ -1,5 +1,0 @@
-<map id="br.usp.cata.util.lemmatizer.Lemmatizer.createCircularList" name="br.usp.cata.util.lemmatizer.Lemmatizer.createCircularList">
-<area shape="rect" id="node2" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_lemmatizer_token.html#aa4bee31c02baa0b583ad09518df9ad2e" title="br.usp.cata.util.lemmatizer.\lLemmatizerToken.setNext" alt="" coords="249,5,429,47"/>
-<area shape="rect" id="node3" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_lemmatizer_token.html#aacc6c8731e7ac623a8c41cd78f04d508" title="br.usp.cata.util.lemmatizer.\lLemmatizerToken.getNext" alt="" coords="249,71,429,112"/>
-<area shape="rect" id="node4" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_lemmatizer_token.html#ac860a0ad47d46384ea1146d9068552eb" title="br.usp.cata.util.lemmatizer.\lLemmatizerToken.setPrev" alt="" coords="249,136,429,177"/>
-</map>

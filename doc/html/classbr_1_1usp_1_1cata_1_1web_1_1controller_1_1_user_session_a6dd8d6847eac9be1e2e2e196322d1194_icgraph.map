@@ -1,5 +1,0 @@
-<map id="br.usp.cata.web.controller.UserSession.isAuthenticatedUser" name="br.usp.cata.web.controller.UserSession.isAuthenticatedUser">
-<area shape="rect" id="node2" href="$classbr_1_1usp_1_1cata_1_1service_1_1_user_service.html#afa7f60fb51c66deb3f1f81839e5079b5" title="br.usp.cata.service.User\lService.isAuthenticatedUser" alt="" coords="272,5,460,47"/>
-<area shape="rect" id="node4" href="$classbr_1_1usp_1_1cata_1_1web_1_1interceptor_1_1_login_interceptor.html#a748231f3128bf1aaeb8ec825e7519fa1" title="br.usp.cata.web.interceptor.\lLoginInterceptor.intercept" alt="" coords="274,71,458,112"/>
-<area shape="rect" id="node3" href="$classbr_1_1usp_1_1cata_1_1util_1_1_rules_trees.html#ac12f087aaff1ad3aec275117cf248eae" title="br.usp.cata.util.RulesTrees.build\lDefaultTrees" alt="" coords="508,5,719,47"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="br.usp.cata.util.lemmatizer.Lemmatizer.searchSuffixes" name="br.usp.cata.util.lemmatizer.Lemmatizer.searchSuffixes">
-<area shape="rect" id="node2" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_suffixes_char.html#a84dc1c4751856834a0219e7ce367bc82" title="br.usp.cata.util.lemmatizer.\lSuffixesChar.getCharacter" alt="" coords="235,5,415,47"/>
-<area shape="rect" id="node3" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_suffixes_char.html#acdea974096f90a2eff0a277c28f2e80d" title="br.usp.cata.util.lemmatizer.\lSuffixesChar.getEqual" alt="" coords="235,71,415,112"/>
-<area shape="rect" id="node4" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_suffixes_char.html#ac658d5bb195c1c36d460c3646c820d8c" title="br.usp.cata.util.lemmatizer.\lSuffixesChar.getLess" alt="" coords="235,136,415,177"/>
-<area shape="rect" id="node5" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_suffixes_char.html#aa500ae76354ebb46f4ec5aba198716d0" title="br.usp.cata.util.lemmatizer.\lSuffixesChar.getGreater" alt="" coords="235,201,415,243"/>
-</map>

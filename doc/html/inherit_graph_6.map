@@ -1,9 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$classbr_1_1usp_1_1cata_1_1dao_1_1_exact_matching_d_a_o.html" title="br.usp.cata.dao.ExactMatchingDAO" alt="" coords="153,5,385,32"/>
-<area shape="rect" id="node3" href="$classbr_1_1usp_1_1cata_1_1dao_1_1_lemma_d_a_o.html" title="br.usp.cata.dao.LemmaDAO" alt="" coords="175,56,363,83"/>
-<area shape="rect" id="node4" href="$classbr_1_1usp_1_1cata_1_1dao_1_1_opinion_d_a_o.html" title="br.usp.cata.dao.OpinionDAO" alt="" coords="175,107,364,133"/>
-<area shape="rect" id="node5" href="$classbr_1_1usp_1_1cata_1_1dao_1_1_pattern_suggestion_pair_d_a_o.html" title="br.usp.cata.dao.PatternSuggestion\lPairDAO" alt="" coords="158,158,381,199"/>
-<area shape="rect" id="node6" href="$classbr_1_1usp_1_1cata_1_1dao_1_1_rule_d_a_o.html" title="br.usp.cata.dao.RuleDAO" alt="" coords="183,224,355,251"/>
-<area shape="rect" id="node7" href="$classbr_1_1usp_1_1cata_1_1dao_1_1_source_d_a_o.html" title="br.usp.cata.dao.SourceDAO" alt="" coords="176,275,363,301"/>
-<area shape="rect" id="node8" href="$classbr_1_1usp_1_1cata_1_1dao_1_1_user_d_a_o.html" title="br.usp.cata.dao.UserDAO" alt="" coords="183,325,356,352"/>
-</map>

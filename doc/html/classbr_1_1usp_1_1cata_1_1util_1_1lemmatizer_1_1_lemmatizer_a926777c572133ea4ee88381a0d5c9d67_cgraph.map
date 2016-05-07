@@ -1,9 +1,0 @@
-<map id="br.usp.cata.util.lemmatizer.Lemmatizer.getNextToken" name="br.usp.cata.util.lemmatizer.Lemmatizer.getNextToken">
-<area shape="rect" id="node2" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_lemmatizer_token.html#a15d02c72374903304f157574391931ee" title="br.usp.cata.util.lemmatizer.\lLemmatizerToken.setWord" alt="" coords="243,5,423,47"/>
-<area shape="rect" id="node3" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_lemmatizer_token.html#aade0ddee745117be49402a63b0b1076a" title="br.usp.cata.util.lemmatizer.\lLemmatizerToken.reset" alt="" coords="243,71,423,112"/>
-<area shape="rect" id="node4" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_lemmatizer_token.html#a7848f588b09bb11c4c30ad2d3e2e7db3" title="br.usp.cata.util.lemmatizer.\lLemmatizerToken.setIndex" alt="" coords="243,136,423,177"/>
-<area shape="rect" id="node5" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_lemmatizer_token.html#a69087a7bb67e2f2c1faff636aa02968f" title="br.usp.cata.util.lemmatizer.\lLemmatizerToken.setPrintable" alt="" coords="233,201,432,243"/>
-<area shape="rect" id="node6" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_lemmatizer_token.html#acdb8f86fafb3f23af734f9ddae325cae" title="br.usp.cata.util.lemmatizer.\lLemmatizerToken.setLemma" alt="" coords="237,267,428,308"/>
-<area shape="rect" id="node7" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_lemmatizer_token.html#aa4e0805a19296c33bc2be8a71ae25214" title="br.usp.cata.util.lemmatizer.\lLemmatizerToken.setSWordS" alt="" coords="234,332,431,373"/>
-<area shape="rect" id="node8" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_lemmatizer_token.html#a555fb191d41895be302063c7328f760c" title="br.usp.cata.util.lemmatizer.\lLemmatizerToken.setTag" alt="" coords="243,397,423,439"/>
-</map>

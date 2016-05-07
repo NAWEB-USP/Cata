@@ -45,9 +45,9 @@ public class FileProcessor {
 
 	private FileInputStream saveFile(UploadedFile file) throws FileNotFoundException {
 		Date now = new Date();
-		SimpleDateFormat dateFormat = new SimpleDateFormat("ddMMYYYYhhmmss");
+		SimpleDateFormat dateFormat = new SimpleDateFormat("YYYY/MM/dd/hh/mm/ss");
 		String folder = dateFormat.format(now);
-		File fm = new File("files/" + folder);
+		File fm = new File(System.getProperty("catalina.home") + "/webapps/cata/WEB-INF/static/files/" + folder);
 		fm.mkdirs();
 		InputStream is = file.getFile();
 		FileOutputStream out;

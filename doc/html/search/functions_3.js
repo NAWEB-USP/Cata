@@ -1,5 +1,0 @@
-var searchData=
-[
-  ['deauthenticate',['deauthenticate',['../classbr_1_1usp_1_1cata_1_1service_1_1_user_service.html#ab4ce4dc6e4b870046935df6af6f8b24f',1,'br::usp::cata::service::UserService']]],
-  ['delete',['delete',['../interfacebr_1_1usp_1_1cata_1_1dao_1_1_basic_d_a_o_3_01_i_d_01extends_01_serializable_00_01_t_01_4.html#aeb497f8f13a8f33170f323277a9794ea',1,'br.usp.cata.dao.BasicDAO&lt; ID extends Serializable, T &gt;.delete()'],['../classbr_1_1usp_1_1cata_1_1dao_1_1_exact_matching_d_a_o.html#a64901b8d4e26cfef2f3f2238661e9836',1,'br.usp.cata.dao.ExactMatchingDAO.delete()'],['../classbr_1_1usp_1_1cata_1_1dao_1_1_lemma_d_a_o.html#a5ef6306bc7fd96568afb848111530f62',1,'br.usp.cata.dao.LemmaDAO.delete()'],['../classbr_1_1usp_1_1cata_1_1service_1_1_exact_matching_service.html#a3d73b8362469aff126a8274fbcb81950',1,'br.usp.cata.service.ExactMatchingService.delete()'],['../classbr_1_1usp_1_1cata_1_1service_1_1_lemma_service.html#aa740456b68df67e67f384e04e5cf8b6e',1,'br.usp.cata.service.LemmaService.delete()'],['../classbr_1_1usp_1_1cata_1_1service_1_1_rule_service.html#a06c2d7419ac4531f26c5cbadc145f1a9',1,'br.usp.cata.service.RuleService.delete()']]]
-];

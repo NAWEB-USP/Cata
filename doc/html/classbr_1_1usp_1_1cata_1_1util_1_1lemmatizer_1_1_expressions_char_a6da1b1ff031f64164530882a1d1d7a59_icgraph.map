@@ -1,9 +1,0 @@
-<map id="br.usp.cata.util.lemmatizer.ExpressionsChar.getLess" name="br.usp.cata.util.lemmatizer.ExpressionsChar.getLess">
-<area shape="rect" id="node2" href="$classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees.html#a6456da8739411ebc7fcaa1a37ed53199" title="br.usp.cata.component.lemmatizer.\lLemmatizerTrees.insertExpressionsTree" alt="" coords="233,5,491,47"/>
-<area shape="rect" id="node5" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_lemmatizer.html#a71b958dadcfdbeb20f69fa6252f59331" title="br.usp.cata.util.lemmatizer.\lLemmatizer.searchExpressions" alt="" coords="259,71,465,112"/>
-<area shape="rect" id="node3" href="$classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees.html#a6c2d16f7d28382ea3440f0ddf3bdb5c9" title="br.usp.cata.component.lemmatizer.\lLemmatizerTrees.readExpressionsFile" alt="" coords="547,5,793,47"/>
-<area shape="rect" id="node4" href="$classbr_1_1usp_1_1cata_1_1component_1_1lemmatizer_1_1_lemmatizer_trees.html#a02014a56727ee3b28a74e3375cdd27b9" title="br.usp.cata.component.lemmatizer.\lLemmatizerTrees.LemmatizerTrees" alt="" coords="849,5,1077,47"/>
-<area shape="rect" id="node6" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_lemmatizer.html#a9619a90003cd6c2d1425d8ea45ccde5b" title="br.usp.cata.util.lemmatizer.\lLemmatizer.analyzeExpressionTkCurrent" alt="" coords="539,71,801,112"/>
-<area shape="rect" id="node7" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_lemmatizer.html#aa5df3e813c815846be9df216bf8a310c" title="br.usp.cata.util.lemmatizer.\lLemmatizer.tagAndLemmatize" alt="" coords="864,71,1063,112"/>
-<area shape="rect" id="node8" href="$classbr_1_1usp_1_1cata_1_1util_1_1lemmatizer_1_1_lemmatizer.html#a7bc40a2c75a57c90796b0f2c2c4ddb3d" title="br.usp.cata.util.lemmatizer.\lLemmatizer.lemmatize" alt="" coords="1125,71,1305,112"/>
-</map>

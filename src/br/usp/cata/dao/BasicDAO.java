@@ -8,11 +8,11 @@ import org.hibernate.criterion.Criterion;
 
 public interface BasicDAO<ID extends Serializable, T> {
 	
-    void save(T... objs);
+    void save(@SuppressWarnings("unchecked") T... objs);
 
-    void delete(T... ts);
+    void delete(@SuppressWarnings("unchecked") T... ts);
 
-    void saveOrUpdate(T... ts);
+    void saveOrUpdate(@SuppressWarnings("unchecked") T... ts);
 
     T findByID(ID id);
 
