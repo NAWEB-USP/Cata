@@ -23,4 +23,6 @@ Para rodar este projeto no Eclipse, você precisa seguir os seguintes passos:
 
 ->Configure o arquivo "context.xml" (em "CATA/WebContent/META-INF") com uma conta de e-mail válida.
 
+-> O sistema precisa escrever na pasta WEB-INF, então certifique-se que existem permissões para isso.
+
 Pronto!
