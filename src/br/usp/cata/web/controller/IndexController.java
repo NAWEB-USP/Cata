@@ -5,6 +5,9 @@
 package br.usp.cata.web.controller;
 import java.nio.charset.Charset;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+
 import br.com.caelum.vraptor.Get;
 import br.com.caelum.vraptor.Path;
 import br.com.caelum.vraptor.Post;
@@ -39,6 +42,8 @@ public class IndexController {
 	private final SourceService sourceService;
 	private final UserService userService;
 	
+	static final Logger logger = LogManager.getLogger(IndexController.class); 
+	
 	public IndexController(Result result, Validator validator,
 			NewUserService newUserService, RuleService ruleService, SourceService sourceService,
 			UserService userService) {
@@ -54,6 +59,7 @@ public class IndexController {
 	@Path("/")
 	public void index() {
     	result.include("charsets", Charset.availableCharsets().values());
+    	logger.trace("Novo acesso de usuário " + (userService.isAuthenticatedUser() ? userService.getUser().getName() : "não autenticado"));
 		if(userService.isAuthenticatedUser())
 			result.redirectTo(HomeController.class).index();
 	}
@@ -74,9 +80,12 @@ public class IndexController {
         final boolean success = userService.authenticate(user.getEmail(), user.getPassword());
 
         if(!success) {
+        	logger.trace("Tentatica inválida de loggin para: " + user.getEmail());
         	validator.add(new ValidationMessage("Valores inválidos.", "E-mail ou senha"));
             validator.onErrorRedirectTo(IndexController.class).index();
         }
+        else
+        	logger.trace("Usuário " + userService.getUser().getName() + " se autenticou.");
         
         result.redirectTo(HomeController.class).index();
     }
@@ -98,6 +107,7 @@ public class IndexController {
 	@Post
 	@Path("/advice")
 	public void advice(UploadedFile file, Languages language, String type) throws Exception {
+		logger.trace("Arquivo " + file.getFileName() + " sendo enviado pelo usuário " + (userService.isAuthenticatedUser() ? userService.getUser().getName() : "não autenticado"));
 		validateFile(file);
 		validator.onErrorRedirectTo(IndexController.class).index();
 
@@ -115,6 +125,7 @@ public class IndexController {
     @Path("/advanced")
     public void advanced(int filter, int selectedFilter, long[] selectedUsers,
     		long[] selectedSources, UploadedFile file, Languages language, String type) {
+		logger.trace("Arquivo " + file.getFileName() + " sendo enviado no modo avançado pelo usuário " + (userService.isAuthenticatedUser() ? userService.getUser().getName() : "não autenticado"));
     	validateFile(file);
     	
     	if(filter == 1) {
@@ -144,12 +155,14 @@ public class IndexController {
 	@Get
 	@Path("/rules")
 	public void rules() {
+		logger.trace("Acesso á página de regras pelo usuário " + (userService.isAuthenticatedUser() ? userService.getUser().getName() : "não autenticado"));
 		result.include("rules", ruleService.findAll());
 	}
 	
 	@Get
 	@Path("/about")
 	public void about() {
+		logger.trace("Acesso á página Sobre pelo usuário " + (userService.isAuthenticatedUser() ? userService.getUser().getName() : "não autenticado"));
 	}
     
     @Get
@@ -167,6 +180,7 @@ public class IndexController {
     	if(newUser.getName().equals(""))
     		validator.add(new ValidationMessage(
     				CataConstraints.emptyField, "Nome"));
+		logger.trace("Tentando criar um novo usuário para nome de usuário: " + newUser.getName());
     	if(newUser.getEmail().equals(""))
     		validator.add(new ValidationMessage(
     				CataConstraints.emptyField, "E-mail"));
@@ -185,6 +199,7 @@ public class IndexController {
     	
     	switch(signupResult) {
     		case SUCCESS:
+    			logger.trace("Novo usuário criado com nome de usuário: " + newUser.getName());
     			result.include("messages", "Seu acesso foi criado. " +
     					"Siga as instruções enviadas para o endereço " + newUser.getEmail() +
     					" para ativar sua conta. Cuidado! O email de confirmação pode ter sido enviado para o SPAM. ");
@@ -284,6 +299,7 @@ public class IndexController {
     	
     	result.include("newPasswordKey", newPasswordKey);
     	result.forwardTo(IndexController.class).newpassword();
+		logger.trace("Nova senha para usuário: " + user.getName());
     }
     
     @Post
@@ -314,6 +330,7 @@ public class IndexController {
     	userService.update(user);
     	
     	result.include("messages", "Sua senha foi alterada com sucesso.");
+		logger.trace("Usuário: " + user.getName() + " atualizou sua senha.");
     	
     	result.redirectTo(IndexController.class).index();
     }

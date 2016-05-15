@@ -4,6 +4,9 @@ import java.util.Date;
 import java.util.HashSet;
 import java.util.List;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+
 import br.com.caelum.vraptor.Get;
 import br.com.caelum.vraptor.Path;
 import br.com.caelum.vraptor.Post;
@@ -38,6 +41,8 @@ public class RulesController { // TODO This class really needs some refactoring
 	private final RuleService ruleService;
 	private final SourceService sourceService;
 	private final UserSession userSession;
+	
+	static final Logger logger = LogManager.getLogger(RulesController.class); 
 	
 	public RulesController(final Result result, final Validator validator,
 		final ExactMatchingService exactMatchingService, final LemmaService lemmaService,
@@ -158,6 +163,8 @@ public class RulesController { // TODO This class really needs some refactoring
 		newRule.setSource(sourceService.findByID(source.getSourceID()));
 		
 		ruleService.save(newRule);
+		
+		logger.trace("Usuário " + userSession.getName() + " cadastrou regra " + newRule.getRuleID() + " com sucesso.");
 		
 		result.include("messages", "A Regra foi cadastrada com sucesso.");		
 		result.redirectTo(IndexController.class).rules();
@@ -355,6 +362,8 @@ public class RulesController { // TODO This class really needs some refactoring
 		rule.setSource(sourceService.findByID(source.getSourceID()));
 		
 		ruleService.update(rule);
+
+		logger.trace("Usuário " + userSession.getName() + " atualizou regra " + rule.getRuleID() + " com sucesso.");
 		
 		result.include("messages", "A Regra foi editada com sucesso.");
 		result.redirectTo(UserController.class).profile();
@@ -372,6 +381,8 @@ public class RulesController { // TODO This class really needs some refactoring
 			validator.add(new ValidationMessage(
     				"Você não possui autorização.", "Erro"));
 		validator.onErrorRedirectTo(UserController.class).profile();
+		
+		logger.trace("Usuário " + userSession.getName() + " deletou regra " + ruleToBeDeleted.getRuleID());
 		
 		ruleService.delete(ruleService.findByID(ruleToBeDeleted.getRuleID()));
 		
