@@ -6,6 +6,7 @@ import java.util.List;
 
 import org.hibernate.Criteria;
 import org.hibernate.Session;
+import org.hibernate.Transaction;
 import org.hibernate.criterion.Criterion;
 import org.hibernate.criterion.Example;
 import org.hibernate.criterion.Order;
@@ -13,7 +14,7 @@ import org.hibernate.criterion.Order;
 import br.com.caelum.vraptor.util.hibernate.SessionCreator;
 
 
-@SuppressWarnings(value = {"unchecked"}) //FIXME
+@SuppressWarnings(value = {"unchecked"}) //FIXME Otimização necessária
 public abstract class AbstractDAO<ID extends Serializable, T> implements BasicDAO<ID,T> {
     
 	private final SessionCreator sessionCreator;
@@ -39,8 +40,10 @@ public abstract class AbstractDAO<ID extends Serializable, T> implements BasicDA
     }
 
     public void save(final T... objs) {
+    	Transaction tx = getSession().beginTransaction();
         for(T o : objs)
             getSession().save(o);
+        tx.commit();
     }
 
     public void delete(final T... ts) {
@@ -49,8 +52,10 @@ public abstract class AbstractDAO<ID extends Serializable, T> implements BasicDA
     }
 
     public void saveOrUpdate(final T... ts) {
+    	Transaction tx = getSession().beginTransaction();
         for(T t : ts)
             getSession().saveOrUpdate(t);
+        tx.commit();
     }
 
     public T findByID(final ID id) {

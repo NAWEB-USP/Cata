@@ -104,6 +104,14 @@ public class IndexController {
 		}
     }
 
+    /**
+     * Quando o usuário envia seu arquivo, esse método é chamado e a validação do arquivo é feita e o usuário é redirecionado
+     * para a página com seu texto analisado.
+     * @param file UploadedFile enviado pelo usuário.
+     * @param language Languages selecionado para tratamento do arquivo.
+     * @param type String usado para especificar o tipo do arquivo no formato txt.
+     * @throws Exception
+     */
 	@Post
 	@Path("/advice")
 	public void advice(UploadedFile file, Languages language, String type) throws Exception {

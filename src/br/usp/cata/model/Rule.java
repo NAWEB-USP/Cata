@@ -63,6 +63,9 @@ public class Rule implements Serializable {
     @JoinColumn(name="userID", referencedColumnName="userID")
 	private User user;
     
+    @Column
+    private Integer count;
+    
     public Rule() {
     }
 
@@ -154,4 +157,11 @@ public class Rule implements Serializable {
 		this.user = user;
 	}
 	
+	public Integer getCount() {
+		return count;
+	}
+	
+	public void setCount(Integer count) {
+		this.count = count;
+	}
 }

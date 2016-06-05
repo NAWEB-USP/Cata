@@ -36,14 +36,14 @@ public class Checker {
 		return numOfMistakes;
 	}
 	/**
-	 * Na função addMistakes é feita uma varredura no conjunto de tokens/lemas (não estou muito certo
-	 * sobre isso) que "quebraram alguma das regras".
-	 * Essa função é chamada duas vezes uma para um conjunto de tokens e outra para um conjunto de lemas.
-	 * @param searcher Um Iterator cujos elementos são os tokens
+	 * Na função addMistakes associa cada regra violada no texto à sua posição no texto.
+	 * Essa função é chamada duas vezes uma para as regras contendo exactMatching e outra para Lemmas.
+	 * @param searcher Um Iterator cujos elementos são as regras que foram quebradas no texto
 	 * @param starts HashMap que associa o índice de cada token no ArrayList tokenizedText com uma
-	 * instancia de Position ou associa o índice de cada lema no ArrayList TODO parei aqui
-	 * @param ends
-	 * @param mistakes
+	 * instancia de Position indicando a posição inicial do token no texto.
+	 * @param ends HashMap que associa o índice de cada token no ArrayList tokenizedText com uma
+	 * instancia de Position indicando a posição final do token no texto.
+	 * @param mistakes ArrayList resultante contendo uma tupla de regras violadas, posição inicial e final no texto.
 	 */
 	private void addMistakes(Iterator<?> searcher, HashMap<Integer, Position> starts,
 			HashMap<Integer, Position> ends, ArrayList<Mistake> mistakes) {
@@ -73,6 +73,13 @@ public class Checker {
 		return false;
 	}
 	
+	/**
+	 * Agrupando todas as regras violadas que estão no mesmo seguimento
+	 * @param mistakesList ArrayList com todas as tuplas de regras violadas e posição inicial e final no texto
+	 * @param mistakes ArrayList resultante, contendo todas as regras violadas agrupadas por seguimento
+	 * @param starts ArrayList informando a posição inicial de cada seguimento no texto
+	 * @param ends ArrayList informando a posição final de cada seguimento no texto
+	 */
 	private void groupMistakes(ArrayList<Mistake> mistakesList, ArrayList<ArrayList<Mistake>> mistakes,
 			ArrayList<Position> starts, ArrayList<Position> ends) {
 		
@@ -107,6 +114,13 @@ public class Checker {
 		}	
 	}
 	
+	/**
+	 * Cada palavra no texto é associada a uma regra violada se esta violar tal regra ou é associado a null se não houver violação de regra.
+	 * @param textAnalyzer TextAnalyzer contendo o texto do documento enviado pelo usuário.
+	 * @param mistakes ArrayList contendo todas as regras violadas agrupadas por seguimento.
+	 * @param starts ArrayList informando a posição inicial de cada seguimento de regra violada no texto.
+	 * @param ends ArrayList informando a posição final de cada seguimento regra violada no texto.
+	 */
 	private void buildCheckedText(TextAnalyzer textAnalyzer, ArrayList<ArrayList<Mistake>> mistakes,
 			ArrayList<Position> starts, ArrayList<Position> ends) {
 		
@@ -191,6 +205,11 @@ public class Checker {
 		}
 	}
 	
+	/**
+	 * Casa todos os tokens e lemas em textAnalyzer com os rulesTrees
+	 * @param textAnalyzer TextAnalyzer que contém  todos os tokens e lemas do texto enviado pelo usuário
+	 * @param rulesTrees RulesTrees que contém todos as regras filtradas do banco de dados
+	 */
 	private void checkText(final TextAnalyzer textAnalyzer, RulesTrees rulesTrees) {
 		Iterator<?> exactMatchingsSearcher = 
 			rulesTrees.searchExactMatchings(textAnalyzer.getTokenizedTextBytes());
@@ -205,6 +224,8 @@ public class Checker {
 		
 		List<String> thisTextKeywords = textAnalyzer.getKeywords();
 		
+		// Filtrando as regras com base nas opiniões dos usuários
+		// FIXME Sugestões com joinhas não aparecem no texto analisado
 		if(thisTextKeywords.size() > 15) {
 			ArrayList<Mistake> mistakesToRemove = new ArrayList<Mistake>();
 			for(Mistake mistake : mistakesList) {
@@ -233,6 +254,7 @@ public class Checker {
 		}
 		
 		numOfMistakes = mistakesList.size();
+		rulesTrees.updateMistakesCounter(mistakesList);
 		
 		ArrayList<ArrayList<Mistake>> mistakes = new ArrayList<ArrayList<Mistake>>();
 		ArrayList<Position> starts = new ArrayList<Position>();

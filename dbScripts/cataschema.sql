@@ -170,6 +170,8 @@ CREATE TABLE `Rule` (
   KEY `FK270B1CAEF0AA5F` (`sourceID`),
   KEY `FK270B1C35DF213F` (`userID`)
 ) ENGINE=MyISAM AUTO_INCREMENT=247 DEFAULT CHARSET=latin1;
+alter table Rule add column count int zerofill;
+alter table Rule alter column count set default 0;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

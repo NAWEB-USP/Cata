@@ -52,6 +52,14 @@ public class SuggestionsController {
 		this.servletContext = servletContext;
 	}
 
+	/**
+	 * A análise do arquivo é feita e as sugestões são geradas.
+	 * @param file UploadedFile enviado pelo usuário para ser analisado.
+	 * @param language Languages selecionado pelo usuário para que seu texto seja analisado.
+	 * @param type String que especifica o tipo do arquivo no formato txt.
+	 * @param adviceFilter AdviceFilter que seleciona o escopo das regras a serem usadas para a análise.
+	 * @param filterIDs long[] que especifica o subconjunto de regras a ser usuado para a análise.
+	 */
 	@Post
 	@Path("/suggestions/results")
 	public void results(UploadedFile file, Languages language, String type, AdviceFilter adviceFilter, long[] filterIDs) {
@@ -73,8 +81,8 @@ public class SuggestionsController {
 				break;
 		}
 		
-		FileProcessor fileProcessor = new FileProcessor(file, type);
-		TextAnalyzer textAnalyzer = new TextAnalyzer(fileProcessor.getText(), language, servletContext);
+		FileProcessor fileProcessor = new FileProcessor(file, type);// Formata o texto para ser processado pelo sistema.
+		TextAnalyzer textAnalyzer = new TextAnalyzer(fileProcessor.getText(), language, servletContext);// Obtem os lemas e os tokens
 		
 		Checker checker = new Checker(textAnalyzer, rulesTrees, opinionService);
 		result.include("numOfMistakes", checker.getNumOfMistakes());

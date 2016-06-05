@@ -38,6 +38,11 @@ public class FileProcessor {
 	// Each element in the list is a line of the text
 	private ArrayList<String> text;
 	
+	/**
+	 * Transforma o UploadedFile enviado pelo usuário em um ArrayList<String> para ser processado pelo sistema.
+	 * @param file
+	 * @param type
+	 */
 	public FileProcessor(UploadedFile file, String type) {
 		this.fileName = file.getFileName();
 		getText(file, type);

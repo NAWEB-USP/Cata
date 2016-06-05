@@ -9,6 +9,7 @@ import org.arabidopsis.ahocorasick.AhoCorasick;
 import br.usp.cata.model.ExactMatching;
 import br.usp.cata.model.Languages;
 import br.usp.cata.model.Lemma;
+import br.usp.cata.model.Mistake;
 import br.usp.cata.model.Rule;
 import br.usp.cata.model.RuleInstance;
 import br.usp.cata.model.Source;
@@ -90,6 +91,14 @@ public class RulesTrees {
 	
 	public Iterator<?> searchLemmas(byte[] text) {
 		return lemmasTree.search(text);
+	}
+
+	public void updateMistakesCounter(ArrayList<Mistake> mistakesList) {
+		for(Mistake mistake : mistakesList){
+			Rule rule = ruleService.findByID(mistake.getBrokenRule().getRule().getRuleID());
+			rule.setCount(rule.getCount() + 1);
+			ruleService.update(rule);
+		}
 	}
 	
 }
