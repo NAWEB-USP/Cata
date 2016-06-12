@@ -14,6 +14,7 @@ import java.nio.charset.StandardCharsets;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -25,8 +26,8 @@ import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.util.PDFTextStripper;
 import org.apache.poi.hwpf.HWPFDocument;
 import org.apache.poi.hwpf.extractor.WordExtractor;
-import org.apache.poi.xwpf.extractor.XWPFWordExtractor;
 import org.apache.poi.xwpf.usermodel.XWPFDocument;
+import org.apache.poi.xwpf.usermodel.XWPFParagraph;
 
 import br.com.caelum.vraptor.interceptor.multipart.UploadedFile;
 import br.usp.cata.component.FixesForLatexPDFTexts;
@@ -235,14 +236,14 @@ public class FileProcessor {
 			}
 		}
 		else if (file.getContentType().equals("application/vnd.openxmlformats-officedocument.wordprocessingml.document")) {
-			XWPFWordExtractor extractor = null;
-			
 			try {
 				XWPFDocument document = new XWPFDocument(is);
-				extractor = new XWPFWordExtractor(document);
-				String paragraphs = extractor.getText();
-			
-				text.add(paragraphs);
+				Iterator<XWPFParagraph> paragraphs = document.getParagraphsIterator();
+				while(paragraphs.hasNext()){
+					XWPFParagraph paragraph = paragraphs.next();
+					text.add(paragraph.getText());
+				}
+				document.close();
 			} catch (Exception e) {
 				e.printStackTrace();
 			} 
@@ -251,5 +252,3 @@ public class FileProcessor {
 		//TODO: Add more file types
 	}
 }
-
-	
