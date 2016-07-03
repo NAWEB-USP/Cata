@@ -44,6 +44,16 @@ public class Lemmatizer {
 		suffixesRoot = LemmatizerTrees.getSuffixesRoot();
 	}
 	
+	/**
+	 * Metodo para lematizar o texto e etiquetar, que é chamado para cada sentença do texto.
+	 * @param tokenizedText List de String são os tokens de uma linha do texto.
+	 * @param offset int é o número de tokens até essa linha.
+	 * @param lemmatizedText List de Byte cujas componentes são caracteres do texto lematizado, que é uma das saída do métodos.
+	 * @param startsList HashMap de Integer para Position associa um token à posição do primeiro caractere desse token no texto.
+	 * @param endsList HashMap de Integer para Position associa um token à posição do último caractere desse token no texto.
+	 * @param startsLemmatized
+	 * @param endsLemmatized
+	 */
 	public void lemmatize(List<String> tokenizedText, int offset, List<Byte> lemmatizedText,
 			HashMap<Integer, Position> startsList, HashMap<Integer, Position> endsList,
 			HashMap<Integer, Position> startsLemmatized, HashMap<Integer, Position> endsLemmatized) {
@@ -57,14 +67,17 @@ public class Lemmatizer {
 		this.endsLemmatized = endsLemmatized;
 		
 		for(int i = 0; i < LemmatizerConstants.numberOfTags; i++) {
-			sfxLemma[i] = "";
-			sfxTag[i] = 0.00;
+			sfxLemma[i] = "";  // Lema relacionado à etiqueta i
+			sfxTag[i] = 0.00;  // Probabilidade da etiqueta i para o token atual no autômato
 		}
 
 		createCircularList();		
 		tagAndLemmatize();		
 	}
 	
+	/**
+	 * Cria uma lista circular com maxCircularListElements nós.
+	 */
 	private void createCircularList() {
 		tkReady = new LemmatizerToken();		
 		tkNeig1 = tkReady;

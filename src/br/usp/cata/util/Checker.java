@@ -35,8 +35,9 @@ public class Checker {
 	public int getNumOfMistakes() {
 		return numOfMistakes;
 	}
+	
 	/**
-	 * Na função addMistakes associa cada regra violada no texto à sua posição no texto.
+	 * Associa regras violadas à sua posição respectiva no texto.
 	 * Essa função é chamada duas vezes uma para as regras contendo exactMatching e outra para Lemmas.
 	 * @param searcher Um Iterator cujos elementos são as regras que foram quebradas no texto
 	 * @param starts HashMap que associa o índice de cada token no ArrayList tokenizedText com uma
@@ -55,6 +56,7 @@ public class Checker {
 			int lastIndex = searchResult.getLastIndex();
 			int firstIndex = lastIndex - 
 				brokenRule.getPatternSuggestionPair().getTokenizedPatternBytes().length;
+			// FIXME As regras de lema são associadas a posição errada no texto
 			Position start = starts.get(firstIndex);
 			Position end = ends.get(lastIndex);
 			

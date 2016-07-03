@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42a98f30-548c-4e99-b224-7d8863a182d0" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/classes/br/usp/cata/util/Checker.class" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/classes/br/usp/cata/util/Checker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/classes/br/usp/cata/util/TextAnalyzerPT.class" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/classes/br/usp/cata/util/TextAnalyzerPT.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/classes/br/usp/cata/util/Tokenizer.class" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/classes/br/usp/cata/util/Tokenizer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/classes/br/usp/cata/util/lemmatizer/Lemmatizer.class" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/classes/br/usp/cata/util/lemmatizer/Lemmatizer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/home/index.jsp" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/home/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/index/about.jsp" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/index/about.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/index/advanced.jsp" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/index/advanced.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/index/index.jsp" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/index/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/index/newpassword.jsp" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/index/newpassword.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/index/recover.jsp" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/index/recover.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/index/rules.jsp" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/index/rules.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/index/signup.jsp" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/index/signup.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/rules/editrule.jsp" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/rules/editrule.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/rules/newrule.jsp" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/rules/newrule.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/rules/newsource.jsp" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/jsp/rules/newsource.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/classes/.gitignore" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/classes/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/usp/cata/util/Checker.java" afterPath="$PROJECT_DIR$/src/br/usp/cata/util/Checker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/usp/cata/util/TextAnalyzerPT.java" afterPath="$PROJECT_DIR$/src/br/usp/cata/util/TextAnalyzerPT.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/usp/cata/util/Tokenizer.java" afterPath="$PROJECT_DIR$/src/br/usp/cata/util/Tokenizer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/usp/cata/util/lemmatizer/Lemmatizer.java" afterPath="$PROJECT_DIR$/src/br/usp/cata/util/lemmatizer/Lemmatizer.java" />
     </list>
     <ignored path="Cata.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,8 +44,8 @@
       <file leaf-file-name="IndexController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/usp/cata/web/controller/IndexController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1404">
-              <caret line="103" column="32" selection-start-line="103" selection-start-column="32" selection-end-line="103" selection-end-column="32" />
+            <state relative-caret-position="2088">
+              <caret line="121" column="32" selection-start-line="121" selection-start-column="32" selection-end-line="121" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -57,8 +54,8 @@
       <file leaf-file-name="SuggestionsController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/usp/cata/web/controller/SuggestionsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="81" column="45" selection-start-line="81" selection-start-column="45" selection-end-line="81" selection-end-column="45" />
+            <state relative-caret-position="1044">
+              <caret line="89" column="45" selection-start-line="89" selection-start-column="45" selection-end-line="89" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -68,7 +65,7 @@
         <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/index/about.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="432">
-              <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+              <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -77,7 +74,7 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/home/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-288">
+            <state relative-caret-position="360">
               <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
               <folding />
             </state>
@@ -87,8 +84,8 @@
       <file leaf-file-name="FileProcessor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/usp/cata/util/FileProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1044">
-              <caret line="93" column="32" selection-start-line="93" selection-start-column="32" selection-end-line="93" selection-end-column="32" />
+            <state relative-caret-position="1530">
+              <caret line="99" column="32" selection-start-line="99" selection-start-column="32" selection-end-line="99" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -123,8 +120,8 @@
         <option value="$PROJECT_DIR$/src/br/usp/cata/web/controller/SuggestionsController.java" />
         <option value="$PROJECT_DIR$/src/br/usp/cata/util/FileProcessor.java" />
         <option value="$PROJECT_DIR$/WebContent/WEB-INF/jsp/index/index.jsp" />
-        <option value="$PROJECT_DIR$/WebContent/WEB-INF/jsp/index/about.jsp" />
         <option value="$PROJECT_DIR$/WebContent/WEB-INF/jsp/home/index.jsp" />
+        <option value="$PROJECT_DIR$/WebContent/WEB-INF/jsp/index/about.jsp" />
       </list>
     </option>
   </component>
@@ -259,6 +256,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -385,8 +384,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -887,6 +884,7 @@
       <workItem from="1460212407951" duration="10624000" />
       <workItem from="1461614164168" duration="19000" />
       <workItem from="1462652867728" duration="227000" />
+      <workItem from="1467248046956" duration="18000" />
     </task>
     <task id="LOCAL-00001" summary="Novos ajustes">
       <created>1460223603224</created>
@@ -899,7 +897,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13879000" />
+    <option name="totallyTimeSpent" value="13897000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -912,7 +910,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="27" width="1682" height="1024" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291714" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -926,7 +924,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291714" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20674847" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20674847" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1316,31 +1314,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/usp/cata/util/FileProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1044">
-          <caret line="93" column="32" selection-start-line="93" selection-start-column="32" selection-end-line="93" selection-end-column="32" />
+        <state relative-caret-position="1530">
+          <caret line="99" column="32" selection-start-line="99" selection-start-column="32" selection-end-line="99" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/usp/cata/web/controller/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1404">
-          <caret line="103" column="32" selection-start-line="103" selection-start-column="32" selection-end-line="103" selection-end-column="32" />
+        <state relative-caret-position="2088">
+          <caret line="121" column="32" selection-start-line="121" selection-start-column="32" selection-end-line="121" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/usp/cata/web/controller/SuggestionsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="81" column="45" selection-start-line="81" selection-start-column="45" selection-end-line="81" selection-end-column="45" />
+        <state relative-caret-position="1044">
+          <caret line="89" column="45" selection-start-line="89" selection-start-column="45" selection-end-line="89" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/home/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-288">
+        <state relative-caret-position="360">
           <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
           <folding />
         </state>
@@ -1349,7 +1347,7 @@
     <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/jsp/index/about.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
-          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+          <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
           <folding />
         </state>
       </provider>

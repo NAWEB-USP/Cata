@@ -32,6 +32,16 @@ public class Tokenizer {
 		tokenizer = config.getTokenizer();
 	}
 	
+	/**
+	 * Método para segmentar, em tokens, o texto extraído do arquivo enviado pelo usuário.
+	 * @param text ArrayList de String cujas componentes são linhas do texto.
+	 * @param tokenizedText ArrayList de Byte cujas componentes são bytes dos tokens do texto é uma das saídas do método.
+	 * @param starts HashMap de Integer para Position associa o espaço que precede o token respectivo em tokenizedText à posição do primeiro caractere do token no texto. 
+	 * @param ends HashMap de Integer para Position associa o espaço que sucede o token respectivo em tokenizedText à posição do último caractere do token no texto.
+	 * @param startsList HashMap de Integer para Position associa um token à posição do primeiro caractere desse token no texto.
+	 * @param endsList HashMap de Integer para Position associa um token à posição do último caractere desse token no texto.
+	 * @param tokensList Lista de ArrayList de Strings cujas componentes são sentenças, onde cada sentença é composta de tokens.
+	 */
 	public void tokenize(ArrayList<String> text, ArrayList<Byte> tokenizedText, 
 			HashMap<Integer, Position> starts, HashMap<Integer, Position> ends,
 			HashMap<Integer, Position> startsList, HashMap<Integer, Position> endsList,
