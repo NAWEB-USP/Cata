@@ -1,5 +1,6 @@
 package br.usp.cata.util.lemmatizer;
 
+import javax.management.RuntimeErrorException;
 
 public class LemmatizerToken {
 	
@@ -19,6 +20,7 @@ public class LemmatizerToken {
 	private LemmatizerToken next;
 	
 	public LemmatizerToken() {
+		index = -1;
 		sfxLemmas = new String[LemmatizerConstants.numberOfTags];
 		sfxTags = new double[LemmatizerConstants.numberOfTags];
 		prevs = new double[LemmatizerConstants.numberOfTags];

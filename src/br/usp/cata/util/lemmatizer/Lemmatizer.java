@@ -4,6 +4,8 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
+import javax.management.RuntimeErrorException;
+
 import br.usp.cata.component.lemmatizer.LemmatizerTrees;
 import br.usp.cata.model.Position;
 
@@ -100,8 +102,8 @@ public class Lemmatizer {
 	private void tagAndLemmatize() {
 		getNextToken(tkReading);
 		combine();
-		
 		while(!tkReady.getWord().equals(".EOF")) {
+			
 			if(tkCurrent.getTag() >= LemmatizerConstants.undefinedTag) {
 				if(tkCurrent.getTag() == LemmatizerConstants.undefinedTag)
 					analyzeTkCurrent();
@@ -134,7 +136,16 @@ public class Lemmatizer {
 						tkReady.getTag() != LemmatizerConstants.notPrintable)
 					analyzeTkReady();
 				
-				if(tkReady.isPrintable()) {
+//				// Tem lemma que não está associado à palavra nenhuma no texto.
+//				if (tkReady.getIndex() < 0) {
+//					String error = new String(tkReady.getWord()) + "(" + tkReady.getIndex() + ")";
+//					for (LemmatizerToken t = tkReady.getNext(); t != tkReady; t = t.getNext()) {
+//						error += ", " + t.getWord() + "(" + t.getIndex() + ")";
+//					}
+//					throw new RuntimeErrorException(new Error(error + " + tkReading.getWord() == " + tkReading.getWord()));
+//				}
+				
+				if(tkReady.isPrintable() && tkReady.getIndex() >= 0) {
 					Position start = startsList.get(tkReady.getIndex());
 					Position end = endsList.get(tkReady.getIndex());
 					
@@ -816,7 +827,7 @@ public class Lemmatizer {
 	
 	private void analyzeTkReady() {
 		int i, u;
-		
+
 		if(tkReady.getNext().getSfxTags()[6] == -9999) {
 			String word = tkReady.getWord();
 			if(word.length() > 0)
