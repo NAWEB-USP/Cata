@@ -57,6 +57,11 @@ public class LemmatizerToken {
 	}
 	
 	public void setIndex(int index) {
+		StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace();
+		if (this.index >= 0 && !stackTraceElements[2].getMethodName().equals("defineNewToken")) {
+			throw new RuntimeErrorException(new Error(this + " chamando setIndex para index já"
+					+ " configurado e não foi chamado pelo método defineNewToken!"));
+		}
 		this.index = index;
 	}
 
@@ -65,6 +70,10 @@ public class LemmatizerToken {
 	}
 
 	public void setWord(String word) {
+		if (index < 0 && !word.equals(".EOF")) {
+			throw new RuntimeErrorException(new Error(this + " chamando setWord para uma palavra"
+					+ " não .EOF com index não configurado!"));
+		}
 		this.word = word;
 	}
 

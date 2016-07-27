@@ -135,17 +135,15 @@ public class Lemmatizer {
 				if(tkReady.getTag() != LemmatizerConstants.defaultTag &&
 						tkReady.getTag() != LemmatizerConstants.notPrintable)
 					analyzeTkReady();
-				
-//				// Tem lemma que não está associado à palavra nenhuma no texto.
-//				if (tkReady.getIndex() < 0) {
-//					String error = new String(tkReady.getWord()) + "(" + tkReady.getIndex() + ")";
-//					for (LemmatizerToken t = tkReady.getNext(); t != tkReady; t = t.getNext()) {
-//						error += ", " + t.getWord() + "(" + t.getIndex() + ")";
-//					}
-//					throw new RuntimeErrorException(new Error(error + " + tkReading.getWord() == " + tkReading.getWord()));
-//				}
-				
-				if(tkReady.isPrintable() && tkReady.getIndex() >= 0) {
+				if(tkReady.isPrintable()) {
+					// Tem lemma que não está associado à palavra nenhuma no texto.
+					if (tkReady.getIndex() < 0) {
+						String error = new String(tkReady.getWord()) + "(" + tkReady.getIndex() + ")";
+						for (LemmatizerToken t = tkReady.getNext(); t != tkReady; t = t.getNext()) {
+							error += ", " + t.getWord() + "(" + t.getIndex() + ")";
+						}
+						throw new RuntimeErrorException(new Error(error + " + tkReading.getWord() == " + tkReading.getWord()));
+					}
 					Position start = startsList.get(tkReady.getIndex());
 					Position end = endsList.get(tkReady.getIndex());
 					
@@ -172,7 +170,7 @@ public class Lemmatizer {
 			}
 		}
 	}
-	
+
 	private void searchAccents(String word, int col, LemmatizerToken token, AccentsChar root) {
 		if(root != null) {
 			if(word.charAt(col) == root.getCharacter()) {
@@ -253,13 +251,9 @@ public class Lemmatizer {
 		if(tokenizedTextIndex >= tokenizedText.size())
 			t.setWord(".EOF");
 		else {
-			t.reset();
-			t.setIndex(tokenizedTextIndex + offset);
-			t.setPrintable(true);
-			t.setWord(tokenizedText.get(tokenizedTextIndex++));
-			t.setLemma("");
-			t.setSWordS("");
-			t.setTag(LemmatizerConstants.undefinedTag);
+			defineNewToken(t, tokenizedTextIndex + offset, true,
+					tokenizedText.get(tokenizedTextIndex++), "", "",
+					LemmatizerConstants.undefinedTag);
 		}
 	}
 	
@@ -286,11 +280,12 @@ public class Lemmatizer {
 					nextWord + " " + nextLemma + " _UN");
 		
 		if(nextWord.length() > 0) {
-			tkReading.getNext().setPrintable(true);
-			tkReading.getNext().setWord(nextWord);
-			tkReading.getNext().setLemma(nextLemma);
-			tkReading.getNext().setSWordS(nextSWordS);
-			tkReading.getNext().setTag(nextTag);
+			if (tkReading.getIndex() < 0) {
+				throw new RuntimeErrorException(new Error("tkReading está configurando com index"
+						+ " não configurado!"));
+			}
+			defineNewToken(tkReading.getNext(), tkReading.getIndex(), true, nextWord, nextLemma,
+					nextSWordS, nextTag);
 		}
 		
 		for(int i = 0; i < LemmatizerConstants.numberOfTags; i++) {
@@ -303,6 +298,17 @@ public class Lemmatizer {
 		combined = true;
 	}
 	
+	private void defineNewToken(LemmatizerToken t, int index, boolean printable, String word,
+				String lemma, String sWordS, int tag) {
+		t.reset();
+		t.setIndex(index);
+		t.setPrintable(printable);
+		t.setWord(word);
+		t.setLemma(lemma);
+		t.setSWordS(sWordS);
+		t.setTag(tag);
+	}
+
 	private boolean equalsList(String s, List<String> termos) {
 		for(String termo : termos)
 			if(s.equals(termo))
