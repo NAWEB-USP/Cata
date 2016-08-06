@@ -24,11 +24,14 @@ public class TextAnalyzer {
 	 */
 	public TextAnalyzer(ArrayList<String> text, Languages language, ServletContext servletContext) {
 		this.text = text;
-		
-		if(language == Languages.ENGLISH)
+		if(language == Languages.ENGLISH) {
+			System.out.println("English text");
 			textAnalyzerLanguage = new TextAnalyzerEN();
-		else
+		}
+		else {
+			System.out.println("Portuguese text");
 			textAnalyzerLanguage = new TextAnalyzerPT(servletContext);
+		}
 		
 		textAnalyzerLanguage.analyze(this.text);
 	}

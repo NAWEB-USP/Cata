@@ -1,6 +1,6 @@
 		<center>
 		<div id="footer">
-			<ul>
+			<ul id="footer">
 				<li><a href="<c:url value='/'/>" title="Início" class="hover">Início</a>|</li>
 				<li><a href="<c:url value='/rules'/>" title="Regras" class="hover">Regras</a>|</li>
 				<li><a href="<c:url value='/about'/>" title="Sobre">Sobre</a></li>

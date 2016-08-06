@@ -42,6 +42,7 @@
 
 	<script type="text/javascript">
 		$(document).ready(function () {
+			$("#footer ul").append('<li>|<a href="\statistics">Estatística</a></li>');
 			$("#index-menu").addClass('selected');
 			showModal("#modal", '<a href="#" class="close"><img src="<c:url value='/css/images/close_pop.png'/>" class="btn_close" title="Fechar" alt="Fechar" /></a>');
 			$('a').css("margin", "0px 0px");
