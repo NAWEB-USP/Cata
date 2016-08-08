@@ -224,36 +224,35 @@ public class Checker {
 		addMistakes(lemmasSearcher, textAnalyzer.getStartsLemmatized(),
 				textAnalyzer.getEndsLemmatized(), mistakesList);
 
-//		List<String> thisTextKeywords = textAnalyzer.getKeywords();
-//
-//		// Filtrando as regras com base nas opiniões dos usuários
-//		// FIXME Sugestões com joinhas não aparecem no texto analisado
-//		if(thisTextKeywords.size() > 15) {
-//			ArrayList<Mistake> mistakesToRemove = new ArrayList<Mistake>();
-//			for(Mistake mistake : mistakesList) {
-//				List<Opinion> opinions = opinionService.findByPair(mistake.getBrokenRule().getPatternSuggestionPair());
-//
-//				for(Opinion opinion : opinions) {
-//					int similarity = 0;
-//					if(opinion.getKeywords() != null) {
-//						Iterator<Keyword> keywords = opinion.getKeywords().iterator();
-//
-//						while(keywords.hasNext()) {
-//							String keyword = keywords.next().getWord();
-//							if(thisTextKeywords.contains(keyword))
-//								similarity++;
-//						}
-//
-//						if(similarity > (thisTextKeywords.size()/2)) {
-//							mistakesToRemove.add(mistake);
-//							break;
-//						}
-//					}
-//				}
-//			}
-//			for(Mistake mistake : mistakesToRemove)
-//				mistakesList.remove(mistake);
-//		}
+		List<String> thisTextKeywords = textAnalyzer.getKeywords();
+
+		// Filtrando as regras com base nas opiniões dos usuários
+		if(thisTextKeywords.size() > 15) {
+			ArrayList<Mistake> mistakesToRemove = new ArrayList<Mistake>();
+			for(Mistake mistake : mistakesList) {
+				List<Opinion> opinions = opinionService.findByPair(mistake.getBrokenRule().getPatternSuggestionPair());
+
+				for(Opinion opinion : opinions) {
+					int similarity = 0;
+					if(opinion.getKeywords() != null) {
+						Iterator<Keyword> keywords = opinion.getKeywords().iterator();
+
+						while(keywords.hasNext()) {
+							String keyword = keywords.next().getWord();
+							if(thisTextKeywords.contains(keyword))
+								similarity++;
+						}
+
+						if(similarity > (thisTextKeywords.size()/2)) {
+							mistakesToRemove.add(mistake);
+							break;
+						}
+					}
+				}
+			}
+			for(Mistake mistake : mistakesToRemove)
+				mistakesList.remove(mistake);
+		}
 
 		numOfMistakes = mistakesList.size();
 		rulesTrees.updateMistakesCounter(mistakesList);

@@ -29,7 +29,6 @@ public class TextAnalyzer {
 			textAnalyzerLanguage = new TextAnalyzerEN();
 		}
 		else {
-			System.out.println("Portuguese text");
 			textAnalyzerLanguage = new TextAnalyzerPT(servletContext);
 		}
 		

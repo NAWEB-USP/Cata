@@ -2,6 +2,7 @@ package br.usp.cata.web.controller;
 
 import java.util.HashSet;
 
+import javax.management.RuntimeErrorException;
 import javax.servlet.ServletContext;
 
 import br.com.caelum.vraptor.Path;
@@ -109,9 +110,8 @@ public class SuggestionsController {
 		String type = "";
 		for(i = 0; i < data.length() && data.charAt(i) != '|'; i++)
 			type += data.charAt(i);
-		if(type == "agree")
+		if(type.equals("agree"))
 			return;
-		
 		i++;	
 		String id = "";
 		for(; i < data.length() && data.charAt(i) != '|'; i++)
