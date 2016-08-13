@@ -158,15 +158,15 @@
 								for="en">Inglês</label><input id="en" name="language" value="1"
 								type="radio"> <br />
 							</span>
-							<div id="type_div" hidden class="small">
-								<label for="type">Tipo de txt</label> <select id="type"
-									type="text" name="type">
-									<c:forEach items="${charsets}" var="charset">
-										<option value="${charset}"
-											<c:if test="${charset eq 'UTF-8' }">selected</c:if>>${charset}</option>
-									</c:forEach>
-								</select> <br />
-							</div>
+						</div>
+						<div id="type_div" hidden class="small single_form_element">
+							<label for="type" class="label">Tipo de txt</label> <select
+								id="type" type="text" name="type" class="input_border width250">
+								<c:forEach items="${charsets}" var="charset">
+									<option value="${charset}"
+										<c:if test="${charset eq 'UTF-8' }">selected</c:if>>${charset}</option>
+								</c:forEach>
+							</select> <br />
 						</div>
 						<input class="button" type="submit" value="Enviar">
 						<div class="small" style="margin-right: none">
